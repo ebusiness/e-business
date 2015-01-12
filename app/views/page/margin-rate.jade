@@ -1,0 +1,85 @@
+extends ../layout.jade
+
+block js
+  script(type="text/javascript").
+    jQuery(document).ready(function() {
+      App.init();
+    });
+    
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left 個労働者派遣のマージン率等の公開資料
+
+block content
+  .container.content
+    .shadow-wrapper.margin-bottom-60
+      .tag-box.tag-box-v1.box-shadow.shadow-effect-2
+        h4 改正労働者派遣法に基づき、マージン率等について公開します。
+        p （平成25年4月1日～平成26年3月31日）
+    .margin-bottom-30
+      .service
+        i.service-icon.icon-calculator
+        .desc
+          h4.no-top-space 労働者派遣の実績及びマージン率等
+          .table-responsive
+            table.table
+              thead
+                tr
+                  th 派遣労働者数
+                  th 派遣先事務所数
+                  th ①労働者派遣の料金(1日8時間当たりの平均)
+                  th ②派遣労働者の賞金(1日8時間当たりの平均)
+                  th マージン率(①−②)÷①
+              tbody
+                tr
+                  td 6
+                  td 5
+                  td 31,641円
+                  td 22,314円
+                  td 29.5%
+          p 
+            em ※マージン率とは、派遣先より株式会社イー･ビジネスに支払われる派遣料金から、派遣労働者に支払う賃金を差し引いた残りの額がマージンであり、これを派遣料金で除して得られた率をマージン率といいます。
+      .service
+        i.service-icon.icon-list
+        .desc
+          h4.no-top-space マージンに含まれる費用
+          .table-responsive
+            table.table.table-bordered
+              tbody
+                tr
+                  td(colspan="2") 会社保険料
+                  td 健康保険料、厚生年金保険料、介護保険料、雇用保険料、労災保険料などの事業主負担分
+                tr
+                  td(colspan="2") 有給休暇費用
+                  td 年次有給休暇取得時にかかる賃金（派遣先への請求はできません）
+                tr
+                  td(rowspan="4") 会社運営経費
+                  td 健康診断費用
+                  td 一般検診及び生活習慣病検診の受診費用
+                tr
+                  td 募集費用
+                  td 労働派遣者の募集にかかる求人媒体費（求人誌及びインターネット等）、登録会場費
+                tr
+                  td 就業管理費用
+                  td 派遣労働者の就業に関する費用（登録受付・教育訓練・派遣先紹介・事務管理費等）
+                tr
+                  td 営業費用
+                  td 営業スタッフの人件費及び活動費・法廷手続費用・事務所費・通信費等
+                tr
+                  td(colspan="2") 営業利益
+                  td 労働者派遣の料金から労働者の賃金、会社保険料、有給休暇費用、会社運営経費を差し引いた利益
+      .service
+        i.service-icon.icon-speedometer
+        .desc
+          h4.no-top-space 教育訓練に関する事項
+          p なし
+      .service
+        i.service-icon.icon-paper-clip
+        .desc
+          h4.no-top-space その他参考と認められる事項
+          p 東京都情報サービス産業健康保険組合の福利厚生施設や、その他のサービスが受けられます。
+            br
+            | ※会社保険加入者のみ
+
+    p ※上の内容に関するお問い合わせがあれば、メール「sales@e-business.co.jp」でお問い合わせてください。

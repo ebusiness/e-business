@@ -1,0 +1,44 @@
+extends ../layout.jade
+
+block js
+  script(type="text/javascript").
+    jQuery(document).ready(function() {
+      App.init();
+    });
+    
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left 個人情報保護方針
+
+block content
+  .container.content
+    .shadow-wrapper.margin-bottom-60
+      .tag-box.tag-box-v1.box-shadow.shadow-effect-2
+        h4 当社は、システム開発・運用等の事業を営むにあたり、個人情報を取得・利用させて頂いている社会的責任を充分認識し、個人情報の適切な取り扱いと保護に全社を挙げて取り組むことを宣言します。
+    .margin-bottom-30
+      .service
+        i.service-icon.icon-loop
+        .desc
+          h4.no-top-space 個人情報保護マネジメントシステム」の策定及び継続的改善
+          p 当社は、個人情報保護の重要性を強く認識し、個人情報を適切に利用し、保護するための「個人情報保護マネジメントシステム」を策定し、これを着実に実施・維持し、継続的に改善する。
+      .service
+        i.service-icon.icon-envelope-letter
+        .desc
+          h4.no-top-space 個人情報収集、利用、提供
+          p 当社は、個人情報保護のためのマネジメントシステムを確立し、情報通信サービス産業における適切な個人情報の収集、利用、提供を実現する。また、目的を逸脱した利用がなされない様に確認手順を設けて実施し、体制整備と安全措置を講じます。
+      .service
+        i.service-icon.icon-lock
+        .desc
+          h4.no-top-space 安全対策の実施
+          p 当社は、個人情報の正確性及び安全性を確保するため、安全対策を実施し、個人情報に対する不正アクセス、個人情報の紛失、破壊、改竄及び漏洩等の予防並びに是正に関する適切な措置を講じます。
+      .service
+        i.service-icon.icon-support
+        .desc
+          h4.no-top-space 情報主体の権利尊重
+          p 当社は、個人情報に関する本人の権利を尊重し、本人からの苦情及び相談へは、社会通念や慣行上の合理的な範囲でこれに応じる。
+      .service
+        i.service-icon.icon-book-open
+        .desc
+          h4.no-top-space 法令、規範の遵守
+          p 当社は、個人情報に関する法令及びその他の規範を遵守する。また、当社の「個人情報保護マネジメントシステム」をこれらの法令及びその他の規範に適合させていく。

@@ -1,0 +1,52 @@
+doctype html
+html
+
+  head
+
+    title 株式会社イー・ビジネス(E-Business)
+
+    link(rel='stylesheet', href='bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='simple-line-icons/css/simple-line-icons.css')
+    link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='css/style.css')
+    link(rel='stylesheet', href='css/pages/page_log_reg_v2.css')
+    link(rel='stylesheet', href='css/theme-colors/default.css')
+    link(rel='stylesheet', href='css/custom.css')
+
+  body(ng-app='login')
+    .container(ng-controller='main as ma')
+      .reg-block
+        .reg-block-header
+          h2 Sign In
+          ul.social-icons.text-center
+            li
+              a.rounded-x.social_facebook(data-original-title='Facebook', href='#')
+            li
+              a.rounded-x.social_twitter(data-original-title='Twitter', href='#')
+            li
+              a.rounded-x.social_googleplus(data-original-title='Google Plus', href='#')
+            li
+              a.rounded-x.social_linkedin(data-original-title='Linkedin', href='#')
+          p
+            | Don't Have Account? Click
+            a.color-green(href='page_registration1.html') Sign Up
+            | to registration.
+        .input-group.margin-bottom-20
+          span.input-group-addon
+            i.fa.fa-envelope
+          input.form-control(type='text', placeholder='Email', ng-model='ma.email')
+        .input-group.margin-bottom-20
+          span.input-group-addon
+            i.fa.fa-lock
+          input.form-control(type='text', placeholder='Password', ng-model='ma.password')
+        hr
+        .checkbox
+          label
+            input(type='checkbox')
+            p Always stay signed in
+        .row
+          .col-md-10.col-md-offset-1
+            button.btn-u.btn-block(ng-click='ma.submit()') Log In
+
+  script(src='angular/angular.js')
+  script(src='js/custom.js')

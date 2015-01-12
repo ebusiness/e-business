@@ -1,0 +1,452 @@
+extends ../layout.jade
+
+block css
+  link(rel="stylesheet", href="image-hover/css/img-hover.css")
+  link(rel="stylesheet", href="css/pages/feature_timeline1.css")
+
+block js
+  // JS Implementing Plugins
+  script(type="text/javascript", src="image-hover/js/modernizr.js")
+  script(type="text/javascript", src="image-hover/js/touch.js")
+  script(type="text/javascript", src="flot/jquery.flot.js")
+  script(type="text/javascript", src="flot/jquery.flot.pie.js")
+  script(type="text/javascript", src="flot/jquery.flot.resize.js")
+  script(type="text/javascript", src="http://maps.google.com/maps/api/js?sensor=true")
+  script(type="text/javascript", src="gmaps/gmaps.js")
+  // JS Page Level
+  script(type="text/javascript").
+    jQuery(document).ready(function() {
+      App.init();
+      $.plot($(".graph-1"), [ {
+          label: "　社員数（人）",
+          data: [ [ 19, 5 ], [ 20, 22 ], [ 21, 14 ], [ 22, 30 ], [ 23, 60 ], [ 24, 90 ], [ 25, 135 ], [ 26, 185 ] ],
+          lines: {
+            show: true
+          },
+          points: {
+            show: true
+          },
+          yaxis: 1
+        }, {
+          label: "　売上（百万円）",
+          data: [ [ 19, 30 ], [ 20, 160 ], [ 21, 80 ], [ 22, 200 ], [ 23, 360 ], [ 24, 630 ], [ 25, 1070 ], [ 26, 1500 ] ],
+          bars: {
+            show: true,
+            barWidth: 0.6,
+            align: "center"
+          },
+          yaxis: 2
+        } ], {
+          yaxes: [ {
+            min: 0,
+            max: 200,
+            position: "right"
+          }, {
+            min: 0,
+            max: 1600,
+            position: "left"
+          } ],
+          xaxis: {
+            tickDecimals: 0,
+            tickFormatter: function(val, axis) {
+              return "H" + val.toFixed(axis.tickDecimals) + "年度";
+            }
+          },
+          grid: {
+            hoverable: true,
+            clickable: true
+          },
+          legend: {
+            noColumns: 1,
+            position: "nw"
+          }
+        });
+    });
+
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left 株式会社 イー・ビジネス
+
+block content
+
+  .container.content
+    blockquote.hero-unify.row.shadow-wrapper
+      h2.color-green 社長からのメッセージ
+      .col-sm-5.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
+        img.img-responsive.margin-bottom-10(src='img/main/6.jpg', alt='')
+      p 当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。
+      p 社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。
+      p 専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。
+      p 今後とも変わらぬ、一層の皆様のご愛顧とご指導、ご支援賜りますようお願い申し上げます。
+      small 社長取締役　花 東江
+
+  #company-info.container.content
+    .heading.heading-v4.margin-bottom-20
+      h2.color-green 会社概要
+    .row
+      .col-sm-4
+        .service
+          i.service-icon.icon-star
+          .desc
+            h4.no-top-space 設立日
+            p 2007年6月（平成19年6月）
+      .col-sm-4
+        .service
+          i.service-icon.icon-user-following
+          .desc
+            h4.no-top-space 代表者
+            p 社長取締役 花東江
+      .col-sm-4
+        .service
+          i.service-icon.icon-pointer
+          .desc
+            h4.no-top-space 所在地
+            p 東京都港区芝2-28-8芝2丁目ビル10階
+    .row
+      .col-sm-4
+        .service
+          i.service-icon.icon-diamond
+          .desc
+            h4.no-top-space 資本金 3050万円
+            p 平成27年1月現在
+      .col-sm-4
+        .service
+          i.service-icon.icon-users
+          .desc
+            h4.no-top-space 従業員数 185人
+            p 平成27年1月現在
+      .col-sm-4
+        .service
+          i.service-icon.icon-globe-alt
+          .desc
+            h4.no-top-space 海外支社
+            p 中国・大連易商共創科技株式会社
+    .row
+      .col-sm-4
+        .service
+          i.service-icon.icon-bar-chart
+          .desc
+            h4.no-top-space 直近年商 10.7億
+            p 平成25年度
+      .col-sm-4
+        .service
+          i.service-icon.icon-graph
+          .desc
+            h4.no-top-space 本年度売上 15.7億
+            p 平成26年度見込み
+      .col-sm-4
+        .service
+          i.service-icon.icon-badge
+          .desc
+            h4.no-top-space 取得資格
+            ul.list-unstyled
+              li
+                i.fa.fa-check.color-green
+                |  一般労働者派遣資格
+              li
+                i.fa.fa-check.color-green
+                |  一般競争入札資格
+              li
+                i.fa.fa-check.color-green
+                |  中小企業経営革新認定企業認定
+              li
+                i.fa.fa-check.color-green
+                |  プライバシーマーク
+              li
+                i.fa.fa-check.color-green
+                |  ISO27001(ISMS)認証
+
+  .container.content
+    .row
+      .col-sm-8.col-sm-offset-2
+        .heading.heading-v4.margin-bottom-20
+          h2.color-green 売上実績
+        .graph-1(style="width:100%; height: 300px;")
+
+  //- #organiztion.container.content
+  //-   .heading.heading-v4.margin-bottom-20
+  //-     h2.color-green 会社組織図
+  //-   .row
+  //-     table.table
+  //-       tbody
+  //-         tr
+  //-           td(rowspan="15")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-flag
+  //-               |  株主総会
+  //-             br
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-flag
+  //-               |  取締役会
+  //-             br
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-user
+  //-               |  代表者
+  //-           td.org-leaf(rowspan="3")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-bell
+  //-               |  経営管理部
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-users
+  //-               |  人事グループ
+  //-         tr
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-note
+  //-               |  経理グループ
+  //-         tr
+  //-           td.org-leaf-last
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-grid
+  //-               |  総務グループ
+  //-         tr
+  //-           td.org-branch(rowspan="2")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-picture
+  //-               |  営業企画部
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-notebook
+  //-               |  営業１グループ
+  //-         tr
+  //-           td.org-leaf-last
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-notebook
+  //-               |  営業２グループ
+  //-         tr
+  //-           td.org-branch(rowspan="6") 
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-screen-desktop
+  //-               |  ICT事業部
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-settings
+  //-               |  SS１部
+  //-         tr
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-settings
+  //-               |  SS２部
+  //-         tr
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-settings
+  //-               |  SS３部
+  //-         tr
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-settings
+  //-               |  SS４部
+  //-         tr
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-settings
+  //-               |  SS５部
+  //-         tr
+  //-           td.org-leaf-last
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-wrench
+  //-               |  技術推進部
+  //-         tr
+  //-           td.org-branch(rowspan="2")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-basket
+  //-               |  GEC事業部
+  //-           td.org-leaf
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-speech
+  //-               |  企画・運営グループ
+  //-         tr
+  //-           td.org-leaf-last
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-wrench
+  //-               |  技術開発グループ
+  //-         tr
+  //-           td(colspan="2")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-key
+  //-               |  セキュリティ・危機管理委員会
+  //-         tr
+  //-           td(colspan="2")
+  //-             .btn-u.btn-brd.btn-brd-hover.btn-u-lg
+  //-               i.icon-volume-2
+  //-               |  CSR推進室
+
+  .container.content.job-partners
+    .heading.heading-v4.margin-bottom-20
+      h2.color-green 主な取引先
+    ul#effect-2.list-inline.our-clients
+      li
+        figure
+          img#isid.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社電通国際情報サービス(ISID)
+      li
+        figure
+          img#iki.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 アイエックス・ナレッジ株式会社(IKI)
+      li
+        figure
+          img#dts.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社　DTS
+      li
+        figure
+          img#nsd.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社ＮＳＤ
+      li
+        figure
+          img#tdc.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 ＴＤＣソフトウェアエンジニアリング株式会社
+      li
+        figure
+          img#fujikura.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社フジクラ
+      li
+        figure
+          img#tss.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社東邦システムサイエンス
+      li
+        figure
+          img#hitachi.client-logo(src='img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 株式会社日立ソリューションズ
+
+  .container.content
+    .heading.heading-v4.margin-bottom-20
+      h2.color-green 会社沿革
+    .row
+      ul.timeline-v1
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 資本金を3050万円に増資
+              span
+                i.fa.fa-clock-o
+                |  平成27年1月
+        li.timeline-inverted
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') ISO27001(ISMS)認証を取得
+              p
+                | ISO 27001は、組織が保有する情報にかかわるさまざまなリスクを適切に管理し、組織の価値向上をもたらすISMSの国際規格です。
+              span
+                i.fa.fa-clock-o
+                |  平成26年5月30日
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 中国・大連易商共創科技株式会社を設立
+              p
+                | 大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。
+              span.pull-left
+                i.fa.fa-clock-o
+                |  平成26年4月4日
+              span.pull-right
+                a.btn-u.btn-u-sm(href='http://big5.51job.com/gate/big5/companyadc.51job.com/companyads/ads/17/16458/16457658/index.htm', target='blank') 易商共創科技
+              .clearfix
+        li.timeline-inverted
+          .timeline-badge.primarya
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 本社を東京都港区芝に移転
+              p
+                | 事業拡大に伴い、本社を東京都港区芝に移転
+              span.pull-left
+                i.fa.fa-clock-o
+                |  平成26年1月
+              span.pull-right
+                a.btn-u.btn-u-sm(href='#') アクセス
+              .clearfix
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 資本金を1850万円に増資
+              span
+                i.fa.fa-clock-o
+                |  平成25年7月
+        li.timeline-inverted
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 一般競争入札資格取得
+              p
+                | 一般競争入札とは、競争入札のうち入札情報を公告して参加申込を募り、希望者同士で競争に付して契約者を決める方式。日本の官庁発注案件においては会計法第29条の3に規定されている。各省各庁の長は参加資格を定めることが出来（予算決算及び会計令第72条）、参加資格を定めた場合は、随時申請を受け付けて審査して名簿に登録しなければならない。また、契約担当官等（地方事務所の所長など）は、各省各庁の長が定めた参加資格の他に、さらに必要な資格を定めることが出来る（予算決算及び会計令第73条）。
+              span
+                i.fa.fa-clock-o
+                |  平成24年4月
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body
+              h4
+                a(href='#') プライバシーマーク取得
+              p
+                | プライバシーマークとは、個人情報保護に関して一定の要件を満たした事業者（基本的には法人単位。ただし、医療関連については病院ごとなど例外あり）に対し、一般財団法人日本情報経済社会推進協会 (JIPDEC) により使用を認められる登録商標（サービスマーク）の事である。Pマークと略して呼ばれることもある。
+              span
+                i.fa.fa-clock-o
+                |  平成24年3月
+        li.timeline-inverted
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 駐日経貿連絡事務所招商代表に就任
+              p
+                | 代表取締役社長花東江が、中国塩城市政府の要請を受け、駐日経貿連絡事務所招商代表に就任。
+              span
+                i.fa.fa-clock-o
+                |  平成21年9月
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body
+              h4
+                a(href='#') 経営革新企業認定取得
+              p
+                | 中小企業新事業活動促進法に準じ、中小企業経営革新認定企業の認定を受ける。
+              span.pull-left
+                i.fa.fa-clock-o
+                |  平成21年8月
+              span.pull-right
+                a.btn-u.btn-u-sm(href='#') 平成21年度8月経営革新計画承認書
+              .clearfix
+        li.timeline-inverted
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record.invert
+          .timeline-panel
+            .timeline-body.text-justify
+              h4
+                a(href='#') 会社設立
+              p
+                | 東京都千代田区において資本金800万円にて設立
+              span
+                i.fa.fa-clock-o
+                |  平成19年6月
+        li.clearfix(style='float: none;')

@@ -1,0 +1,141 @@
+extends ../layout.jade
+
+block css
+  link(rel="stylesheet", href="css/pages/page_one.css")
+
+block js
+  script(type="text/javascript").
+    jQuery(document).ready(function() {
+      App.init();
+    });
+
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left 事業内容
+
+block content
+  .container.content-sm
+    .row.margin-bottom-30
+      .col-md-4
+        .service-block-v1.md-margin-bottom-50
+          i.rounded-x.icon-wrench
+          h3.title-v3-bg.text-uppercase システム開発
+          a.text-uppercase(href='#') Read More
+      .col-md-4
+        .service-block-v1.md-margin-bottom-50
+          i.rounded-x.icon-book-open
+          h3.title-v3-bg.text-uppercase ソリューション
+          a.text-uppercase(href='#') Read More
+      .col-md-4
+        .service-block-v1.md-margin-bottom-50
+          i.rounded-x.icon-screen-tablet
+          h3.title-v3-bg.text-uppercase 製品及びサービス
+          a.text-uppercase(href='#') Read More
+      .col-md-6
+        .service-block-v1.md-margin-bottom-50
+          i.rounded-x.icon-game-controller
+          h3.title-v3-bg.text-uppercase ソーシャルゲーム事業
+          a.text-uppercase(href='#') Read More
+      .col-md-6
+        .service-block-v1.md-margin-bottom-50
+          i.rounded-x.icon-earphones-alt
+          h3.title-v3-bg.text-uppercase オフショアコンサルティング
+          a.text-uppercase(href='#') Read More
+
+  .one-page
+    .one-page-inner.one-blue
+      .container.content
+        .row.margin-bottom-30
+          .col-md-7.content-boxes-v6
+            i.rounded-x.icon-wrench
+            h1.title-v3-md.text-uppercase.margin-bottom-10 システム開発
+            p
+              | 創業以来培った「業務ノウハウ」「豊富なプロジェクトマネージメント経験」「業種毎のナレッジ」と 「最新の情報技術」をベースに、受託開発、業務支援（ＳＥＳ）、オフショアなどの様々なメソッドを活用し、 システム提案から設計、製造、テスト、納品までの総合的なシステム開発サービスをご提供いたします。
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/24.jpg', alt='')
+        .row.margin-bottom-30
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/15.jpg', alt='')
+          .col-md-7
+            h2 SES事業
+            p
+              | 2007年の創業から一貫して、お客様のご支持を頂けるSES事業者として、 常に真摯にお客様のニーズに向き合って参りました。お客様に「ニーズにベストマッチした人材を、 ベストのタイミングで、確実にお届けする」を合言葉に日々の業務に取り組ませて頂いております。
+        .row.margin-bottom-30
+          .col-md-7
+            h2 受託開発
+            p
+              | 弊社には150名を超えるシステム開発のスタッフが在籍しており、 お客様の要望にお応えできる体制が整っております。 また各業界に特化した知識を持ったエキスパートがプロジェクトをリードし、 非常に投資効率の高い成果をあげております。（以下　実績一覧をご参照ください）
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/22.jpg', alt='')
+        .row
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/23.jpg', alt='')
+          .col-md-7
+            h2 中国オフショア開発
+            p
+              | 当社の推奨するオフショア開発は、上流工程及びテスト以降の工程をすべて日本で行い、 オフショア部分は「プログラム製造工程」に絞り、リスクを最小限に抑える仕組みを採用しております。 また、開発における全工程を日本人スタッフが国内でマネージし、オフショア先には日本での開発経験豊富な中国人スタッフをBSEとして派遣しております。 当社では、お客様とオフショア先企業の間に、当社の日本人マネージャ及び中国人BSEを配置することで、 コミュニケーションに齟齬が生じない体制を確立しております。 これにより、安全かつ低コストを実現し、 失敗しないオフショア開発のサービスをお客様にご提供することが可能となりました。
+    .one-page-inner.one-default
+      .container.content
+        .row
+          .col-md-7.content-boxes-v6
+            i.rounded-x.icon-book-open
+            h1.title-v3-md.text-uppercase.margin-bottom-10 ソリューション
+            p
+              | インターネットが急速に進化・発展している現在、各企業ではビジネスに直結したWebシステム構築の重要性が高まっています。 インターネット戦略の核となるWebシステムの構築は、企業の事業戦略、マーケティング戦略 に対する貢献度が大きい重要課題の１つであり、 各企業のWebシステムのサービスレベル及び品質レベルが、各社の事業を成功に導く重要な鍵となっております。 当社はWebシステムのトータル・ソリューションをご提供いたします。
+          .col-md-5
+            img.margin-bottom-10.img-responsive(src='img/masonry/blog2.jpg', alt='')
+    .one-page-inner.one-red
+      .container.content
+        .row
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/11.jpg', alt='')
+          .col-md-7.content-boxes-v6
+            i.rounded-x.icon-screen-tablet
+            h1.title-v3-md.text-uppercase.margin-bottom-10 製品及びサービス
+            p
+              | 次世代端末（スマートフォン、タブレット等）の急速な普及に伴い、お客様（コンシューマ様やクライアント様）のからのマルチデバイス対応のニーズが高まっています。 当社は新たな技術を駆使し、お客様の様々なニーズに向き合い、最善な製品をご提供いたします。 主な製品：スマートフォン関連、クラウドサービスなど。
+    .one-page-inner.one-default
+      .container.content
+        .row
+          .col-md-7.content-boxes-v6
+            i.rounded-x.icon-game-controller
+            h1.title-v3-md.text-uppercase.margin-bottom-10 ソーシャルゲーム事業
+            p
+              | 2010年からは、GREE、mobage、mixiなどのプラットフォームに対応したソーシャルゲームプロジェクトに要員を派遣、企画から運営までの業務に従事してまいりました。世の中の発展に合わせた対応を行うことによりさらなる成長をみせています。また、様々な企画、ポータルサイトの展開などを幅広く執り行ってまいります。
+          .col-md-5
+            img.img-responsive(src='img/masonry/blog5.jpg', alt='')
+    .one-page-inner.one-green
+      .container.content
+        .row.margin-bottom-30
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/10.jpg', alt='')
+          .col-md-7.content-boxes-v6
+            i.rounded-x.icon-earphones-alt
+            h1.title-v3-md.text-uppercase.margin-bottom-10 オフショアコンサルティング
+            p
+              | 中国におけるオフショア開発プロジェクト成功への第一歩は、お客様にとって、最適なパートナーを選定することです。弊社はこれから中国オフショアへの進出を検討しているＩＴ企業に、企業体質別の“向き・不向き”やメリットもあわせて指導し開発コストや管理コストの削減に向けた道すじを明らかにします。また、過去に中国オフショアに失敗したＩＴ企業に対しては、その原因を明らかにすると共に、成功ノウハウを指導します。
+            p
+              | コンサルティング内容
+              | ①過去に行ったオフショア開発の失敗原因の分析
+              | ②中国でオフショア開発を行う際の適正チェック（案件や企業体質などから診断）
+              | ③オフショアマーケット調査、相手企業の選別
+              | ④オフショア企画支援
+        .row.margin-bottom-30
+          .col-md-7
+            h2 オフショアプロセスコンサルティング
+            p
+              | オフショア実施中のお客様にご提供するサービスです。
+              | ①オフショア各段階のリスク予測・アドバイスの提供
+              | ②発生している課題分析・解決案の提供
+              | ③プロセス全体の品質管理及び進捗管理支援
+              | ④お客様の要望応じ必要なリソースの調達（人材、設備等）
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/11.jpg', alt='')
+        .row
+          .col-md-5
+            img.img-responsive.margin-bottom-10(src='img/main/27.jpg', alt='')
+          .col-md-7
+            h2 オフショア受注実施
+            p
+              | 弊社特有の開発手順、品質管理及び成熟的な組織と柔軟的な人員調達により、正確にお客様の要望を把握し、高品質を維持しながら短納期のシステム開発を実現しています。

@@ -1,0 +1,198 @@
+doctype html
+<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ja"><!--<![endif]-->
+head
+
+  title 株式会社イー・ビジネス(E-Business)
+
+  // Meta 
+  meta(charset='utf-8')
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  meta(name='description', content='')
+  meta(name='author', content='JoeHetfield')
+
+  // Favicon 
+  link(rel='shortcut icon', href='favicon.ico')
+
+  // CSS Global Compulsory 
+  link(rel='stylesheet', href='bootstrap/dist/css/bootstrap.min.css')
+  link(rel='stylesheet', href='css/style.css')
+
+  // CSS Implementing Plugins 
+  link(rel='stylesheet', href='simple-line-icons/css/simple-line-icons.css')
+  link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+
+  // CSS Page Block
+  block css
+
+  // CSS Customization 
+  link(rel='stylesheet', href='css/custom.css')
+
+body.header-fixed
+
+  // Wrapper
+  .wrapper
+
+    // Header
+    .header.header-sticky
+
+      // Topbar 
+      .topbar
+        .container
+          // Topbar Navigation 
+          ul.loginbar.pull-right
+            li.languagesSelector
+              i.fa.fa-globe
+              | 
+              a 言語選択
+              ul.languages
+                li.active
+                  a(href='#') 日本語
+                    i.fa.fa-check
+                li
+                  a(href='#') 中国語
+                li
+                  a(href='#') 英語
+            li.topbar-devider
+            li
+              a(href='login') ログイン
+
+
+      // Navbar 
+      .navbar.navbar-default.mega-menu(role='navigation')
+        .container
+          // Brand
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+              span.sr-only Toggle navigation
+              span.fa.fa-bars
+            a.navbar-brand(href='index.html')
+              //- img#logo-header(src='img/logo1-default.png', alt='Logo')
+              img#logo-header(src='img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
+              //- h1 E-Business Inc.
+          // Collect the nav links
+          .collapse.navbar-collapse.navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='home')
+                  | Home
+              li
+                a(href='about-us')
+                  | 会社概要  
+              li
+                a(href='services')
+                  | 事業内容
+              li
+                a(href='recruitment')
+                  | 採用情報
+              li
+                a(href='contact')
+                  | お問合せ
+
+    // Slider
+    block slider
+
+    // Breadcrumbs
+    block breadcrumbs
+
+    // Content
+    block content
+
+    // Footer
+    .footer-v1
+      .footer
+        .container
+          .row
+            // About 
+            .col-sm-6.col-md-3.md-margin-bottom-40
+              a(href='index.html')
+                //- img#logo-footer.footer-logo(src='img/logo2-default.png', alt='')
+                h2 株式会社イー・ビジネス
+              p
+                | 社会と人々の生活をより豊かなものへと推進し、進化をもたらせるIT組織を目指していきます
+              img#logo-footer.footer-logo(src='img/eb/pmark.gif', alt='', style="width: auto; height: 75px;")
+              img#logo-footer.footer-logo(src='img/eb/isms.jpg', alt='', style="width: auto; height: 75px;")
+            // Latest 
+            .col-sm-6.col-md-3.md-margin-bottom-40
+              .posts
+                .headline
+                  h2 最新ニュース
+                ul.list-unstyled.latest-list
+                  li
+                    a(href='#') ISO27001(ISMS)認証を取得しました
+                    small 2014年5月30日
+                  li
+                    a(href='#') 事業拡大のため、本社を東京都港区芝に移転
+                    small 2014年1月8日
+                  li
+                    a(href='#') 資本金を1850万円に増資
+                    small 2013年12月20日
+            // Link List 
+            .col-sm-6.col-md-3.md-margin-bottom-40
+              .headline
+                h2 リンク集
+              ul.list-unstyled.link-list
+                li
+                  a(href='home') HOME
+                  i.fa.fa-angle-right
+                li
+                  a(href='about-us') 会社概要
+                  i.fa.fa-angle-right
+                li
+                  a(href='services') 事業内容
+                  i.fa.fa-angle-right
+                li
+                  a(href='recruitment') 採用情報
+                  i.fa.fa-angle-right
+                li
+                  a(href='contact') お問合せ
+                  i.fa.fa-angle-right
+            // Contact
+            .col-sm-6.col-md-3.map-img.md-margin-bottom-40
+              .headline
+                h2 お問合せ
+              address.md-margin-bottom-40
+                | 東京都港区芝2-28-8芝2丁目ビル10階
+                br
+                | 〒 105-0014
+                br
+                | Tel: 03-6809-3235
+                br
+                | Fax: 03-6809-3238
+                br
+                | Email: 
+                a(href='mailto:info@e-business.co.jp') info@e-business.co.jp
+
+      .copyright
+        .container
+          .row
+            .col-md-6
+              p Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.
+            .col-md-6
+              p.pull-right
+                a(href='privacy') 個人情報保護方針
+                |  |
+                a(href='terms-of-service')  個人情報の利用目的の公表に関する事項
+                |  |
+                a(href='margin-rate')  労働者派遣のマージン率等
+
+
+  // JS Global Compulsory 
+  script(type='text/javascript', src='jquery/dist/jquery.min.js')
+  script(type='text/javascript', src='bootstrap/dist/js/bootstrap.min.js')
+  script(type='text/javascript', src='js/back-to-top.js')
+
+  // JS Page Level
+  script(type="text/javascript", src="js/app.js")
+
+  // JS Page Block
+  block js
+
+  <!--[if lt IE 9]>
+  <script src="plugins/respond.js"></script>
+  <script src="plugins/html5shiv.js"></script>    
+  <![endif]-->
+
+</html>
