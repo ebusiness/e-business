@@ -8,7 +8,6 @@ requirejs.config({
     'back2top': 'js/back-to-top',
     'touchswipe': 'components/jquery-touchswipe/jquery.touchSwipe.min',
     'tween-max': 'components/gsap/src/minified/TweenMax.min',
-    // 'rs-slider-tools': 'components/revolution-slider/rs-plugin/js/jquery.themepunch.tools.min',
     'rs-slider': 'components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min',
     'owl-carousel': 'components/OwlCarousel/owl-carousel/owl.carousel',
     'app-slider': 'js/plugins/revolution-slider',
@@ -19,7 +18,6 @@ requirejs.config({
   shim: {
     'bootstrap': ['jquery'],
     'back2top': ['jquery'],
-    // 'rs-slider-tools': ['bootstrap'],
     'rs-slider': ['touchswipe', 'tween-max'],
     'owl-carousel': ['bootstrap'],
     'app-slider': ['rs-slider'],

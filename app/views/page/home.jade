@@ -1,23 +1,10 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="css/home-built.css")
-  //- link(rel="stylesheet", href="components/revolution-slider/rs-plugin/css/settings.css", media="screen")
-  //- link(rel="stylesheet", href="components/OwlCarousel/owl-carousel/owl.carousel.css", media="screen")
+  link(rel="stylesheet", href="home.css")
 
 block js
-  script(data-main="js/pages/home-built", src="components/requirejs/require.js")
-  //- script(type="text/javascript", src="js/plugins/revolution-slider.js")
-  //- script(type="text/javascript", src="revolution-slider/rs-plugin/js/jquery.themepunch.tools.min.js")
-  //- script(type="text/javascript", src="revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js")
-  //- script(type="text/javascript", src="js/plugins/owl-carousel.js")
-  //- script(type="text/javascript", src="OwlCarousel/owl-carousel/owl.carousel.js")
-  //- script(type="text/javascript").
-  //-   jQuery(document).ready(function() {
-  //-     App.init();
-  //-     RevolutionSlider.initRSfullWidth();
-  //-     OwlCarousel.initOwlCarousel();
-  //-   });
+  script(data-main="home", src="components/requirejs/require.js")
 
 block slider
   .tp-banner-container

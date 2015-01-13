@@ -1,67 +1,10 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="image-hover/css/img-hover.css")
-  link(rel="stylesheet", href="css/pages/feature_timeline1.css")
+  link(rel="stylesheet", href="about-us.css")
 
 block js
-  // JS Implementing Plugins
-  script(type="text/javascript", src="image-hover/js/modernizr.js")
-  script(type="text/javascript", src="image-hover/js/touch.js")
-  script(type="text/javascript", src="flot/jquery.flot.js")
-  script(type="text/javascript", src="flot/jquery.flot.pie.js")
-  script(type="text/javascript", src="flot/jquery.flot.resize.js")
-  script(type="text/javascript", src="http://maps.google.com/maps/api/js?sensor=true")
-  script(type="text/javascript", src="gmaps/gmaps.js")
-  // JS Page Level
-  script(type="text/javascript").
-    jQuery(document).ready(function() {
-      App.init();
-      $.plot($(".graph-1"), [ {
-          label: "　社員数（人）",
-          data: [ [ 19, 5 ], [ 20, 22 ], [ 21, 14 ], [ 22, 30 ], [ 23, 60 ], [ 24, 90 ], [ 25, 135 ], [ 26, 185 ] ],
-          lines: {
-            show: true
-          },
-          points: {
-            show: true
-          },
-          yaxis: 1
-        }, {
-          label: "　売上（百万円）",
-          data: [ [ 19, 30 ], [ 20, 160 ], [ 21, 80 ], [ 22, 200 ], [ 23, 360 ], [ 24, 630 ], [ 25, 1070 ], [ 26, 1500 ] ],
-          bars: {
-            show: true,
-            barWidth: 0.6,
-            align: "center"
-          },
-          yaxis: 2
-        } ], {
-          yaxes: [ {
-            min: 0,
-            max: 200,
-            position: "right"
-          }, {
-            min: 0,
-            max: 1600,
-            position: "left"
-          } ],
-          xaxis: {
-            tickDecimals: 0,
-            tickFormatter: function(val, axis) {
-              return "H" + val.toFixed(axis.tickDecimals) + "年度";
-            }
-          },
-          grid: {
-            hoverable: true,
-            clickable: true
-          },
-          legend: {
-            noColumns: 1,
-            position: "nw"
-          }
-        });
-    });
+  script(data-main="about-us", src="components/requirejs/require.js")
 
 block breadcrumbs
   .breadcrumbs
