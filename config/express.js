@@ -55,7 +55,7 @@ module.exports = function(config) {
 
   // Public folder
   app.use(express.static(path.join(config.root, 'public')));
-  app.use(express.static(path.join(config.root, 'bower_components')));
+  // app.use(express.static(path.join(config.root, 'bower_components')));
 
   // Error handler, not linked in production
   if ('production' !== config.app.env) {
@@ -69,7 +69,7 @@ module.exports = function(config) {
   app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
-    res.render('page/404');
+    next(err);
   });
 
   // error handlers
