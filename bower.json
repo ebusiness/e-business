@@ -30,6 +30,7 @@
     "jquery-touchswipe": "~1.6.6",
     "requirejs-plugins": "~1.0.3",
     "counter-up": "~1.0.0",
-    "waypoints": "2.0.3"
+    "waypoints": "2.0.3",
+    "jpreloader": "*"
   }
 }

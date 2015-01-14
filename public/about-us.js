@@ -38,6 +38,91 @@ require(['app'], function(app) {
   // init counter
   App.initCounter();
 
+  // element reference
+  $basicInfo = $('.service');
+  $graph = $('#bar-graph');
+  $clinets = $('.our-clients li');
+  $historyLeft = $('li.timeline');
+  $historyRight = $('li.timeline-inverted');
+
+  // init tween
+  TweenMax.set($basicInfo, {
+    transformPerspective: 500,
+    rotationX: 90,
+    autoAlpha: 0
+  });
+
+  TweenMax.set($graph, {
+    transformPerspective: 500,
+    rotationX: 90,
+    autoAlpha: 0
+  });
+
+  TweenMax.set($clinets, {
+    transformPerspective: 500,
+    rotationY: 180,
+    autoAlpha: 0
+  });
+
+  TweenMax.set($historyLeft, {
+    x: '-=180',
+    autoAlpha: 0
+  });
+
+  TweenMax.set($historyRight, {
+    x: '+=180',
+    autoAlpha: 0
+  });
+
+  // setup waypoints
+  $('#company-info').waypoint(function() {
+    TweenMax.staggerTo($basicInfo, 0.5, {
+      rotationX: 0,
+      autoAlpha: 1
+    }, 0.3);
+  }, {
+    offset: '100%',
+    triggerOnce: true
+  });
+
+  $('#graph').waypoint(function() {
+    TweenMax.to($graph, 0.5, {
+      rotationX: 0,
+      autoAlpha: 1
+    });
+  }, {
+    offset: '70%',
+    triggerOnce: true
+  });
+
+  $('.job-partners').waypoint(function() {
+    TweenMax.staggerTo($clinets, 0.5, {
+      rotationY: 0,
+      autoAlpha: 1
+    }, 0.3);
+  }, {
+    offset: '70%',
+    triggerOnce: true
+  });
+
+
+  $history = $historyLeft.add($historyRight)
+
+  $history.each(function() {
+
+    var $elements = $(this);
+
+    $elements.waypoint(function() {
+      TweenMax.to($elements, 1, {
+        x: 0,
+        autoAlpha: 1
+      });
+    }, {
+      offset: '100%',
+      triggerOnce: true
+    });
+  });
+
   // draw bar graph
   $.plot($("#bar-graph"), [{
     label: "　社員数（人）",
@@ -100,91 +185,6 @@ require(['app'], function(app) {
       noColumns: 1,
       position: "nw"
     }
-  });
-
-  // element reference
-  $basicInfo = $('.service');
-  $graph = $('#bar-graph');
-  $clinets = $('.our-clients li');
-  $historyLeft = $('li.timeline');
-  $historyRight = $('li.timeline-inverted');
-
-  // init tween
-  TweenMax.set($basicInfo, {
-    transformPerspective: 500,
-    rotationX: 90,
-    alpha: 0
-  });
-
-  TweenMax.set($graph, {
-    transformPerspective: 500,
-    rotationX: 90,
-    alpha: 0
-  });
-
-  TweenMax.set($clinets, {
-    transformPerspective: 500,
-    rotationY: 180,
-    alpha: 0
-  });
-
-  TweenMax.set($historyLeft, {
-    x: '-=180',
-    alpha: 0
-  });
-
-  TweenMax.set($historyRight, {
-    x: '+=180',
-    alpha: 0
-  });
-
-  // setup waypoints
-  $('#company-info').waypoint(function() {
-    TweenMax.staggerTo($basicInfo, 0.5, {
-      rotationX: 0,
-      alpha: 1
-    }, 0.3);
-  }, {
-    offset: '100%',
-    triggerOnce: true
-  });
-
-  $('#graph').waypoint(function() {
-    TweenMax.to($graph, 0.5, {
-      rotationX: 0,
-      alpha: 1
-    });
-  }, {
-    offset: '70%',
-    triggerOnce: true
-  });
-
-  $('.job-partners').waypoint(function() {
-    TweenMax.staggerTo($clinets, 0.5, {
-      rotationY: 0,
-      alpha: 1
-    }, 0.3);
-  }, {
-    offset: '70%',
-    triggerOnce: true
-  });
-
-
-  $history = $historyLeft.add($historyRight)
-
-  $history.each(function() {
-
-    var $elements = $(this);
-
-    $elements.waypoint(function() {
-      TweenMax.to($elements, 1, {
-        x: 0,
-        alpha: 1
-      });
-    }, {
-      offset: '100%',
-      triggerOnce: true
-    });
   });
 
 });

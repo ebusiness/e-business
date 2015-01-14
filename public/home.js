@@ -13,6 +13,7 @@ requirejs.config({
     'app-slider': 'js/plugins/revolution-slider',
     'app-carousel': 'js/plugins/owl-carousel',
     'waypoints': 'components/waypoints/waypoints.min',
+    'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'app': 'js/app',
   },
 
@@ -23,12 +24,24 @@ requirejs.config({
     'owl-carousel': ['bootstrap'],
     'app-slider': ['rs-slider'],
     'app-carousel': ['owl-carousel'],
-    'app': ['back2top', 'app-slider', 'app-carousel', 'waypoints'],
+    'jpreloader': ['jquery'],
+    'app': ['back2top', 'app-slider', 'app-carousel', 'waypoints', 'jpreloader'],
   }
 
 });
 
 require(['touchswipe', 'tween-max', 'app'], function(app) {
+
+  $('.wrapper').jpreLoader({
+      loaderVPos: '50%',
+      autoClose: true
+    },
+    function() {
+      TweenMax.to($('.wrapper'), 0.7, {
+        opacity: 1
+      });
+      $('#loading').fadeOut('fast');
+    });
 
   // global init
   App.init();
@@ -42,16 +55,16 @@ require(['touchswipe', 'tween-max', 'app'], function(app) {
 
   // init tween
   TweenMax.set($thumbnails, {
-    transformPerspective: 500,
+    transformPerspective: 300,
     rotationY: 90,
-    alpha: 0
+    autoAlpha: 0
   });
 
   // setup waypoints
   $('#sub-cate').waypoint(function() {
     TweenMax.staggerTo($thumbnails, 1, {
       rotationY: 0,
-      alpha: 1
+      autoAlpha: 1
     }, 0.3);
   }, {
     offset: '100%',
