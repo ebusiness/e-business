@@ -16,19 +16,8 @@ head
   // Favicon 
   link(rel='shortcut icon', href='favicon.ico')
 
-  //- // CSS Global Compulsory 
-  //- link(rel='stylesheet', href='components/bootstrap/dist/css/bootstrap.min.css')
-  //- link(rel='stylesheet', href='css/style.css')
-
-  //- // CSS Implementing Plugins 
-  //- link(rel='stylesheet', href='components/simple-line-icons/css/simple-line-icons.css')
-  //- link(rel='stylesheet', href='components/font-awesome/css/font-awesome.min.css')
-
-  // CSS Page Block
+  // CSS
   block css
-
-  //- // CSS Customization 
-  //- link(rel='stylesheet', href='css/custom.css')
 
 body.header-fixed
 
@@ -68,26 +57,26 @@ body.header-fixed
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
               span.sr-only Toggle navigation
               span.fa.fa-bars
-            a.navbar-brand(href='index.html')
+            a.navbar-brand(href='home')
               //- img#logo-header(src='img/logo1-default.png', alt='Logo')
               img#logo-header(src='img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
               //- h1 E-Business Inc.
           // Collect the nav links
           .collapse.navbar-collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
-              li.active
+              li(class=(path === "home")?"active":"")
                 a(href='home')
                   | Home
-              li
+              li(class=(path === "about-us")?"active":"")
                 a(href='about-us')
                   | 会社概要  
-              li
+              li(class=(path === "services")?"active":"")
                 a(href='services')
                   | 事業内容
-              li
+              li(class=(path === "recruitment")?"active":"")
                 a(href='recruitment')
                   | 採用情報
-              li
+              li(class=(path === "contact")?"active":"")
                 a(href='contact')
                   | お問合せ
 
@@ -107,7 +96,7 @@ body.header-fixed
           .row
             // About 
             .col-sm-6.col-md-3.md-margin-bottom-40
-              a(href='index.html')
+              a(href='home')
                 //- img#logo-footer.footer-logo(src='img/logo2-default.png', alt='')
                 h2 株式会社イー・ビジネス
               p
@@ -178,16 +167,7 @@ body.header-fixed
                 |  |
                 a(href='margin-rate')  労働者派遣のマージン率等
 
-
-  //- // JS Global Compulsory 
-  //- script(type='text/javascript', src='jquery/dist/jquery.min.js')
-  //- script(type='text/javascript', src='bootstrap/dist/js/bootstrap.min.js')
-  //- script(type='text/javascript', src='js/back-to-top.js')
-
-  //- // JS Page Level
-  //- script(type="text/javascript", src="js/app.js")
-
-  // JS Page Block
+  // JS
   block js
 
   <!--[if lt IE 9]>

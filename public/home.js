@@ -12,6 +12,7 @@ requirejs.config({
     'owl-carousel': 'components/OwlCarousel/owl-carousel/owl.carousel',
     'app-slider': 'js/plugins/revolution-slider',
     'app-carousel': 'js/plugins/owl-carousel',
+    'waypoints': 'components/waypoints/waypoints.min',
     'app': 'js/app',
   },
 
@@ -22,13 +23,39 @@ requirejs.config({
     'owl-carousel': ['bootstrap'],
     'app-slider': ['rs-slider'],
     'app-carousel': ['owl-carousel'],
-    'app': ['back2top', 'app-slider', 'app-carousel'],
+    'app': ['back2top', 'app-slider', 'app-carousel', 'waypoints'],
   }
 
 });
 
 require(['touchswipe', 'tween-max', 'app'], function(app) {
+
+  // global init
   App.init();
+
+  // init slider
   RevolutionSlider.initRSfullWidth();
   OwlCarousel.initOwlCarousel();
+
+  // element reference
+  $thumbnails = $('.thumbnails');
+
+  // init tween
+  TweenMax.set($thumbnails, {
+    transformPerspective: 500,
+    rotationY: 90,
+    alpha: 0
+  });
+
+  // setup waypoints
+  $('#sub-cate').waypoint(function() {
+    TweenMax.staggerTo($thumbnails, 1, {
+      rotationY: 0,
+      alpha: 1
+    }, 0.3);
+  }, {
+    offset: '100%',
+    triggerOnce: true
+  });
+
 });

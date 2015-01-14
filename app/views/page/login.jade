@@ -1,0 +1,38 @@
+extends ../layout
+
+block css
+  link(rel="stylesheet", href="login.css")
+
+block js
+  script(data-main="common", src="components/requirejs/require.js")
+    
+block breadcrumbs
+  .breadcrumbs
+    .container
+      h1.pull-left システムログイン
+
+block content
+  .container.content
+    .row
+      .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
+        form.reg-page
+          .reg-header
+            h2 ログイン
+          .input-group.margin-bottom-20
+            span.input-group-addon
+              i.fa.fa-user
+            input.form-control(type='text', placeholder='ユーザID')
+          .input-group.margin-bottom-20
+            span.input-group-addon
+              i.fa.fa-lock
+            input.form-control(type='password', placeholder='パスワード')
+          .row
+            .col-md-6
+            .col-md-6
+              button.btn-u.pull-right(type='submit') ログイン
+          hr
+          h4 パスワード忘れました？
+          p
+            | ご心配なく、 
+            a.color-green(href='#') こちらで
+            |  パスワードをリセット

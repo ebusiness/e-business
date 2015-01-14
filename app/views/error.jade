@@ -1,13 +1,11 @@
 extends layout
 
 block css
+  link(rel="stylesheet", href="common.css")
   link(rel="stylesheet", href="css/pages/page_404_error.css")
 
 block js
-  script(type="text/javascript").
-    jQuery(document).ready(function() {
-      App.init();
-    });
+  script(data-main="common", src="components/requirejs/require.js")
     
 block breadcrumbs
   .breadcrumbs

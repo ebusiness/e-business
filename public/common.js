@@ -19,4 +19,8 @@ requirejs.config({
 
 require(['app'], function(app) {
   App.init();
+  $('#btn-download-resume').click(function() {
+    window.location.href = "/resume-template";
+    $('#privacy-modal').modal('hide');
+  })
 });

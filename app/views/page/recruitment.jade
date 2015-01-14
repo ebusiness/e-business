@@ -101,10 +101,10 @@ block content
                   br
                   | E-Mail: saiyou@e-business.co.jp
       .col-md-4
-        .service-block.service-block-u.margin-bottom-40(data-toggle="modal",data-target="#myModal")
+        .service-block.service-block-u.margin-bottom-40(data-toggle="modal",data-target="#privacy-modal")
           i.icon-4x.color-light.icon-line.icon-cloud-download
           h2.heading-md 履歴書ダウンロード
-        #myModal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        #privacy-modal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
           .modal-dialog.modal-lg
             .modal-content
               .modal-header
@@ -158,7 +158,7 @@ block content
               .modal-footer
                 button.btn-u.btn-u-default(data-dismiss='modal', type='button') 同意しない
                 | 
-                button.btn-u(type='button') 同意
+                button#btn-download-resume.btn-u(type='button') 同意
         .headline
           h2 社員たちの声
         #testimonials-6.carousel.slide.testimonials.testimonials-v1.margin-bottom-40

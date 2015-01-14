@@ -51,13 +51,17 @@ block content
         .service
           i.service-icon.icon-diamond
           .desc
-            h4.no-top-space 資本金 3050万円
+            h4.no-top-space 資本金 
+              span.counter 3050
+              | 万円
             p 平成27年1月現在
       .col-sm-4
         .service
           i.service-icon.icon-users
           .desc
-            h4.no-top-space 従業員数 185人
+            h4.no-top-space 従業員数 
+              span.counter 185
+              | 人
             p 平成27年1月現在
       .col-sm-4
         .service
@@ -70,13 +74,17 @@ block content
         .service
           i.service-icon.icon-bar-chart
           .desc
-            h4.no-top-space 直近年商 10.7億
+            h4.no-top-space 直近年商 
+              span.counter 10.7
+              | 億
             p 平成25年度
       .col-sm-4
         .service
           i.service-icon.icon-graph
           .desc
-            h4.no-top-space 本年度売上 15.7億
+            h4.no-top-space 本年度売上 
+              span.counter 15.7
+              | 億
             p 平成26年度見込み
       .col-sm-4
         .service
@@ -100,17 +108,47 @@ block content
                 i.fa.fa-check.color-green
                 |  ISO27001(ISMS)認証
 
-  .container.content
+  #graph.container.content
     .row
-      .col-sm-8.col-sm-offset-2
+      .col-md-8.col-md-offset-2
         .heading.heading-v4.margin-bottom-20
           h2.color-green 売上実績
-        .graph-1(style="width:100%; height: 300px;")
+        #bar-graph(style="width:100%; height: 300px;")
+
+  //- #organiztion2.container.content
+  //-   .heading.heading-v4.margin-bottom-20
+  //-     h2.color-green 会社組織図
+  //-   .table-responsive
+  //-     table.table.table-bordered
+  //-       tbody
+  //-         tr
+  //-           td(colspan='15') 株主総会
+  //-         tr
+  //-           td(colspan='3') 経営管理部
+  //-           td(colspan='2') 営業企画部
+  //-           td(colspan='6') ICT事業部
+  //-           td(colspan='2') GEC事業部
+  //-           td(rowspan='2') セキュリティ・危機管理委員会
+  //-           td(rowspan='2') CSR推進室
+  //-         tr
+  //-           td 人事グループ
+  //-           td 経理グループ
+  //-           td 総務グループ
+  //-           td 営業１グループ
+  //-           td 営業２グループ
+  //-           td SS１部
+  //-           td SS２部
+  //-           td SS３部
+  //-           td SS４部
+  //-           td SS５部
+  //-           td　技術推進部
+  //-           td　企画・運営グループ
+  //-           td　技術開発グループ
 
   //- #organiztion.container.content
   //-   .heading.heading-v4.margin-bottom-20
   //-     h2.color-green 会社組織図
-  //-   .row
+  //-   .table-responsive
   //-     table.table
   //-       tbody
   //-         tr
@@ -267,13 +305,12 @@ block content
       h2.color-green 会社沿革
     .row
       ul.timeline-v1
-        li
+        li.timeline
           .timeline-badge.primary
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 資本金を3050万円に増資
+              h4 資本金を3050万円に増資
               span
                 i.fa.fa-clock-o
                 |  平成27年1月
@@ -282,20 +319,19 @@ block content
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') ISO27001(ISMS)認証を取得
+              h4 ISO27001(ISMS)認証を取得
               p
+                img(src='img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
                 | ISO 27001は、組織が保有する情報にかかわるさまざまなリスクを適切に管理し、組織の価値向上をもたらすISMSの国際規格です。
               span
                 i.fa.fa-clock-o
                 |  平成26年5月30日
-        li
+        li.timeline
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 中国・大連易商共創科技株式会社を設立
+              h4 中国・大連易商共創科技株式会社を設立
               p
                 | 大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。
               span.pull-left
@@ -309,23 +345,21 @@ block content
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 本社を東京都港区芝に移転
+              h4 本社を東京都港区芝に移転
               p
                 | 事業拡大に伴い、本社を東京都港区芝に移転
               span.pull-left
                 i.fa.fa-clock-o
                 |  平成26年1月
               span.pull-right
-                a.btn-u.btn-u-sm(href='#') アクセス
+                a.btn-u.btn-u-sm(href='/contact') アクセス
               .clearfix
-        li
+        li.timeline
           .timeline-badge.primary
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 資本金を1850万円に増資
+              h4 資本金を1850万円に増資
               span
                 i.fa.fa-clock-o
                 |  平成25年7月
@@ -334,21 +368,20 @@ block content
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 一般競争入札資格取得
+              h4 一般競争入札資格取得
               p
                 | 一般競争入札とは、競争入札のうち入札情報を公告して参加申込を募り、希望者同士で競争に付して契約者を決める方式。日本の官庁発注案件においては会計法第29条の3に規定されている。各省各庁の長は参加資格を定めることが出来（予算決算及び会計令第72条）、参加資格を定めた場合は、随時申請を受け付けて審査して名簿に登録しなければならない。また、契約担当官等（地方事務所の所長など）は、各省各庁の長が定めた参加資格の他に、さらに必要な資格を定めることが出来る（予算決算及び会計令第73条）。
               span
                 i.fa.fa-clock-o
                 |  平成24年4月
-        li
+        li.timeline
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body
-              h4
-                a(href='#') プライバシーマーク取得
+              h4 プライバシーマーク取得
               p
+                img(src='img/eb/pmark.gif', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
                 | プライバシーマークとは、個人情報保護に関して一定の要件を満たした事業者（基本的には法人単位。ただし、医療関連については病院ごとなど例外あり）に対し、一般財団法人日本情報経済社会推進協会 (JIPDEC) により使用を認められる登録商標（サービスマーク）の事である。Pマークと略して呼ばれることもある。
               span
                 i.fa.fa-clock-o
@@ -358,35 +391,32 @@ block content
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 駐日経貿連絡事務所招商代表に就任
+              h4 駐日経貿連絡事務所招商代表に就任
               p
                 | 代表取締役社長花東江が、中国塩城市政府の要請を受け、駐日経貿連絡事務所招商代表に就任。
               span
                 i.fa.fa-clock-o
                 |  平成21年9月
-        li
+        li.timeline
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body
-              h4
-                a(href='#') 経営革新企業認定取得
+              h4 経営革新企業認定取得
               p
                 | 中小企業新事業活動促進法に準じ、中小企業経営革新認定企業の認定を受ける。
               span.pull-left
                 i.fa.fa-clock-o
                 |  平成21年8月
               span.pull-right
-                a.btn-u.btn-u-sm(href='#') 平成21年度8月経営革新計画承認書
+                a.btn-u.btn-u-sm(href='certification') 平成21年度8月経営革新計画承認書
               .clearfix
         li.timeline-inverted
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4
-                a(href='#') 会社設立
+              h4 会社設立
               p
                 | 東京都千代田区において資本金800万円にて設立
               span
