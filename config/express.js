@@ -1,5 +1,6 @@
 var path = require('path'),
   http = require('http'),
+  i18n = require('i18n'),
   express = require('express'),
   favicon = require('static-favicon'),
   bodyParser = require('body-parser'),
@@ -33,6 +34,16 @@ module.exports = function(config) {
       path: config.root + '/log/requests.log'
     }));
 
+  // i18n config
+  i18n.configure({
+
+    // setup some locales - other locales default to ja silently
+    locales: ['ja', 'zh', 'en'],
+    directory: config.root + '/config/locales',
+    defaultLocale: 'ja',
+    objectNotation: true
+  });
+
   // Parse application/json
   app.use(bodyParser.json());
 
@@ -44,6 +55,9 @@ module.exports = function(config) {
 
   // Parse cookie before session
   app.use(cookieParser('cookie secret sauce'));
+
+  // i18n init parses req for language headers, cookies, etc.
+  app.use(i18n.init);
 
   /* TODO: CSRF support */
 

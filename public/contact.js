@@ -6,25 +6,29 @@ requirejs.config({
     'jquery': 'components/jquery/dist/jquery',
     'bootstrap': 'components/bootstrap/dist/js/bootstrap',
     'back2top': 'js/back-to-top',
+    'tween-max': 'components/gsap/src/minified/TweenMax.min',
+    'waypoints': 'components/waypoints/waypoints.min',
+    'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'async': 'components/requirejs-plugins/src/async',
     'gmap': 'components/gmaps/gmaps',
     'sky-form': 'components/sky-forms/version-2.0.1/js/jquery.form.min',
     'validate': 'components/sky-forms/version-2.0.1/js/jquery.validate.min',
-    'waypoints': 'components/waypoints/waypoints.min',
-    'tween-max': 'components/gsap/src/minified/TweenMax.min',
     'app': 'js/app',
   },
 
   shim: {
     'bootstrap': ['jquery'],
     'back2top': ['jquery'],
+    'tween-max': ['jquery'],
+    'waypoints': ['jquery'],
+    'jpreloader': ['jquery'],
     'gmap': ['async!http://maps.google.com/maps/api/js?sensor=true'],
-    'app': ['bootstrap', 'back2top', 'gmap', 'waypoints', 'tween-max'],
+    'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader'],
   }
 
 });
 
-require(['app'], function(app) {
+require(['gmap', 'app'], function(app) {
 
   // global init
   App.init();

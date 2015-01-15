@@ -5,6 +5,9 @@ module.exports = function(app, config) {
 
   // Landing
   app.get('/', function(req, res, next) {
+    console.log('########################')
+    console.log(req.getLocale())
+    console.log('########################')
     res.render('page/home', {
       path: 'home'
     });

@@ -6,12 +6,13 @@ requirejs.config({
     'jquery': 'components/jquery/dist/jquery',
     'bootstrap': 'components/bootstrap/dist/js/bootstrap',
     'back2top': 'js/back-to-top',
+    'tween-max': 'components/gsap/src/minified/TweenMax.min',
+    'waypoints': 'components/waypoints/waypoints.min',
+    'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'modernizr': 'components/image-hover/js/modernizr',
     'image-hover': 'components/image-hover/js/touch',
     'flot': 'components/flot/jquery.flot',
     'flot-resize': 'components/flot/jquery.flot.resize',
-    'tween-max': 'components/gsap/src/minified/TweenMax.min',
-    'waypoints': 'components/waypoints/waypoints.min',
     'counterup': 'components/counter-up/jquery.counterup.min',
     'app': 'js/app',
   },
@@ -19,18 +20,20 @@ requirejs.config({
   shim: {
     'bootstrap': ['jquery'],
     'back2top': ['jquery'],
+    'tween-max': ['jquery'],
+    'waypoints': ['jquery'],
+    'jpreloader': ['jquery'],
     'modernizr': ['jquery'],
     'image-hover': ['modernizr'],
     'flot': ['jquery'],
     'flot-resize': ['flot'],
-    'waypoints': ['jquery'],
     'counterup': ['waypoints'],
-    'app': ['bootstrap', 'back2top', 'image-hover', 'flot-resize', 'counterup', 'tween-max'],
+    'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader'],
   }
 
 });
 
-require(['app'], function(app) {
+require(['image-hover', 'flot-resize', 'counterup', 'app'], function(app) {
 
   // global init
   App.init();
@@ -42,8 +45,7 @@ require(['app'], function(app) {
   $basicInfo = $('.service');
   $graph = $('#bar-graph');
   $clinets = $('.our-clients li');
-  $historyLeft = $('li.timeline');
-  $historyRight = $('li.timeline-inverted');
+  $history = $('.timeline-v1 li');
 
   // init tween
   TweenMax.set($basicInfo, {
@@ -64,13 +66,8 @@ require(['app'], function(app) {
     autoAlpha: 0
   });
 
-  TweenMax.set($historyLeft, {
-    x: '-=180',
-    autoAlpha: 0
-  });
-
-  TweenMax.set($historyRight, {
-    x: '+=180',
+  TweenMax.set($history, {
+    y: '+=80',
     autoAlpha: 0
   });
 
@@ -105,16 +102,13 @@ require(['app'], function(app) {
     triggerOnce: true
   });
 
-
-  $history = $historyLeft.add($historyRight)
-
   $history.each(function() {
 
     var $elements = $(this);
 
     $elements.waypoint(function() {
       TweenMax.to($elements, 1, {
-        x: 0,
+        y: 0,
         autoAlpha: 1
       });
     }, {

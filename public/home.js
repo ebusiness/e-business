@@ -6,42 +6,33 @@ requirejs.config({
     'jquery': 'components/jquery/dist/jquery',
     'bootstrap': 'components/bootstrap/dist/js/bootstrap',
     'back2top': 'js/back-to-top',
-    'touchswipe': 'components/jquery-touchswipe/jquery.touchSwipe.min',
     'tween-max': 'components/gsap/src/minified/TweenMax.min',
+    'waypoints': 'components/waypoints/waypoints.min',
+    'jpreloader': 'components/jpreloader/js/jpreloader.min',
+    'touchswipe': 'components/jquery-touchswipe/jquery.touchSwipe.min',
     'rs-slider': 'components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min',
     'owl-carousel': 'components/OwlCarousel/owl-carousel/owl.carousel',
     'app-slider': 'js/plugins/revolution-slider',
     'app-carousel': 'js/plugins/owl-carousel',
-    'waypoints': 'components/waypoints/waypoints.min',
-    'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'app': 'js/app',
   },
 
   shim: {
     'bootstrap': ['jquery'],
     'back2top': ['jquery'],
+    'tween-max': ['jquery'],
+    'waypoints': ['jquery'],
+    'jpreloader': ['jquery'],
     'rs-slider': ['touchswipe', 'tween-max'],
     'owl-carousel': ['bootstrap'],
     'app-slider': ['rs-slider'],
     'app-carousel': ['owl-carousel'],
-    'jpreloader': ['jquery'],
-    'app': ['back2top', 'app-slider', 'app-carousel', 'waypoints', 'jpreloader'],
+    'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader'],
   }
 
 });
 
-require(['touchswipe', 'tween-max', 'app'], function(app) {
-
-  $('.wrapper').jpreLoader({
-      loaderVPos: '50%',
-      autoClose: true
-    },
-    function() {
-      TweenMax.to($('.wrapper'), 0.7, {
-        opacity: 1
-      });
-      $('#loading').fadeOut('fast');
-    });
+require(['touchswipe', 'app-slider', 'app-carousel', 'app'], function(app) {
 
   // global init
   App.init();
