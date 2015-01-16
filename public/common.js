@@ -3,13 +3,13 @@ requirejs.config({
   baseUrl: "./",
 
   paths: {
-    'jquery': 'components/jquery/dist/jquery',
-    'bootstrap': 'components/bootstrap/dist/js/bootstrap',
-    'back2top': 'js/back-to-top',
-    'tween-max': 'components/gsap/src/minified/TweenMax.min',
-    'waypoints': 'components/waypoints/waypoints.min',
-    'jpreloader': 'components/jpreloader/js/jpreloader.min',
-    'app': 'js/app',
+    'jquery': '/components/jquery/dist/jquery',
+    'bootstrap': '/components/bootstrap/dist/js/bootstrap',
+    'back2top': '/js/back-to-top',
+    'tween-max': '/components/gsap/src/minified/TweenMax.min',
+    'waypoints': '/components/waypoints/waypoints.min',
+    'jpreloader': '/components/jpreloader/js/jpreloader.min',
+    'app': '/js/app',
   },
 
   shim: {

@@ -1,7 +1,7 @@
 doctype html
-<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
-<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
-<!--[if !IE]><!--><html lang="en"><!--<![endif]-->
+<!--[if IE 8]><html lang="#{locale}" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="#{locale}" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="#{locale}"><!--<![endif]-->
 head
 
   title #{__('title')}
@@ -14,7 +14,7 @@ head
   meta(name='author', content='JoeHetfield')
 
   // Favicon 
-  link(rel='shortcut icon', href='favicon.ico')
+  link(rel='shortcut icon', href='/favicon.ico')
 
   // CSS
   block css
@@ -24,7 +24,7 @@ body.header-fixed
   // Loader
   #loading
     .loading-inner
-      img(src='img/loader/flat/1.gif', alt='loading...')
+      img(src='/img/loader/flat/1.gif', alt='loading...')
 
   // Wrapper
   .wrapper
@@ -42,17 +42,15 @@ body.header-fixed
               | 
               a #{__('topBar.language')}
               ul.languages
-                li.active
-                  a(href='#') #{__('topBar.languageOpt.ja')}
-                    i.fa.fa-check
-                li
-                  a(href='#') #{__('topBar.languageOpt.zh')}
-                li
-                  a(href='#') #{__('topBar.languageOpt.en')}
+                li(class=(locale === "ja")?"active":"")
+                  a(href='/ja/#{path}', hreflang="ja") #{__('topBar.languageOpt.ja')}
+                li(class=(locale === "zh")?"active":"")
+                  a(href='/zh/#{path}', hreflang="zh") #{__('topBar.languageOpt.zh')}
+                li(class=(locale === "en")?"active":"")
+                  a(href='/en/#{path}', hreflang="en") #{__('topBar.languageOpt.en')}
             li.topbar-devider
             li
-              a(href='login') #{__('topBar.login')}
-
+              a(href='/#{locale}/login') #{__('topBar.login')}
 
       // Navbar 
       .navbar.navbar-default.mega-menu(role='navigation')
@@ -62,27 +60,27 @@ body.header-fixed
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
               span.sr-only Toggle navigation
               span.fa.fa-bars
-            a.navbar-brand(href='home')
-              //- img#logo-header(src='img/logo1-default.png', alt='Logo')
-              img#logo-header(src='img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
+            a.navbar-brand(href='/home')
+              //- img#logo-header(src='/img/logo1-default.png', alt='Logo')
+              img#logo-header(src='/img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
               //- h1 E-Business Inc.
           // Collect the nav links
           .collapse.navbar-collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
               li(class=(path === "home")?"active":"")
-                a(href='home')
+                a(href='/#{locale}/home')
                   | Home
               li(class=(path === "about-us")?"active":"")
-                a(href='about-us')
+                a(href='/#{locale}/about-us')
                   | #{__('menu.about')}
               li(class=(path === "services")?"active":"")
-                a(href='services')
+                a(href='/#{locale}/services')
                   | #{__('menu.service')}
               li(class=(path === "recruitment")?"active":"")
-                a(href='recruitment')
+                a(href='/#{locale}/recruitment')
                   | #{__('menu.recruitment')}
               li(class=(path === "contact")?"active":"")
-                a(href='contact')
+                a(href='/#{locale}/contact')
                   | #{__('menu.contact')}
 
     // Slider
@@ -101,13 +99,13 @@ body.header-fixed
           .row
             // About 
             .col-sm-6.col-md-3.md-margin-bottom-40
-              a(href='home')
-                //- img#logo-footer.footer-logo(src='img/logo2-default.png', alt='')
+              a(href='/home')
+                //- img#logo-footer.footer-logo(src='/img/logo2-default.png', alt='')
                 h2 #{__('footer.brand')}
               p
                 | #{__('footer.statement')}
-              img#logo-footer.footer-logo(src='img/eb/pmark.gif', alt='', style="width: auto; height: 75px;")
-              img#logo-footer.footer-logo(src='img/eb/isms.jpg', alt='', style="width: auto; height: 75px;")
+              img#logo-footer.footer-logo(src='/img/eb/pmark.gif', alt='', style="width: auto; height: 75px;")
+              img#logo-footer.footer-logo(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px;")
             // Latest 
             .col-sm-6.col-md-3.md-margin-bottom-40
               .posts
@@ -129,19 +127,19 @@ body.header-fixed
                 h2 #{__('footer.links.header')}
               ul.list-unstyled.link-list
                 li
-                  a(href='home') HOME
+                  a(href='/#{locale}/home') HOME
                   i.fa.fa-angle-right
                 li
-                  a(href='about-us') #{__('footer.links.link1')}
+                  a(href='/#{locale}/about-us') #{__('footer.links.link1')}
                   i.fa.fa-angle-right
                 li
-                  a(href='services') #{__('footer.links.link2')}
+                  a(href='/#{locale}/services') #{__('footer.links.link2')}
                   i.fa.fa-angle-right
                 li
-                  a(href='recruitment') #{__('footer.links.link3')}
+                  a(href='/#{locale}/recruitment') #{__('footer.links.link3')}
                   i.fa.fa-angle-right
                 li
-                  a(href='contact') #{__('footer.links.link4')}
+                  a(href='/#{locale}/contact') #{__('footer.links.link4')}
                   i.fa.fa-angle-right
             // Contact
             .col-sm-6.col-md-3.map-img.md-margin-bottom-40
@@ -166,18 +164,18 @@ body.header-fixed
               p #{__('copyright.statement')}
             .col-md-6
               p.pull-right
-                a(href='privacy') #{__('copyright.privacy')}
+                a(href='/#{locale}/privacy') #{__('copyright.privacy')}
                 |  |
-                a(href='terms-of-service')  #{__('copyright.terms')}
+                a(href='/#{locale}/terms-of-service')  #{__('copyright.terms')}
                 |  |
-                a(href='margin-rate')  #{__('copyright.margin')}
+                a(href='/#{locale}/margin-rate')  #{__('copyright.margin')}
 
   // JS
   block js
 
   <!--[if lt IE 9]>
-  <script src="plugins/respond.js"></script>
-  <script src="plugins/html5shiv.js"></script>    
+  <script src="/plugins/respond.js"></script>
+  <script src="/plugins/html5shiv.js"></script>    
   <![endif]-->
 
 </html>

@@ -1,10 +1,10 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="about-us.css")
+  link(rel="stylesheet", href="/about-us.css")
 
 block js
-  script(data-main="about-us", src="components/requirejs/require.js")
+  script(data-main="/about-us", src="/components/requirejs/require.js")
 
 block breadcrumbs
   .breadcrumbs
@@ -17,7 +17,7 @@ block content
     blockquote.hero-unify.row.shadow-wrapper
       h2.color-green 社長からのメッセージ
       .col-sm-5.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
-        img.img-responsive.margin-bottom-10(src='img/main/6.jpg', alt='')
+        img.img-responsive.margin-bottom-10(src='/img/main/6.jpg', alt='')
       p 当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。
       p 社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。
       p 専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。
@@ -261,42 +261,42 @@ block content
     ul#effect-2.list-inline.our-clients
       li
         figure
-          img#isid.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#isid.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社電通国際情報サービス(ISID)
       li
         figure
-          img#iki.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#iki.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 アイエックス・ナレッジ株式会社(IKI)
       li
         figure
-          img#dts.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#dts.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社　DTS
       li
         figure
-          img#nsd.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#nsd.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社ＮＳＤ
       li
         figure
-          img#tdc.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#tdc.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 ＴＤＣソフトウェアエンジニアリング株式会社
       li
         figure
-          img#fujikura.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#fujikura.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社フジクラ
       li
         figure
-          img#tss.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#tss.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社東邦システムサイエンス
       li
         figure
-          img#hitachi.client-logo(src='img/eb/customer/transparent.png', alt='')
+          img#hitachi.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 株式会社日立ソリューションズ
 
@@ -321,7 +321,7 @@ block content
             .timeline-body.text-justify
               h4 ISO27001(ISMS)認証を取得
               p
-                img(src='img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
+                img(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
                 | ISO 27001は、組織が保有する情報にかかわるさまざまなリスクを適切に管理し、組織の価値向上をもたらすISMSの国際規格です。
               span
                 i.fa.fa-clock-o
@@ -381,7 +381,7 @@ block content
             .timeline-body
               h4 プライバシーマーク取得
               p
-                img(src='img/eb/pmark.gif', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
+                img(src='/img/eb/pmark.gif', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
                 | プライバシーマークとは、個人情報保護に関して一定の要件を満たした事業者（基本的には法人単位。ただし、医療関連については病院ごとなど例外あり）に対し、一般財団法人日本情報経済社会推進協会 (JIPDEC) により使用を認められる登録商標（サービスマーク）の事である。Pマークと略して呼ばれることもある。
               span
                 i.fa.fa-clock-o
@@ -409,7 +409,7 @@ block content
                 i.fa.fa-clock-o
                 |  平成21年8月
               span.pull-right
-                a.btn-u.btn-u-sm(href='certification') 平成21年度8月経営革新計画承認書
+                a.btn-u.btn-u-sm(href='/certification') 平成21年度8月経営革新計画承認書
               .clearfix
         li.timeline-inverted
           .timeline-badge.primary

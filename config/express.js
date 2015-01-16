@@ -76,6 +76,11 @@ module.exports = function(config) {
     app.use(errorhandler());
   }
 
+  app.param('lang', function(req, res, next, lang) {
+    if (lang) req.setLocale(lang)
+    next();
+  })
+
   // Routes
   require('./routes')(app, config);
 
@@ -94,6 +99,7 @@ module.exports = function(config) {
     app.use(function(err, req, res, next) {
       res.status(err.status || 500);
       res.render('error', {
+        locale: req.getLocale(),
         message: err.message,
         error: err
       });
@@ -105,6 +111,7 @@ module.exports = function(config) {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
+      locale: req.getLocale(),
       message: err.message,
       error: {}
     });

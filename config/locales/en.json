@@ -1,3 +1,84 @@
 {
-  "contact": "Contact Us"
+	"title": "E-Business Inc.",
+	"topBar": {
+		"language": "Language",
+		"languageOpt": {
+			"ja": "Japaneses",
+			"en": "English",
+			"zh": "Chinese"
+		},
+		"login": "Login"
+	},
+	"menu": {
+		"about": "About US",
+		"service": "Our Service",
+		"recruitment": "Recruitment",
+		"contact": "Contact Us"
+	},
+	"footer": {
+		"brand": "E-Business Inc.",
+		"statement": "For more beautiful society and individual life, a creative IT organization with evolution.",
+		"news": {
+			"header": "News",
+			"news1": {
+				"title": "ISO27001(ISMS) certification acquired",
+				"date": "May 30, 2014"
+			},
+			"news2": {
+				"title": "HQ move to Minatoku-Shiba Tokyo",
+				"date": "January 8, 2014"
+			},
+			"news3": {
+				"title": "Capital increased to 18.5 million yen",
+				"date": "December 20, 2013"
+			}
+		},
+		"links": {
+			"header": "Links",
+			"link1": "About US",
+			"link2": "Our Service",
+			"link3": "Recruitment",
+			"link4": "Contact Us"
+		},
+		"contact": {
+			"header": "Contact",
+			"address": "Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10th floor",
+			"zipCode": "〒 105-0014",
+			"tel": "Tel: 03-6809-3235",
+			"fax": "Fax: 03-6809-3238",
+			"email": "Email: "
+		}
+	},
+	"copyright": {
+		"statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
+		"privacy": "Privacy policy",
+		"terms": "Announcement about usage of personal information",
+		"margin": "The margin rate of dispatch workers"
+	},
+	"home": {
+		"contact": "Contact",
+		"slider": {
+			"title1": "Company Vision",
+			"title2": "Management Philosophy",
+			"title3": "To a great international company",
+			"statement1": "For more beautiful society and individual life",
+			"statement2": "To creative IT organization with evolution",
+			"statement3": "First priority -- Partner's happiness",
+			"statement4": "Maximization -- Customer's satisfaction",
+			"statement5": "With the view of global",
+			"statement6": "pursuit more convenience for customer",
+			"statement7": "provide high quality IT service"
+		},
+		"breadcrumb": {
+			"title": "E-Business Inc.",
+			"statement": "home.breadcrumb.statement",
+			"contact": "Contact"
+		},
+		"subCate": {
+			"sub1": "About US",
+			"sub2": "Our Service",
+			"sub3": "Recruitment",
+			"sub4": "Contact Us"
+		}
+	}
 }

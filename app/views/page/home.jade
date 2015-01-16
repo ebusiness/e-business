@@ -1,35 +1,35 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="home.css")
+  link(rel="stylesheet", href="/home.css")
 
 block js
-  script(data-main="home", src="components/requirejs/require.js")
+  script(data-main="/home", src="/components/requirejs/require.js")
 
 block slider
   .tp-banner-container
     .tp-banner
       ul
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='会社ビジョン')
-          img(src='img/sliders/4.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title1')}")
+          img(src='/img/sliders/4.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 社会と人々の生活をより豊かなものへと推進し
+            | #{__('home.slider.statement1')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | 進化をもたらせるIT組織を目指していきます
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='経営理念')
-          img(src='img/sliders/3.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+            | #{__('home.slider.statement2')}
+        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title2')}")
+          img(src='/img/sliders/3.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 社員の幸せを優先する会社づくり
+            | #{__('home.slider.statement3')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | 顧客満足度を最大とするためのビジネス展開
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title='イー国際会社に目指す')
-          img(src='img/sliders/2.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+            | #{__('home.slider.statement4')}
+        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title3')}")
+          img(src='/img/sliders/2.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
-            | 国際的な視野に立ち
+            | #{__('home.slider.statement5')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | より高い利便性を追求
+            | #{__('home.slider.statement6')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='280', data-speed='1400', data-start='3000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
-            | より高品質なITサービスを提供
+            | #{__('home.slider.statement7')}
       .tp-bannertimer.tp-bottom
 
 block breadcrumbs
@@ -37,13 +37,13 @@ block breadcrumbs
     .container
       .row
         .col-md-9.animated.fadeInLeft
-          span 株式会社 イー・ビジネス
+          span #{__('home.breadcrumb.title')}
           p
-            | お客様とともに歩み、絶えず進化する高い生産効率と信頼の高品質で貢献する先進のテクノロジに積極果敢に挑戦し異文化融合を目指す企業の先駆けとなり常に信頼され、支持される企業に
+            | #{__('home.breadcrumb.statement')}
         .col-md-3.btn-buy.animated.fadeInRight
           a.btn-u.btn-u-lg(href='contact')
             i.icon-earphones-alt
-            |  #{__('home.contact')}
+            |  #{__('home.breadcrumb.contact')}
             //- |  お問合せ
 
 block content
@@ -108,35 +108,35 @@ block content
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
-              img.img-responsive(src='img/main/1.jpg', alt='')
+              img.img-responsive(src='/img/main/1.jpg', alt='')
             a.btn-more.btn-blue.hover-effect(href='about-us') read more +
           .caption
             h3
-              a.hover-effect(href='about-us') 会社概要
+              a.hover-effect(href='about-us') #{__('home.subCate.sub1')}
       .col-md-3.col-sm-6
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
-              img.img-responsive(src='img/main/16.jpg', alt='')
+              img.img-responsive(src='/img/main/16.jpg', alt='')
             a.btn-more.hover-effect(href='services') read more +
           .caption
             h3
-              a.hover-effect(href='services') 事業内容
+              a.hover-effect(href='services') #{__('home.subCate.sub2')}
       .col-md-3.col-sm-6
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
-              img.img-responsive(src='img/main/17.jpg', alt='')
+              img.img-responsive(src='/img/main/17.jpg', alt='')
             a.btn-more.hover-effect(href='recruitment') read more +
           .caption
             h3
-              a.hover-effect(href='recruitment') 採用情報
+              a.hover-effect(href='recruitment') #{__('home.subCate.sub3')}
       .col-md-3.col-sm-6
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
-              img.img-responsive(src='img/main/11.jpg', alt='')
+              img.img-responsive(src='/img/main/11.jpg', alt='')
             a.btn-more.hover-effect(href='contact') read more +
           .caption
             h3
-              a.hover-effect(href='contact') お問合せ
+              a.hover-effect(href='contact') #{__('home.subCate.sub4')}
