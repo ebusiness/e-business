@@ -5,3 +5,4 @@ public/components/
 tmp
 .DS_Store
 .idea
+*.pem

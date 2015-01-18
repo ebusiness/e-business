@@ -79,5 +79,19 @@
       "sub3": "採用情報",
       "sub4": "お問合せ"
     }
+  },
+  "login": {
+    "breadcrumb": {
+      "title": "システムログイン"
+    },
+    "form": {
+      "title": "ログイン",
+      "username": "ユーザID",
+      "password": "パスワード",
+      "button": "ログイン",
+      "forgotPass": "パスワード忘れました？",
+      "resetPassLink": "こちらで",
+      "resetpass": "パスワードをリセット"
+    }
   }
 }

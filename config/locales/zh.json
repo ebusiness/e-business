@@ -56,29 +56,42 @@
 		"margin": "关于劳动者派遣的毛利率"
 	},
 	"home": {
-		"contact": "お問合せ",
 		"slider": {
-			"title1": "home.slider.title1",
-			"statement1": "home.slider.statement1",
-			"statement2": "home.slider.statement2",
-			"title2": "home.slider.title2",
-			"statement3": "home.slider.statement3",
-			"statement4": "home.slider.statement4",
-			"title3": "home.slider.title3",
-			"statement5": "home.slider.statement5",
-			"statement6": "home.slider.statement6",
-			"statement7": "home.slider.statement7"
+			"title1": "公司视野",
+			"title2": "经营理念",
+			"title3": "迈向优秀的国际公司",
+			"statement1": "让社会和人们的生活更加富裕多彩",
+			"statement2": "建设不断创新和进化的IT企业",
+			"statement3": "以员工福利为优先的公司文化",
+			"statement4": "将客户满意度最大化为中心的事业进程",
+			"statement5": "在国际化视野的高度上",
+			"statement6": "追求更高的便利性",
+			"statement7": "提供更高品质的IT服务"
 		},
 		"breadcrumb": {
-			"title": "home.breadcrumb.title",
+			"title": "株式会社 イー・ビジネス",
 			"statement": "home.breadcrumb.statement",
-			"contact": "home.breadcrumb.contact"
+			"contact": "联系我们"
 		},
 		"subCate": {
-			"sub1": "home.subCate.sub1",
-			"sub2": "home.subCate.sub2",
-			"sub3": "home.subCate.sub3",
-			"sub4": "home.subCate.sub4"
+			"sub1": "关于我们",
+			"sub2": "服务内容",
+			"sub3": "招聘信息",
+			"sub4": "联系我们"
+		}
+	},
+	"login": {
+		"breadcrumb": {
+			"title": "系统登录"
+		},
+		"form": {
+			"title": "登录",
+			"username": "用户ID",
+			"password": "密码",
+			"button": "登录",
+			"forgotPass": "忘记密码了？",
+			"resetPassLink": "点击这里",
+			"resetpass": "重置密码"
 		}
 	}
 }

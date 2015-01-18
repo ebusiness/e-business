@@ -46,7 +46,9 @@ require(['touchswipe', 'app-slider', 'app-carousel', 'app'], function(app) {
 
   // init tween
   TweenMax.set($thumbnails, {
-    transformPerspective: 300,
+    transformPerspective: 200,
+    backfaceVisibility: "hidden",
+    transformStyle: "preserve-3d",
     rotationY: 90,
     autoAlpha: 0
   });

@@ -80,5 +80,19 @@
 			"sub3": "Recruitment",
 			"sub4": "Contact Us"
 		}
+	},
+	"login": {
+		"breadcrumb": {
+			"title": "System Login"
+		},
+		"form": {
+			"title": "Login",
+			"username": "User ID",
+			"password": "Password",
+			"button": "Login",
+			"forgotPass": "Forgot password?",
+			"resetPassLink": "Click here ",
+			"resetpass": "to reset your password"
+		}
 	}
 }

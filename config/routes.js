@@ -3,7 +3,52 @@ var fs = require('fs'),
 
 module.exports = function(app, config) {
 
-  // Landing
+  // prepare controller
+  var controller = {},
+    pattern = /(.*)?\.js/,
+    controller_path = path.join(config.root + '/app/controllers');
+
+  // open the controller path, loop through the contents
+  fs.readdirSync(controller_path).forEach(function(dir) {
+
+    // get stats object of a dir/file
+    var stats = fs.statSync(controller_path + '/' + dir);
+
+    // if encounter a dir
+    if (stats.isDirectory()) {
+
+      // create controller sub categroy
+      controller[dir] = {};
+
+      // then loop through the dir
+      fs.readdirSync(controller_path + '/' + dir).forEach(function(file) {
+
+        // if encounter a .js file
+        if (~file.indexOf('.js') && file) {
+
+          // load this file as request handler
+          var match = pattern.exec(file);
+          controller[dir][match[1]] = require(controller_path + '/' + dir + '/' + file);
+        }
+      });
+    }
+  });
+
+  // Retrieve password request
+  app.post('/retrieve', controller.resetpassword.create);
+  // Retrieve password page
+  app.get('/retrieve/:id', controller.resetpassword.show);
+  // Reset password
+  app.put('/retrieve/:id', controller.resetpassword.update);
+
+  // User Login
+  app.post('/login', controller.user.login);
+  // User Logout
+  app.get('/logout', controller.user.logout);
+
+  //////////////////////////////////////////////////
+  /// Static route
+  //////////////////////////////////////////////////
   app.get('/', function(req, res, next) {
     res.render('page/home', {
       locale: req.getLocale(),

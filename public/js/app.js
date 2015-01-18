@@ -12,7 +12,7 @@ var App = function() {
   function handlePreloader() {
     jQuery('.wrapper').jpreLoader({
         loaderVPos: '50%',
-        autoClose: true
+      autoClose: true
       },
       function() {
         TweenMax.to(jQuery('.wrapper'), 0.7, {
