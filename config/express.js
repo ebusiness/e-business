@@ -3,6 +3,7 @@ var path = require('path'),
   i18n = require('i18n'),
   express = require('express'),
   favicon = require('static-favicon'),
+  session = require('express-session'),
   bodyParser = require('body-parser'),
   compression = require('compression'),
   cookieParser = require('cookie-parser'),
@@ -34,6 +35,9 @@ module.exports = function(config) {
       path: config.root + '/log/requests.log'
     }));
 
+  // Override request method
+  app.use(methodOverride());
+
   // i18n config
   i18n.configure({
 
@@ -44,14 +48,16 @@ module.exports = function(config) {
     objectNotation: true
   });
 
+  app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret: 'uwotm8'
+  }));
   // Parse application/json
   app.use(bodyParser.json());
 
   // Parse application/x-www-form-urlencoded
   app.use(bodyParser.urlencoded());
-
-  // Override request method
-  app.use(methodOverride());
 
   // Parse cookie before session
   app.use(cookieParser('cookie secret sauce'));

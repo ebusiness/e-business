@@ -323,13 +323,39 @@
       "title10": "今回のイベントも盛上り、楽しいひと時を過しました"
     }
   },
+  "contact": {
+    "breadcrumb": {
+      "title": "お問合せ"
+    },
+    "form": {
+      "title": "お問合せ",
+      "description": "お気軽に問い合わせください。",
+      "name": "ご氏名",
+      "email": "メールアドレス",
+      "subject": "タイトル",
+      "message": "メーセッジ",
+      "send": "送信",
+      "success": "Your message was successfully sent!"
+    },
+    "info": {
+      "title": "会社案内",
+      "address": "東京都港区芝2-28-8 芝2丁目ビル10階"
+    },
+    "time": {
+      "title": "営業時間",
+      "workday": "平日:",
+      "saturday": "土曜日:",
+      "sunday": "日曜日:",
+      "rest": " 休日"
+    }
+  },
   "login": {
     "breadcrumb": {
       "title": "システムログイン"
     },
     "form": {
       "title": "ログイン",
-      "username": "ユーザID",
+      "email": "メールアドレス",
       "password": "パスワード",
       "button": "ログイン",
       "forgotPass": "パスワード忘れました？",

@@ -9,7 +9,7 @@ block js
 block breadcrumbs
   .breadcrumbs
     .container
-      h1.pull-left お問合せ
+      h1.pull-left #{__('contact.breadcrumb.title')}
 
 block content
   // Google Map
@@ -18,48 +18,48 @@ block content
     .row.margin-bottom-30
       .col-md-9.mb-margin-bottom-30
         .headline
-          h2 お問合せ
+          h2 #{__('contact.form.title')}
         p
-          | お気軽に問い合わせください。
+          | #{__('contact.form.description')}
         br
         form#sky-form3.sky-form.sky-changes-3(action='assets/php/demo-contacts-process.php', method='post', novalidate='novalidate')
           fieldset
             .row
               section.col.col-6
-                label.label ご氏名
+                label.label #{__('contact.form.name')}
                 label.input
                   i.icon-append.fa.fa-user
                   input#name(type='text', name='name')
               section.col.col-6
-                label.label メールアドレス
+                label.label #{__('contact.form.email')}
                 label.input
                   i.icon-append.fa.fa-envelope-o
                   input#email(type='email', name='email')
             section
-              label.label タイトル
+              label.label #{__('contact.form.subject')}
               label.input
                 i.icon-append.fa.fa-tag
                 input#subject(type='text', name='subject')
             section
-              label.label メーセッジ
+              label.label #{__('contact.form.message')}
               label.textarea
                 i.icon-append.fa.fa-comment
                 textarea#message(rows='4', name='message')
           footer
-            button.btn-u(type='submit') 送信
+            button.btn-u(type='submit') #{__('contact.form.send')}
           .message
             i.rounded-x.fa.fa-check
-            p Your message was successfully sent!
+            p #{__('contact.form.success')}
 
       // /col-md-9
       .col-md-3
         // Contacts
         .headline
-          h2 会社案内
+          h2 #{__('contact.info.title')}
         ul.list-unstyled.who.margin-bottom-30
           li
             i.fa.fa-home
-            | 東京都港区芝2-28-8 芝2丁目ビル10階
+            | #{__('contact.info.address')}
           li
             i.fa.fa-envelope
             | info@e-business.co.jp
@@ -71,15 +71,15 @@ block content
             | http://www.e-business.co.jp
         // Business Hours
         .headline
-          h2 営業時間
+          h2 #{__('contact.time.title')}
         ul.list-unstyled.margin-bottom-30
           li
-            strong 平日:
+            strong #{__('contact.time.workday')}
             |  10am 〜 18pm
           li
-            strong 土曜日:
+            strong #{__('contact.time.saturday')}
             |  11am 〜 15pm
           li
-            strong 日曜日:
-            |  休日　
+            strong #{__('contact.time.sunday')}
+            | #{__('contact.time.rest')}
 

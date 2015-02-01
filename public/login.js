@@ -9,6 +9,7 @@ requirejs.config({
     'tween-max': '/components/gsap/src/minified/TweenMax.min',
     'waypoints': '/components/waypoints/waypoints.min',
     'jpreloader': '/components/jpreloader/js/jpreloader.min',
+    'angular': '/components/angular/angular.min',
     'app': '/js/app',
   },
 
@@ -18,14 +19,31 @@ requirejs.config({
     'tween-max': ['jquery'],
     'waypoints': ['jquery'],
     'jpreloader': ['jquery'],
-    'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader'],
+    'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader', 'angular'],
   }
 
 });
+
+window.name = "NG_DEFER_BOOTSTRAP!";
 
 require(['app'], function(app) {
 
   // global init
   App.init();
+
+  angular.module('login', [])
+    .controller('MainController', ['$http', function($http) {
+
+      this.submit = function() {
+        $http.post('/login', this.user).then(function(resp) {
+          window.location.href = '/admin';
+        }, function(resp) {
+          $('.contex-bg').slideDown();
+        });
+      };
+
+    }]);
+
+  angular.resumeBootstrap(['login']);
 
 });

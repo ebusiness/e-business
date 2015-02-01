@@ -6,7 +6,7 @@ module.exports = function(req, res, next) {
 
     // do nothing if login info are not enough
     if (!req.body.email || !req.body.password)
-        res.json(400, {});
+        res.status(400).end();
 
     // look up user info
     User.findOne(req.body, function(err, user) {
@@ -14,7 +14,7 @@ module.exports = function(req, res, next) {
         // pass if error happend
         if (err) next(err);
         // if the account not found, return the fail message
-        else if (!user) res.json(401, {});
+        else if (!user) res.status(401).end();
         // if account could be found
         else {
 

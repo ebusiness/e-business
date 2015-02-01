@@ -1,97 +1,365 @@
 {
-  "title": "E-Business Inc.",
-  "topBar": {
-    "language": "Language",
-    "languageOpt": {
-      "ja": "Japaneses",
-      "en": "English",
-      "zh": "Chinese"
-    },
-    "login": "Login"
-  },
-  "menu": {
-    "about": "About US",
-    "service": "Our Service",
-    "recruitment": "Recruitment",
-    "contact": "Contact Us"
-  },
-  "footer": {
-    "brand": "E-Business Inc.",
-    "statement": "For more beautiful society and individual life, a creative IT organization with evolution.",
-    "news": {
-      "header": "News",
-      "news1": {
-        "title": "ISO27001(ISMS) certification acquired",
-        "date": "May 30, 2014"
-      },
-      "news2": {
-        "title": "HQ move to Minatoku-Shiba Tokyo",
-        "date": "January 8, 2014"
-      },
-      "news3": {
-        "title": "Capital increased to 18.5 million yen",
-        "date": "December 20, 2013"
-      }
-    },
-    "links": {
-      "header": "Links",
-      "link1": "About US",
-      "link2": "Our Service",
-      "link3": "Recruitment",
-      "link4": "Contact Us"
-    },
-    "contact": {
-      "header": "Contact",
-      "address": "Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F",
-      "zipCode": "〒 105-0014",
-      "tel": "Tel: 03-6809-3235",
-      "fax": "Fax: 03-6809-3238",
-      "email": "Email: "
-    }
-  },
-  "copyright": {
-    "statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
-    "privacy": "Privacy policy",
-    "terms": "Announcement about usage of personal information",
-    "margin": "The margin rate of dispatch workers"
-  },
-  "home": {
-    "slider": {
-      "title1": "Company Vision",
-      "title2": "Management Philosophy",
-      "title3": "To a great international company",
-      "statement1": "For more beautiful society and individual life",
-      "statement2": "To creative IT organization with evolution",
-      "statement3": "First priority -- Partner's happiness",
-      "statement4": "Maximization -- Customer's satisfaction",
-      "statement5": "With the view of global",
-      "statement6": "pursuit more convenience for customer",
-      "statement7": "provide high quality IT service"
-    },
-    "breadcrumb": {
-      "title": "E-Business Inc.",
-      "statement": "home.breadcrumb.statement",
-      "contact": "Contact"
-    },
-    "subCate": {
-      "sub1": "About US",
-      "sub2": "Our Service",
-      "sub3": "Recruitment",
-      "sub4": "Contact Us"
-    }
-  },
-  "login": {
-    "breadcrumb": {
-      "title": "System Login"
-    },
-    "form": {
-      "title": "Login",
-      "username": "User ID",
-      "password": "Password",
-      "button": "Login",
-      "forgotPass": "Forgot password?",
-      "resetPassLink": "Click here ",
-      "resetpass": "to reset your password"
-    }
-  }
+	"title": "E-Business Inc.",
+	"topBar": {
+		"language": "Language",
+		"languageOpt": {
+			"ja": "Japaneses",
+			"en": "English",
+			"zh": "Chinese"
+		},
+		"login": "Login"
+	},
+	"menu": {
+		"about": "About US",
+		"service": "Our Service",
+		"recruitment": "Recruitment",
+		"contact": "Contact Us"
+	},
+	"footer": {
+		"brand": "E-Business Inc.",
+		"statement": "For more beautiful society and individual life, a creative IT organization with evolution.",
+		"news": {
+			"header": "News",
+			"news1": {
+				"title": "ISO27001(ISMS) certification acquired",
+				"date": "May 30, 2014"
+			},
+			"news2": {
+				"title": "HQ move to Minatoku-Shiba Tokyo",
+				"date": "January 8, 2014"
+			},
+			"news3": {
+				"title": "Capital increased to 18.5 million yen",
+				"date": "December 20, 2013"
+			}
+		},
+		"links": {
+			"header": "Links",
+			"link1": "About US",
+			"link2": "Our Service",
+			"link3": "Recruitment",
+			"link4": "Contact Us"
+		},
+		"contact": {
+			"header": "Contact",
+			"address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F",
+			"zipCode": "〒 105-0014",
+			"tel": "Tel: 03-6809-3235",
+			"fax": "Fax: 03-6809-3238",
+			"email": "Email: "
+		}
+	},
+	"copyright": {
+		"statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
+		"privacy": "Privacy policy",
+		"terms": "Announcement about usage of personal information",
+		"margin": "The margin rate of dispatch workers"
+	},
+	"home": {
+		"slider": {
+			"title1": "Company Vision",
+			"title2": "Management Philosophy",
+			"title3": "To a great international company",
+			"statement1": "For more beautiful society and individual life",
+			"statement2": "To creative IT organization with evolution",
+			"statement3": "First priority -- Partner's happiness",
+			"statement4": "Maximization -- Customer's satisfaction",
+			"statement5": "With the view of global",
+			"statement6": "pursuit more convenience for customer",
+			"statement7": "provide high quality IT service"
+		},
+		"breadcrumb": {
+			"title": "E-Business Inc.",
+			"statement": "home.breadcrumb.statement",
+			"contact": "Contact"
+		},
+		"subCate": {
+			"sub1": "About US",
+			"sub2": "Our Service",
+			"sub3": "Recruitment",
+			"sub4": "Contact Us"
+		}
+	},
+	"aboutus": {
+		"breadcrumb": {
+			"title": "E-Business Inc."
+		},
+		"message": {
+			"title": "Messages From Representative",
+			"paragraph1": "aboutus.message.paragraph1",
+			"paragraph2": "aboutus.message.paragraph2",
+			"paragraph3": "aboutus.message.paragraph3",
+			"paragraph4": "aboutus.message.paragraph4",
+			"paragraph5": "aboutus.message.paragraph5"
+		},
+		"info": {
+			"title": "About E-Business Inc.",
+			"date": {
+				"title": "Found Date",
+				"content": "June 2007"
+			},
+			"ceo": {
+				"title": "Representative",
+				"content": "CEO Hua DongJiang"
+			},
+			"address": {
+				"title": "Address",
+				"content": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
+			},
+			"capital": {
+				"title": "Capital",
+				"unit": " Man Yen",
+				"date": "Up to Jan. 2015"
+			},
+			"employee": {
+				"title": "Employees",
+				"unit": " ",
+				"date": "Up to Jan. 2015"
+			},
+			"branch": {
+				"title": "Branch",
+				"content": "Yi Shang Gong Chuang Inc. China, DaiLian"
+			},
+			"profit": {
+				"title": "Last Year Sales",
+				"unit": " Oku Yen",
+				"date": "2014 fiscal year"
+			},
+			"profit2": {
+				"title": "This Year Sales",
+				"unit": " Oku Yen",
+				"date": "2015 fiscal year estimate"
+			},
+			"certification": {
+				"title": "Authentication",
+				"name1": "aboutus.info.certification.name1",
+				"name2": "aboutus.info.certification.name2",
+				"name3": "aboutus.info.certification.name3",
+				"name4": "aboutus.info.certification.name4",
+				"name5": "aboutus.info.certification.name5"
+			}
+		},
+		"profit": "Sales Achievement",
+		"organization": "Our Organization",
+		"customer": {
+			"title": "Our Customers",
+			"name1": "aboutus.customer.name1",
+			"name2": "aboutus.customer.name2",
+			"name3": "aboutus.customer.name3",
+			"name4": "aboutus.customer.name4",
+			"name5": "aboutus.customer.name5",
+			"name6": "aboutus.customer.name6",
+			"name7": "aboutus.customer.name7",
+			"name8": "aboutus.customer.name8"
+		},
+		"history": {
+			"title": "Our History",
+			"event1": {
+				"title": "aboutus.history.event1.title",
+				"date": "aboutus.history.event1.date"
+			},
+			"event2": {
+				"title": "aboutus.history.event2.title",
+				"content": "aboutus.history.event2.content",
+				"date": "aboutus.history.event2.date"
+			},
+			"event3": {
+				"title": "aboutus.history.event3.title",
+				"content": "aboutus.history.event3.content",
+				"date": "aboutus.history.event3.date",
+				"btn": "aboutus.history.event3.btn"
+			},
+			"event4": {
+				"title": "aboutus.history.event4.title",
+				"content": "aboutus.history.event4.content",
+				"date": "aboutus.history.event4.date",
+				"btn": "aboutus.history.event4.btn"
+			},
+			"event5": {
+				"title": "aboutus.history.event5.title",
+				"date": "aboutus.history.event5.date"
+			},
+			"event6": {
+				"title": "aboutus.history.event6.title",
+				"content": "aboutus.history.event6.content",
+				"date": "aboutus.history.event6.date"
+			},
+			"event7": {
+				"title": "aboutus.history.event7.title",
+				"content": "aboutus.history.event7.content",
+				"date": "aboutus.history.event7.date"
+			},
+			"event8": {
+				"title": "aboutus.history.event8.title",
+				"content": "aboutus.history.event8.content",
+				"date": "aboutus.history.event8.date"
+			},
+			"event9": {
+				"title": "aboutus.history.event9.title",
+				"content": "aboutus.history.event9.content",
+				"date": "aboutus.history.event9.date",
+				"btn": "aboutus.history.event9.btn"
+			},
+			"event10": {
+				"title": "aboutus.history.event10.title",
+				"content": "aboutus.history.event10.content",
+				"date": "aboutus.history.event10.date"
+			}
+		}
+	},
+	"recruitment": {
+		"breadcrumb": {
+			"title": "Recruitment"
+		},
+		"info": {
+			"employ": {
+				"title": "recruitment.info.employ.title",
+				"content": "recruitment.info.employ.content"
+			},
+			"education": {
+				"title": "recruitment.info.education.title",
+				"content": "recruitment.info.education.content",
+				"remark": "recruitment.info.education.remark"
+			},
+			"workplace": {
+				"title": "recruitment.info.workplace.title",
+				"content": "recruitment.info.workplace.content",
+				"remark": "recruitment.info.workplace.remark"
+			},
+			"category": {
+				"title": "recruitment.info.category.title",
+				"content": "recruitment.info.category.content"
+			},
+			"job": {
+				"title": "recruitment.info.job.title",
+				"content1": "recruitment.info.job.content1",
+				"remark1": "recruitment.info.job.remark1",
+				"content2": "recruitment.info.job.content2",
+				"remark2": "recruitment.info.job.remark2"
+			},
+			"qualification": {
+				"title": "recruitment.info.qualification.title",
+				"content1": "recruitment.info.qualification.content1",
+				"content2": "recruitment.info.qualification.content2",
+				"remark": "recruitment.info.qualification.remark"
+			},
+			"application": {
+				"title": "recruitment.info.application.title",
+				"content": "recruitment.info.application.content"
+			},
+			"selection": {
+				"title": "recruitment.info.selection.title",
+				"content": "recruitment.info.selection.content"
+			},
+			"holiday": {
+				"title": "recruitment.info.holiday.title",
+				"content": "recruitment.info.holiday.content",
+				"remark": "recruitment.info.holiday.remark"
+			},
+			"contact": {
+				"title": "recruitment.info.contact.title"
+			}
+		},
+		"download": "Download Resume Template",
+		"agreement": {
+			"title": "recruitment.agreement.title",
+			"info1": {
+				"title": "recruitment.agreement.info1.title",
+				"content": "recruitment.agreement.info1.content"
+			},
+			"info2": {
+				"title": "recruitment.agreement.info2.title",
+				"content": "recruitment.agreement.info2.content"
+			},
+			"info3": {
+				"title": "recruitment.agreement.info3.title",
+				"content": "recruitment.agreement.info3.content"
+			},
+			"info4": {
+				"title": "recruitment.agreement.info4.title",
+				"content": "recruitment.agreement.info4.content"
+			},
+			"info5": {
+				"title": "recruitment.agreement.info5.title",
+				"content": "recruitment.agreement.info5.content",
+				"contact": "recruitment.agreement.info5.contact",
+				"window": "recruitment.agreement.info5.window",
+				"tel": "recruitment.agreement.info5.tel",
+				"fax": "recruitment.agreement.info5.fax"
+			},
+			"disagree": "disagree",
+			"agree": "agree"
+		},
+		"voices": {
+			"title": "recruitment.voices.title",
+			"voice1": {
+				"content": "recruitment.voices.voice1.content",
+				"name": "recruitment.voices.voice1.name",
+				"position": "recruitment.voices.voice1.position"
+			},
+			"voice2": {
+				"content": "recruitment.voices.voice2.content",
+				"name": "recruitment.voices.voice2.name",
+				"position": "recruitment.voices.voice2.position"
+			},
+			"voice3": {
+				"content": "recruitment.voices.voice3.content",
+				"name": "recruitment.voices.voice3.name",
+				"position": "recruitment.voices.voice3.position"
+			}
+		},
+		"photos": {
+			"title": "recruitment.photos.title",
+			"title1": "recruitment.photos.title1",
+			"title2": "recruitment.photos.title2",
+			"title3": "recruitment.photos.title3",
+			"title4": "recruitment.photos.title4",
+			"title5": "recruitment.photos.title5",
+			"title6": "recruitment.photos.title6",
+			"title7": "recruitment.photos.title7",
+			"title8": "recruitment.photos.title8",
+			"title9": "recruitment.photos.title9",
+			"title10": "recruitment.photos.title10"
+		}
+	},
+	"contact": {
+		"breadcrumb": {
+			"title": "Contact Us"
+		},
+		"form": {
+			"title": "Contact Us",
+			"description": "If you have questions, please feel free to contact us. Fill the form below and press send button.",
+			"name": "Your Name",
+			"email": "Your E-mail",
+			"subject": "Subject",
+			"message": "Message",
+			"send": "Send",
+			"success": "contact.form.success"
+		},
+		"info": {
+			"title": "Guide",
+			"address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
+		},
+		"time": {
+			"title": "Office Hours",
+			"workday": "Mon ~ Fri:",
+			"saturday": "Sat:",
+			"sunday": "Sun:",
+			"rest": " Close"
+		}
+	},
+	"login": {
+		"breadcrumb": {
+			"title": "System Login"
+		},
+		"form": {
+			"title": "Login",
+			"email": "E-mail address",
+			"password": "Password",
+			"button": "Login",
+			"forgotPass": "Forgot password?",
+			"resetPassLink": "Click here ",
+			"resetpass": "to reset your password"
+		}
+	}
 }

@@ -4,7 +4,7 @@ block css
   link(rel="stylesheet", href="/login.css")
 
 block js
-  script(data-main="/common", src="/components/requirejs/require.js")
+  script(data-main="/login", src="/components/requirejs/require.js")
     
 block breadcrumbs
   .breadcrumbs
@@ -12,24 +12,26 @@ block breadcrumbs
       h1.pull-left #{__('login.breadcrumb.title')}
 
 block content
-  .container.content
-    .row
+  .container.content(ng-app='login')
+    .row(ng-controller='MainController as ctrl')
       .col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3
-        form.reg-page
+        form.reg-page(ng-submit='ctrl.submit()', name="loginForm")
           .reg-header
             h2 #{__('login.form.title')}
           .input-group.margin-bottom-20
             span.input-group-addon
-              i.fa.fa-user
-            input.form-control(type='text', placeholder=' #{__("login.form.username")}')
+              i.fa.fa-envelope-o
+            input.form-control(type='text', ng-model='ctrl.user.email', placeholder=' #{__("login.form.email")}', required)
           .input-group.margin-bottom-20
             span.input-group-addon
-              i.fa.fa-lock
-            input.form-control(type='password', placeholder=' #{__("login.form.password")}')
+              i.fa.fa-key
+            input.form-control(type='password', ng-model='ctrl.user.password', placeholder=' #{__("login.form.password")}', required)
+          .contex-bg(style="display:none;")
+            p.bg-danger.rounded password error
           .row
             .col-md-6
             .col-md-6
-              button.btn-u.pull-right(type='submit') #{__('login.form.button')}
+              button.btn.btn-u.pull-right(type='submit', ng-disabled='loginForm.$invalid') #{__('login.form.button')}
           hr
           h4 #{__('login.form.forgotPass')}
           p
