@@ -31,6 +31,10 @@
     "counter-up": "~1.0.0",
     "waypoints": "2.0.3",
     "jpreloader": "*",
-    "gsap": "1.14.0"
+    "gsap": "1.14.0",
+    "cube-portfolio": "./public/plugins/cube-portfolio",
+    "jquery-file-upload": "~9.9.2",
+    "Jcrop": "~0.9.12",
+    "blueimp-load-image": "~1.13.0"
   }
 }

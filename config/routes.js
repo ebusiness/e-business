@@ -1,5 +1,6 @@
 var fs = require('fs'),
-  path = require('path');
+  path = require('path'),
+  User = require('mongoose').model('User');
 
 module.exports = function(app, config) {
 
@@ -49,7 +50,7 @@ module.exports = function(app, config) {
   //////////////////////////////////////////////////
   /// Console route
   //////////////////////////////////////////////////
-  app.get('/admin', function(req, res, next) {
+  app.get('/admin', checkLoginStatus, function(req, res, next) {
     res.render('admin/index');
   });
 
@@ -154,4 +155,31 @@ module.exports = function(app, config) {
       if (err) res.status(err.status).end();
     });
   });
+};
+
+checkLoginStatus = function(req, res, next) {
+
+  if (!req.session.userId) {
+    if (req.xhr) {
+      res.status(401).json({
+        title: "セッションの有効期限が切りました。",
+        msg: "セキュリティのため、しばらく操作しない場合はサーバーからセッションを切断することがあります。お手数ですが、もう一度ログインしてください。"
+      });
+    } else {
+      res.redirect('/');
+    }
+  } else {
+
+    // find user by his id
+    User.findById(req.session.userId, function(err, user) {
+
+      if (!err && user) {
+        // associate user with request
+        req.user = user;
+        next();
+      } else {
+        next(new Error('Could not restore User from Session.'));
+      }
+    });
+  }
 };

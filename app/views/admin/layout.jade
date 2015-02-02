@@ -1,0 +1,92 @@
+doctype html
+<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ja"><!--<![endif]-->
+head
+
+  title #{__('title')}
+
+  // Meta 
+  meta(charset='utf-8')
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  meta(name='description', content='')
+  meta(name='author', content='JoeHetfield')
+
+  // Favicon 
+  link(rel='shortcut icon', href='/favicon.ico')
+
+  // CSS
+  block css
+
+body.header-fixed
+
+  // Loader
+  #loading
+    .loading-inner
+      img(src='/img/loader/flat/1.gif', alt='loading...')
+
+  // Wrapper
+  .wrapper
+
+    // Header
+    .header.header-sticky
+
+      // Topbar 
+      .topbar
+        .container
+          // Topbar Navigation 
+          ul.loginbar.pull-right
+            li
+              a(href='/logout') Logout
+
+      // Navbar 
+      .navbar.navbar-default.mega-menu(role='navigation')
+        .container
+          // Brand
+          .navbar-header
+            button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+              span.sr-only Toggle navigation
+              span.fa.fa-bars
+            a.navbar-brand(href='/home')
+              img#logo-header(src='/img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
+              //- h1 E-Business Inc.
+          // Collect the nav links
+          .collapse.navbar-collapse.navbar-responsive-collapse
+            ul.nav.navbar-nav
+              li(class=(path === "home")?"active":"")
+                a(href='/home')
+                  | Home
+              li(class=(path === "about-us")?"active":"")
+                a(href='/about-us')
+                  | 画像管理
+              li(class=(path === "services")?"active":"")
+                a(href='/services')
+                  | ページ管理
+              li(class=(path === "recruitment")?"active":"")
+                a(href='/recruitment')
+                  | 問合せ管理
+              li(class=(path === "contact")?"active":"")
+                a(href='/contact')
+                  | プロフィール
+
+    // Content
+    block content
+
+    // Footer
+    .footer-v1
+      .copyright
+        .container
+          .row
+            .col-md-6
+              p #{__('copyright.statement')}
+
+  // JS
+  block js
+
+  <!--[if lt IE 9]>
+  <script src="/plugins/respond.js"></script>
+  <script src="/plugins/html5shiv.js"></script>    
+  <![endif]-->
+
+</html>

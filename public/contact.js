@@ -47,8 +47,14 @@ require(['gmap', 'app'], function(app) {
     lat: 35.6501828,
     lng: 139.7531093,
     animation: google.maps.Animation.DROP,
-    title: 'E-Business Inc.'
+    title: 'E-Business Inc.',
+    infoWindow: {
+      content: '東京都港区芝2-28-8芝2丁目ビル10階'
+    }
   });
+
+  // This opens the infoWindow
+  marker.infoWindow.open(map, marker);
 
   // element reference
   $input = $('section').add('button')

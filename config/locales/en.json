@@ -86,11 +86,11 @@
 		},
 		"message": {
 			"title": "Messages From Representative",
-			"paragraph1": "aboutus.message.paragraph1",
-			"paragraph2": "aboutus.message.paragraph2",
-			"paragraph3": "aboutus.message.paragraph3",
-			"paragraph4": "aboutus.message.paragraph4",
-			"paragraph5": "aboutus.message.paragraph5"
+			"paragraph1": "In the short 8 years since E-Business was established, the global depression, the great earthquake in east Japan, Abenomics... We expirenced lots of intense changes of the society. With the support of our customers and partners, we conquered all of those difficulties, and finally meet up with the vigorous 8th year. Please allow me express my appreciation to all of our friends.",
+			"paragraph2": "As our society progressing forward, the revolution in IT industry happened even faster, and we deeply felt the fierceness of modern company competition. With such sense of crisis, we think it is very important to follow up to the trend, imporve our internal communicate and initiative.",
+			"paragraph3": "To build a more professional and more reliable company, and also for the profits of our customers and employees, we will take new challenges and innovations as usual, keep the endless self improvement as daily task.",
+			"paragraph4": "In the coming days, we sincerely need every precious instructions and suggestions from all of our friends.",
+			"paragraph5": "CEO of E-Business Inc. Hua DongJiang"
 		},
 		"info": {
 			"title": "About E-Business Inc.",
@@ -118,7 +118,7 @@
 			},
 			"branch": {
 				"title": "Branch",
-				"content": "Yi Shang Gong Chuang Inc. China, DaiLian"
+				"content": "YiShangGongChuang Inc. DaiLian, China"
 			},
 			"profit": {
 				"title": "Last Year Sales",
@@ -131,79 +131,79 @@
 				"date": "2015 fiscal year estimate"
 			},
 			"certification": {
-				"title": "Authentication",
-				"name1": "aboutus.info.certification.name1",
-				"name2": "aboutus.info.certification.name2",
-				"name3": "aboutus.info.certification.name3",
-				"name4": "aboutus.info.certification.name4",
-				"name5": "aboutus.info.certification.name5"
+				"title": " Authentication",
+				"name1": " Qualification of General Labor Dispatch",
+				"name2": " Qualification of General Competition Auction",
+				"name3": " Management Innovation Certification",
+				"name4": " Privacy Mark",
+				"name5": " ISO27001(ISMS) Certification"
 			}
 		},
 		"profit": "Sales Achievement",
 		"organization": "Our Organization",
 		"customer": {
 			"title": "Our Customers",
-			"name1": "aboutus.customer.name1",
-			"name2": "aboutus.customer.name2",
-			"name3": "aboutus.customer.name3",
-			"name4": "aboutus.customer.name4",
-			"name5": "aboutus.customer.name5",
-			"name6": "aboutus.customer.name6",
-			"name7": "aboutus.customer.name7",
-			"name8": "aboutus.customer.name8"
+			"name1": "Information Services International-Dentsu, Ltd.",
+			"name2": "IX Knowledge Inc.",
+			"name3": "DTS CORPORATION",
+			"name4": "NSD CO., LTD.",
+			"name5": "TDC SOFTWARE ENGINEERING Inc.",
+			"name6": "Fujikura　Ltd.",
+			"name7": "TouHou System Science Ltd.",
+			"name8": "Hitachi Solutions, Ltd."
 		},
 		"history": {
 			"title": "Our History",
 			"event1": {
-				"title": "aboutus.history.event1.title",
-				"date": "aboutus.history.event1.date"
+				"title": "Capital increased to 30.5 million yen",
+				"date": " Jan 2015"
 			},
 			"event2": {
-				"title": "aboutus.history.event2.title",
+				"title": "Acquired ISO27001(ISMS) Certification",
 				"content": "aboutus.history.event2.content",
-				"date": "aboutus.history.event2.date"
+				"date": " May 30 2014"
 			},
 			"event3": {
-				"title": "aboutus.history.event3.title",
+				"title": "Established YiShangGongChuang Inc. in DaiLian China",
 				"content": "aboutus.history.event3.content",
-				"date": "aboutus.history.event3.date",
-				"btn": "aboutus.history.event3.btn"
+				"date": " Apr 4 2014",
+				"btn": "YiShangGongChuang"
 			},
 			"event4": {
-				"title": "aboutus.history.event4.title",
-				"content": "aboutus.history.event4.content",
-				"date": "aboutus.history.event4.date",
-				"btn": "aboutus.history.event4.btn"
+				"title": "HQ moved to Minatoku-Shiba Tokyo",
+				"content": "As the business grow, the HQ moved to Minatoku-Shiba Tokyo.",
+				"date": " Jan 2014",
+				"btn": "Access"
 			},
 			"event5": {
-				"title": "aboutus.history.event5.title",
-				"date": "aboutus.history.event5.date"
+				"title": "Capital increased to 18.5 million yen",
+				"date": " July 2013"
 			},
 			"event6": {
-				"title": "aboutus.history.event6.title",
+				"title": "Acquired General Competition Auction Qualification",
 				"content": "aboutus.history.event6.content",
-				"date": "aboutus.history.event6.date"
+				"date": " Apr 2012"
 			},
 			"event7": {
-				"title": "aboutus.history.event7.title",
+				"title": "Acquired Privacy Mark",
 				"content": "aboutus.history.event7.content",
-				"date": "aboutus.history.event7.date"
+				"date": " Mar 2012"
 			},
 			"event8": {
-				"title": "aboutus.history.event8.title",
-				"content": "aboutus.history.event8.content",
-				"date": "aboutus.history.event8.date"
+				"title": "Appointed as representative of China-Japan trade communicate acgency",
+				"content": "Our CEO Mr. Hua DongJiang, as the invitation of the goverment of YanCheng City Chian, appointed as representative of China-Japan trade communicate acgency.",
+				"date": " Sept 2009"
 			},
 			"event9": {
-				"title": "aboutus.history.event9.title",
+				"title": "Acquired Management Innovation Certification",
 				"content": "aboutus.history.event9.content",
-				"date": "aboutus.history.event9.date",
-				"btn": "aboutus.history.event9.btn"
+				"date": " Aug 2009",
+				"btn": "Authorization of management innovation plan Aug 2009"
 			},
 			"event10": {
-				"title": "aboutus.history.event10.title",
-				"content": "aboutus.history.event10.content",
-				"date": "aboutus.history.event10.date"
+				"title": "Found",
+				"content": "E-Business Inc. was founded in Chiyoda Tokyo, with registered capital 8 million yen.",
+				"date": " June 2007"
 			}
 		}
 	},
@@ -213,113 +213,113 @@
 		},
 		"info": {
 			"employ": {
-				"title": "recruitment.info.employ.title",
-				"content": "recruitment.info.employ.content"
+				"title": "Type of Employment",
+				"content": "Full-time employee, Contract employee"
 			},
 			"education": {
-				"title": "recruitment.info.education.title",
-				"content": "recruitment.info.education.content",
-				"remark": "recruitment.info.education.remark"
+				"title": "Educational Background",
+				"content": "Technical school graduate or above",
+				"remark": "* 2 years working expirence needed in case of high school graduate "
 			},
 			"workplace": {
-				"title": "recruitment.info.workplace.title",
-				"content": "recruitment.info.workplace.content",
-				"remark": "recruitment.info.workplace.remark"
+				"title": "Work locations",
+				"content": "Tokyo, Yokohama, Chiba",
+				"remark": "* Decide according to your current residence"
 			},
 			"category": {
-				"title": "recruitment.info.category.title",
-				"content": "recruitment.info.category.content"
+				"title": "Positions",
+				"content": "Project manager, Project leader, System engineer, programmer"
 			},
 			"job": {
-				"title": "recruitment.info.job.title",
-				"content1": "recruitment.info.job.content1",
-				"remark1": "recruitment.info.job.remark1",
-				"content2": "recruitment.info.job.content2",
-				"remark2": "recruitment.info.job.remark2"
+				"title": "Job Description",
+				"content1": "Application design/development for large-sacle computer.",
+				"remark1": " ",
+				"content2": "Application design/development for Windows systems.",
+				"remark2": " "
 			},
 			"qualification": {
-				"title": "recruitment.info.qualification.title",
-				"content1": "recruitment.info.qualification.content1",
-				"content2": "recruitment.info.qualification.content2",
-				"remark": "recruitment.info.qualification.remark"
+				"title": "Application Qualification",
+				"content1": "Graduate of IT relate technical school or college/university.",
+				"content2": "22 - 38 years old expirencer in case of career change.",
+				"remark": " "
 			},
 			"application": {
-				"title": "recruitment.info.application.title",
-				"content": "recruitment.info.application.content"
+				"title": "Application Method",
+				"content": "Please fill the resume template and mail to: saiyou@e-business.co.jp"
 			},
 			"selection": {
-				"title": "recruitment.info.selection.title",
-				"content": "recruitment.info.selection.content"
+				"title": "Selection Method",
+				"content": "Resume selection, interviews"
 			},
 			"holiday": {
-				"title": "recruitment.info.holiday.title",
-				"content": "recruitment.info.holiday.content",
-				"remark": "recruitment.info.holiday.remark"
+				"title": "Leave",
+				"content": "Two days off per week, national holiday",
+				"remark": "* May adjust according to customer"
 			},
 			"contact": {
-				"title": "recruitment.info.contact.title"
+				"title": "Consultation"
 			}
 		},
 		"download": "Download Resume Template",
 		"agreement": {
-			"title": "recruitment.agreement.title",
+			"title": "Announcement about private information",
 			"info1": {
-				"title": "recruitment.agreement.info1.title",
-				"content": "recruitment.agreement.info1.content"
+				"title": "The purpose of using and providing",
+				"content": "The personal information we required from you like name, birth day, address etc. are used and only used in the process of our recruitment. We will not publish or transfer your private information for other purpose."
 			},
 			"info2": {
-				"title": "recruitment.agreement.info2.title",
-				"content": "recruitment.agreement.info2.content"
+				"title": "The usage of private information",
+				"content": "The E-Business Inc. will in charge of the management of your private information. As our recruitment events finish, your private information will be eliminate/delete by us as part of our responsibility."
 			},
 			"info3": {
-				"title": "recruitment.agreement.info3.title",
-				"content": "recruitment.agreement.info3.content"
+				"title": "The range of private information",
+				"content": "The personal information we required are limited in the minimun range for finish recruitment events. If you don't agree with this announcement, we may not accept your application."
 			},
 			"info4": {
-				"title": "recruitment.agreement.info4.title",
-				"content": "recruitment.agreement.info4.content"
+				"title": "Publish, modification and elimination",
+				"content": "You can ask us to publish your private information to 3rd-party. and you can also ask us to modifty or delete the published information. In such cases, please contact us with the method below."
 			},
 			"info5": {
-				"title": "recruitment.agreement.info5.title",
-				"content": "recruitment.agreement.info5.content",
-				"contact": "recruitment.agreement.info5.contact",
-				"window": "recruitment.agreement.info5.window",
-				"tel": "recruitment.agreement.info5.tel",
-				"fax": "recruitment.agreement.info5.fax"
+				"title": "Contact",
+				"content": "To publish, modify or delete your private information, plases contact us with: ",
+				"contact": " E-Business Inc.",
+				"window": " Hua DongJiang",
+				"tel": " Tel: ",
+				"fax": " Fax: "
 			},
 			"disagree": "disagree",
 			"agree": "agree"
 		},
 		"voices": {
-			"title": "recruitment.voices.title",
+			"title": "Employee's Voices",
 			"voice1": {
 				"content": "recruitment.voices.voice1.content",
-				"name": "recruitment.voices.voice1.name",
-				"position": "recruitment.voices.voice1.position"
+				"name": "Peter",
+				"position": "Sales Division 1"
 			},
 			"voice2": {
 				"content": "recruitment.voices.voice2.content",
-				"name": "recruitment.voices.voice2.name",
-				"position": "recruitment.voices.voice2.position"
+				"name": "John",
+				"position": "Product Dision 2"
 			},
 			"voice3": {
 				"content": "recruitment.voices.voice3.content",
-				"name": "recruitment.voices.voice3.name",
-				"position": "recruitment.voices.voice3.position"
+				"name": "Lisa",
+				"position": "HR"
 			}
 		},
 		"photos": {
-			"title": "recruitment.photos.title",
-			"title1": "recruitment.photos.title1",
-			"title2": "recruitment.photos.title2",
-			"title3": "recruitment.photos.title3",
-			"title4": "recruitment.photos.title4",
-			"title5": "recruitment.photos.title5",
-			"title6": "recruitment.photos.title6",
-			"title7": "recruitment.photos.title7",
-			"title8": "recruitment.photos.title8",
-			"title9": "recruitment.photos.title9",
-			"title10": "recruitment.photos.title10"
+			"title": "Life in E-Business",
+			"title1": "Project leader training",
+			"title2": "Learning new skills",
+			"title3": "Education for fresher",
+			"title4": "iOS education 1",
+			"title5": "iOS education 2",
+			"title6": "Ready for Babeqe",
+			"title7": "A fun party",
+			"title8": "Warm like home",
+			"title9": "Taste the tasty",
+			"title10": "The happy timie in E-Business"
 		}
 	},
 	"contact": {
@@ -342,7 +342,7 @@
 		},
 		"time": {
 			"title": "Office Hours",
-			"workday": "Mon ~ Fri:",
+			"workday": "Mon-Fri:",
 			"saturday": "Sat:",
 			"sunday": "Sun:",
 			"rest": " Close"
