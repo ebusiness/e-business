@@ -40,19 +40,21 @@ module.exports = function(config) {
 
   // i18n config
   i18n.configure({
-
     // setup some locales - other locales default to ja silently
     locales: ['ja', 'zh', 'en'],
     directory: config.root + '/config/locales',
     defaultLocale: 'ja',
+    cookie: 'language',
     objectNotation: true
   });
 
+  // session
   app.use(session({
     resave: true,
     saveUninitialized: true,
     secret: 'uwotm8'
   }));
+
   // Parse application/json
   app.use(bodyParser.json());
 
@@ -83,7 +85,13 @@ module.exports = function(config) {
   }
 
   app.param('lang', function(req, res, next, lang) {
-    if (lang) req.setLocale(lang)
+    if (lang) {
+      req.setLocale(lang);
+      res.cookie('language', lang, {
+        maxAge: 900000,
+        httpOnly: true
+      });
+    }
     next();
   })
 

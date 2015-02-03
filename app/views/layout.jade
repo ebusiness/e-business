@@ -50,7 +50,7 @@ body.header-fixed
                   a(href='/en/#{path}', hreflang="en") #{__('topBar.languageOpt.en')}
             li.topbar-devider
             li
-              a(href='/#{locale}/login') #{__('topBar.login')}
+              a(href='/login') #{__('topBar.login')}
 
       // Navbar 
       .navbar.navbar-default.mega-menu(role='navigation')
@@ -68,19 +68,19 @@ body.header-fixed
           .collapse.navbar-collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
               li(class=(path === "home")?"active":"")
-                a(href='/#{locale}/home')
+                a(href='/home')
                   | Home
               li(class=(path === "about-us")?"active":"")
-                a(href='/#{locale}/about-us')
+                a(href='/about-us')
                   | #{__('menu.about')}
               li(class=(path === "services")?"active":"")
-                a(href='/#{locale}/services')
+                a(href='/services')
                   | #{__('menu.service')}
               li(class=(path === "recruitment")?"active":"")
-                a(href='/#{locale}/recruitment')
+                a(href='/recruitment')
                   | #{__('menu.recruitment')}
               li(class=(path === "contact")?"active":"")
-                a(href='/#{locale}/contact')
+                a(href='/contact')
                   | #{__('menu.contact')}
 
     // Slider
@@ -127,19 +127,19 @@ body.header-fixed
                 h2 #{__('footer.links.header')}
               ul.list-unstyled.link-list
                 li
-                  a(href='/#{locale}/home') HOME
+                  a(href='/home') HOME
                   i.fa.fa-angle-right
                 li
-                  a(href='/#{locale}/about-us') #{__('footer.links.link1')}
+                  a(href='/about-us') #{__('footer.links.link1')}
                   i.fa.fa-angle-right
                 li
-                  a(href='/#{locale}/services') #{__('footer.links.link2')}
+                  a(href='/services') #{__('footer.links.link2')}
                   i.fa.fa-angle-right
                 li
-                  a(href='/#{locale}/recruitment') #{__('footer.links.link3')}
+                  a(href='/recruitment') #{__('footer.links.link3')}
                   i.fa.fa-angle-right
                 li
-                  a(href='/#{locale}/contact') #{__('footer.links.link4')}
+                  a(href='/contact') #{__('footer.links.link4')}
                   i.fa.fa-angle-right
             // Contact
             .col-sm-6.col-md-3.map-img.md-margin-bottom-40
@@ -164,11 +164,11 @@ body.header-fixed
               p #{__('copyright.statement')}
             .col-md-6
               p.pull-right
-                a(href='/#{locale}/privacy') #{__('copyright.privacy')}
+                a(href='/privacy') #{__('copyright.privacy')}
                 |  |
-                a(href='/#{locale}/terms-of-service')  #{__('copyright.terms')}
+                a(href='/terms-of-service')  #{__('copyright.terms')}
                 |  |
-                a(href='/#{locale}/margin-rate')  #{__('copyright.margin')}
+                a(href='/margin-rate')  #{__('copyright.margin')}
 
   // JS
   block js

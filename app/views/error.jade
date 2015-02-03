@@ -19,5 +19,5 @@ block content
         .error-v1
           span.error-v1-title #{error.status}
           span #{error.message}
-          p 大変申し訳ございませんが、下記ボタンをクリックして、ホームページに戻ってください。
-          a.btn-u.btn-border(href="/#{locale}/home") Back Home
+          p #{__('error.404')}
+          a.btn-u.btn-border(href="/home") #{__('error.backBtn')}

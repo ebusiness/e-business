@@ -361,5 +361,9 @@
 			"resetPassLink": "Click here ",
 			"resetpass": "to reset your password"
 		}
+	},
+	"error": {
+		"404": "Sorry, the page your requested is not exists. Please click the button below back to home page.",
+		"backBtn": "Back Home"
 	}
 }

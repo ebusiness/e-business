@@ -65,6 +65,7 @@ block content
               span.counter 185
               | #{__('aboutus.info.employee.unit')}
             p #{__('aboutus.info.employee.date')}
+            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#organiztion") 会社組織図
       .col-sm-4
         .service
           i.service-icon.icon-globe-alt
@@ -119,145 +120,119 @@ block content
           h2.color-green #{__('aboutus.profit')}
         #bar-graph(style="width:100%; height: 300px;")
 
-  //- #organiztion2.container.content
-  //-   .heading.heading-v4.margin-bottom-20
-  //-     h2.color-green 会社組織図
-  //-   .table-responsive
-  //-     table.table.table-bordered
-  //-       tbody
-  //-         tr
-  //-           td(colspan='15') 株主総会
-  //-         tr
-  //-           td(colspan='3') 経営管理部
-  //-           td(colspan='2') 営業企画部
-  //-           td(colspan='6') ICT事業部
-  //-           td(colspan='2') GEC事業部
-  //-           td(rowspan='2') セキュリティ・危機管理委員会
-  //-           td(rowspan='2') CSR推進室
-  //-         tr
-  //-           td 人事グループ
-  //-           td 経理グループ
-  //-           td 総務グループ
-  //-           td 営業１グループ
-  //-           td 営業２グループ
-  //-           td SS１部
-  //-           td SS２部
-  //-           td SS３部
-  //-           td SS４部
-  //-           td SS５部
-  //-           td　技術推進部
-  //-           td　企画・運営グループ
-  //-           td　技術開発グループ
-
-  #organiztion.container.content
-    .heading.heading-v4.margin-bottom-20
-      h2.color-green #{__('aboutus.organization')}
-    .table-responsive
-      table.table
-        tbody
-          tr
-            td(rowspan="15")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-flag
-                |  株主総会
-              br
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-flag
-                |  取締役会
-              br
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-user
-                |  代表者
-            td.org-leaf(rowspan="3")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-bell
-                |  経営管理部
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-users
-                |  人事グループ
-          tr
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-note
-                |  経理グループ
-          tr
-            td.org-leaf-last
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-grid
-                |  総務グループ
-          tr
-            td.org-branch(rowspan="2")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-picture
-                |  営業企画部
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-notebook
-                |  営業１グループ
-          tr
-            td.org-leaf-last
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-notebook
-                |  営業２グループ
-          tr
-            td.org-branch(rowspan="6") 
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-screen-desktop
-                |  ICT事業部
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-settings
-                |  SS１部
-          tr
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-settings
-                |  SS２部
-          tr
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-settings
-                |  SS３部
-          tr
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-settings
-                |  SS４部
-          tr
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-settings
-                |  SS５部
-          tr
-            td.org-leaf-last
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-wrench
-                |  技術推進部
-          tr
-            td.org-branch(rowspan="2")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-basket
-                |  GEC事業部
-            td.org-leaf
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-speech
-                |  企画・運営グループ
-          tr
-            td.org-leaf-last
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-wrench
-                |  技術開発グループ
-          tr
-            td(colspan="2")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-key
-                |  セキュリティ・危機管理委員会
-          tr
-            td(colspan="2")
-              .btn-u.btn-brd.btn-brd-hover.btn-u-lg
-                i.icon-volume-2
-                |  CSR推進室
+  #organiztion.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+          h4#myModalLabel.modal-title #{__('aboutus.organization')}
+        .modal-body
+          .table-responsive
+            table.table
+              tbody
+                tr
+                  td.org-head-1(rowspan="3")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-flag
+                      |  株主総会
+                  td.org-branch(rowspan="3")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-bell
+                      |  経営管理部
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-users
+                      |  人事グループ
+                tr
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-note
+                      |  経理グループ
+                tr
+                  td.org-leaf-last
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-grid
+                      |  総務グループ
+                tr
+                  td.org-head-2(rowspan="2")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-flag
+                      |  取締役会
+                  td.org-branch(rowspan="2")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-picture
+                      |  営業企画部
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-notebook
+                      |  営業１グループ
+                tr
+                  td.org-leaf-last
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-notebook
+                      |  営業２グループ
+                tr
+                  td.org-root(rowspan="10")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-user
+                      |  　代表者
+                  td.org-branch(rowspan="6") 
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-screen-desktop
+                      |  ICT事業部
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-settings
+                      |  SS１部
+                tr
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-settings
+                      |  SS２部
+                tr
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-settings
+                      |  SS３部
+                tr
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-settings
+                      |  SS４部
+                tr
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-settings
+                      |  SS５部
+                tr
+                  td.org-leaf-last
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-wrench
+                      |  技術推進部
+                tr
+                  td.org-branch(rowspan="2")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-basket
+                      |  GEC事業部
+                  td.org-leaf
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-speech
+                      |  企画・運営グループ
+                tr
+                  td.org-leaf-last
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-wrench
+                      |  技術開発グループ
+                tr
+                  td.org-leaf(colspan="2")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-key
+                      |  セキュリティ・危機管理委員会
+                tr
+                  td.org-leaf-last(colspan="2")
+                    .btn-u.btn-u-xs.btn-brd.btn-brd-hover
+                      i.icon-volume-2
+                      |  CSR推進室
 
   .container.content.job-partners
     .heading.heading-v4.margin-bottom-20
@@ -342,7 +317,7 @@ block content
                 i.fa.fa-clock-o
                 | #{__('aboutus.history.event3.date')}
               span.pull-right
-                a.btn-u.btn-u-sm(href='http://big5.51job.com/gate/big5/companyadc.51job.com/companyads/ads/17/16458/16457658/index.htm', target='blank') #{__('aboutus.history.event3.btn')}
+                a.btn-u.btn-u-xs(href='http://big5.51job.com/gate/big5/companyadc.51job.com/companyads/ads/17/16458/16457658/index.htm', target='blank') #{__('aboutus.history.event3.btn')}
               .clearfix
         li.timeline-inverted
           .timeline-badge.primarya
@@ -356,7 +331,7 @@ block content
                 i.fa.fa-clock-o
                 | #{__('aboutus.history.event4.date')}
               span.pull-right
-                a.btn-u.btn-u-sm(href='/contact') #{__('aboutus.history.event4.btn')}
+                a.btn-u.btn-u-xs(href='/contact') #{__('aboutus.history.event4.btn')}
               .clearfix
         li
           .timeline-badge.primary
@@ -413,7 +388,7 @@ block content
                 i.fa.fa-clock-o
                 | #{__('aboutus.history.event9.date')}
               span.pull-right
-                a.btn-u.btn-u-sm(href='/certification') #{__('aboutus.history.event9.btn')}
+                a.btn-u.btn-u-xs(href='/certification') #{__('aboutus.history.event9.btn')}
               .clearfix
         li.timeline-inverted
           .timeline-badge.primary
