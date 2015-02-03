@@ -7,10 +7,50 @@ module.exports = function(grunt) {
 
     requirejs: {
 
+      // 'compile': {
+      //   options: {
+      //     appDir: "./public",
+      //     baseUrl: "./",
+      //     dir: "public-build",
+      //     optimizeCss: "standard",
+      //     modules: [{
+      //       name: "home",
+      //     }],
+      //     paths: {
+      //       'jquery': 'components/jquery/dist/jquery',
+      //       'bootstrap': 'components/bootstrap/dist/js/bootstrap',
+      //       'back2top': 'js/back-to-top',
+      //       'tween-max': 'components/gsap/src/minified/TweenMax.min',
+      //       'waypoints': 'components/waypoints/waypoints.min',
+      //       'jpreloader': 'components/jpreloader/js/jpreloader.min',
+      //       'touchswipe': 'components/jquery-touchswipe/jquery.touchSwipe.min',
+      //       'rs-slider': 'components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min',
+      //       'owl-carousel': 'components/OwlCarousel/owl-carousel/owl.carousel',
+      //       'app-slider': 'js/plugins/revolution-slider',
+      //       'app-carousel': 'js/plugins/owl-carousel',
+      //       'app': 'js/app',
+      //     },
+      //     shim: {
+      //       'bootstrap': ['jquery'],
+      //       'back2top': ['jquery'],
+      //       'tween-max': ['jquery'],
+      //       'waypoints': ['jquery'],
+      //       'jpreloader': ['jquery'],
+      //       'rs-slider': ['touchswipe', 'tween-max'],
+      //       'owl-carousel': ['bootstrap'],
+      //       'app-slider': ['rs-slider'],
+      //       'app-carousel': ['owl-carousel'],
+      //       'app': ['bootstrap', 'back2top', 'tween-max', 'waypoints', 'jpreloader'],
+      //     }
+      //   }
+      // }
+
       'compile-home': {
         options: {
           name: "home",
-          out: "./public/js/pages/home-built.js",
+          baseUrl: "public",
+          out: "./public/home-built.js",
+          // optimize: "none",
           preserveLicenseComments: false,
           mainConfigFile: "./public/home.js"
         }
@@ -20,7 +60,7 @@ module.exports = function(grunt) {
         options: {
           optimizeCss: "standard",
           cssIn: "./public/home.css",
-          out: "./public/css/home-built.css",
+          out: "./public/home-built.css",
         }
       }
     },
