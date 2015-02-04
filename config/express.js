@@ -76,8 +76,10 @@ module.exports = function(config) {
   }));
 
   // Public folder
-  app.use(express.static(path.join(config.root, 'public')));
-  // app.use(express.static(path.join(config.root, 'bower_components')));
+  if ('production' !== config.app.env)
+    app.use(express.static(path.join(config.root, 'public')));
+  else
+    app.use(express.static(path.join(config.root, 'public-build')));
 
   // Error handler, not linked in production
   if ('production' !== config.app.env) {

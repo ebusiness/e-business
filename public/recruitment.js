@@ -8,20 +8,20 @@ requirejs.config({
     'fastclick': 'components/fastclick/lib/fastclick',
     'back2top': 'js/back-to-top',
     'tween-max': 'components/gsap/src/minified/TweenMax.min',
+    'waypoints': 'components/waypoints/waypoints.min',
     'jpreloader': 'components/jpreloader/js/jpreloader.min',
-    'angular': 'components/angular/angular.min',
   },
 
   shim: {
     'bootstrap': ['jquery'],
+    'fastclick': ['jquery'],
     'back2top': ['jquery'],
     'tween-max': ['jquery'],
-    'jpreloader': ['jquery'],
+    'waypoints': ['jquery'],
+    'jpreloader': ['jquery']
   }
 
 });
-
-window.name = "NG_DEFER_BOOTSTRAP!";
 
 require([
   'fastclick',
@@ -29,7 +29,7 @@ require([
   'back2top',
   'bootstrap',
   'tween-max',
-  'angular'
+  'waypoints'
 ], function(fastclick) {
 
   // start proloader
@@ -41,7 +41,8 @@ require([
     // setup page
     handleFastClick();
     handleHeader();
-    handleApp();
+    handleModal();
+    handleAnimation();
 
     // display content
     TweenMax.to($('.wrapper'), 0.7, {
@@ -49,7 +50,7 @@ require([
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast');
+    $('#loading').fadeOut('fast', startAnimation);
 
   });
 
@@ -70,22 +71,49 @@ require([
     });
   };
 
-  var handleApp = function() {
+  var handleModal = function() {
 
-    angular.module('login', [])
-      .controller('MainController', ['$http', function($http) {
+    $('#btn-download-resume').click(function() {
+      window.location.href = "/resume-template";
+      $('#privacy-modal').modal('hide');
+    })
+  };
 
-        this.submit = function() {
-          $http.post('/login', this.user).then(function(resp) {
-            window.location.href = '/admin';
-          }, function(resp) {
-            $('.contex-bg').slideDown();
-          });
-        };
+  // Animation initialize
+  var handleAnimation = function() {
 
-      }]);
+    // element reference
+    $basicInfo = $('.service');
 
-    angular.resumeBootstrap(['login']);
+    // init tween
+    TweenMax.set($('#recruit-info'), {
+      transformPerspective: 800
+    });
+
+    TweenMax.set($basicInfo, {
+      transformPerspective: 800,
+      rotationX: 90,
+      autoAlpha: 0
+    });
+  };
+
+  // Animation
+  var startAnimation = function() {
+
+    // element reference
+    $basicInfo = $('.service');
+
+    // setup waypoints
+    $('#recruit-info').waypoint(function() {
+      TweenMax.staggerTo($basicInfo, 0.5, {
+        rotationX: 0,
+        autoAlpha: 1
+      }, 0.3);
+    }, {
+      offset: '100%',
+      triggerOnce: true
+    });
+
   };
 
 });
