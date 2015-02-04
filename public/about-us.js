@@ -205,7 +205,7 @@ require([
 
     // init tween
     TweenMax.set($('#company-info, #graph, .job-partners'), {
-      transformPerspective: 800
+      perspective: 800
     });
 
     TweenMax.set($basicInfo, {

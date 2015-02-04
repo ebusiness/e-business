@@ -87,7 +87,7 @@ require([
 
     // init tween
     TweenMax.set($('#recruit-info'), {
-      transformPerspective: 800
+      perspective: 800
     });
 
     TweenMax.set($basicInfo, {

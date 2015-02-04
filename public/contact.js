@@ -109,7 +109,7 @@ require([
 
     // init tween
     TweenMax.set($('form'), {
-      transformPerspective: 800
+      perspective: 800
     });
 
     TweenMax.set($input, {

@@ -95,7 +95,7 @@ require([
 
     // init tween
     TweenMax.set($('#sub-cate'), {
-      transformPerspective: 800,
+      perspective: 800,
     });
 
     // init tween
