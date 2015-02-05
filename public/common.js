@@ -29,8 +29,14 @@ require([
   'tween-max'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -40,12 +46,12 @@ require([
     handleHeader();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader
-    $('#loading').fadeOut('fast');
+    $loading.fadeOut('fast');
 
   });
 
@@ -57,17 +63,13 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };
 
-  $('#btn-download-resume').click(function() {
-    window.location.href = "/resume-template";
-    $('#privacy-modal').modal('hide');
-  })
 });

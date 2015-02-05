@@ -16,8 +16,7 @@ block js
 
 block content
   .container.content(ng-app="FileUpload")
-    ng-upload-form(url='//jquery-file-upload.appspot.com/', auto-upload='true', size-limit='500000')
-      button upload
+    input#fileupload(type='file', name='pic', data-url='/pictures', multiple)
     #sub-cate.row.margin-bottom-20
       .col-md-3.col-sm-6
         .thumbnails.thumbnail-style.thumbnail-kenburn

@@ -43,8 +43,23 @@ require([
   'waypoints'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
+  var $counter = $('.counter');
+  var $companyInfoArea = $('#company-info');
+  var $companyInfo = $('.service');
+  var $barGraphArea = $('#graph');
+  var $barGraph = $('#bar-graph');
+  var $clinetsArea = $('.job-partners');
+  var $clinets = $('.our-clients li');
+  var $history = $('.timeline-v1 li');
+
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -58,12 +73,12 @@ require([
     handleAnimation();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast', startAnimation);
+    $loading.fadeOut('fast', startAnimation);
 
   });
 
@@ -75,22 +90,24 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };
 
+  // Number Counter
   var handleCounter = function() {
-    $('.counter').counterUp({
+    $counter.counterUp({
       delay: 10,
       time: 1000
     });
   };
 
+  // Image Hover
   var handleHover = function() {
 
     // check for touch
@@ -127,10 +144,11 @@ require([
     }
   };
 
+  // Flot Chart
   var handleFlot = function() {
 
     // draw bar graph
-    $.plot($("#bar-graph"), [{
+    $.plot($('#bar-graph'), [{
       label: "　社員数（人）",
       data: [
         [19, 5],
@@ -197,24 +215,18 @@ require([
   // Animation initialize
   var handleAnimation = function() {
 
-    // element reference
-    $basicInfo = $('.service');
-    $graph = $('#bar-graph');
-    $clinets = $('.our-clients li');
-    $history = $('.timeline-v1 li');
-
     // init tween
-    TweenMax.set($('#company-info, #graph, .job-partners'), {
+    TweenMax.set([$companyInfoArea, $barGraphArea, $clinetsArea], {
       perspective: 800
     });
 
-    TweenMax.set($basicInfo, {
+    TweenMax.set($companyInfo, {
       transformPerspective: 800,
       rotationX: 90,
       autoAlpha: 0
     });
 
-    TweenMax.set($graph, {
+    TweenMax.set($barGraph, {
       transformPerspective: 800,
       rotationX: 90,
       autoAlpha: 0
@@ -235,15 +247,9 @@ require([
   // Animation
   var startAnimation = function() {
 
-    // element reference
-    $basicInfo = $('.service');
-    $graph = $('#bar-graph');
-    $clinets = $('.our-clients li');
-    $history = $('.timeline-v1 li');
-
     // setup waypoints
-    $('#company-info').waypoint(function() {
-      TweenMax.staggerTo($basicInfo, 0.5, {
+    $companyInfoArea.waypoint(function() {
+      TweenMax.staggerTo($companyInfo, 0.5, {
         rotationX: 0,
         autoAlpha: 1
       }, 0.3);
@@ -252,8 +258,8 @@ require([
       triggerOnce: true
     });
 
-    $('#graph').waypoint(function() {
-      TweenMax.to($graph, 0.5, {
+    $barGraphArea.waypoint(function() {
+      TweenMax.to($barGraph, 0.5, {
         rotationX: 0,
         autoAlpha: 1
       });
@@ -262,7 +268,7 @@ require([
       triggerOnce: true
     });
 
-    $('.job-partners').waypoint(function() {
+    $clinetsArea.waypoint(function() {
       TweenMax.staggerTo($clinets, 0.5, {
         rotationY: 0,
         autoAlpha: 1

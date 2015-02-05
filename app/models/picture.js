@@ -14,6 +14,16 @@ var Picture = new Schema({
     trim: true
   },
 
+  type: {
+    type: String,
+    trim: true
+  },
+
+  path: {
+    type: String,
+    trim: true
+  },
+
   // Logic delete flag
   logicDelete: {
     type: Boolean,

@@ -36,6 +36,15 @@ require([
   'gmap'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
+  var $form = $('#sky-form3');
+  var $input = $('section').add('button')
+
   // init google map first cause it slow
   var map = new GMaps({
     div: '#map',
@@ -46,7 +55,7 @@ require([
   });
 
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -58,12 +67,12 @@ require([
     handleAnimation();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast', startAnimation);
+    $loading.fadeOut('fast', startAnimation);
 
   });
 
@@ -75,15 +84,16 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };
 
+  // GoogleMap add Marker
   var handleMap = function() {
 
     // draw map mark
@@ -104,11 +114,8 @@ require([
   // Animation initialize
   var handleAnimation = function() {
 
-    // element reference
-    $input = $('section').add('button')
-
     // init tween
-    TweenMax.set($('form'), {
+    TweenMax.set($form, {
       perspective: 800
     });
 
@@ -123,11 +130,8 @@ require([
   // Animation
   var startAnimation = function() {
 
-    // element reference
-    $input = $('section').add('button')
-
     // setup waypoints
-    $('#sky-form3').waypoint(function() {
+    $form.waypoint(function() {
       TweenMax.staggerTo($input, 0.2, {
         rotationX: 0,
         alpha: 1

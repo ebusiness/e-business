@@ -32,8 +32,14 @@ require([
   'angular'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -44,12 +50,12 @@ require([
     handleApp();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast');
+    $loading.fadeOut('fast');
 
   });
 
@@ -61,11 +67,11 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };

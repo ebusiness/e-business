@@ -54,6 +54,9 @@ module.exports = function(app, config) {
     res.render('admin/index');
   });
 
+  app.get('/pictures', checkLoginStatus, controller.picture.create);
+  app.post('/pictures', checkLoginStatus, controller.picture.create);
+
   //////////////////////////////////////////////////
   /// Static route
   //////////////////////////////////////////////////

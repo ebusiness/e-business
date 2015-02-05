@@ -2,6 +2,7 @@ logs/*
 !.gitkeep
 node_modules/
 public/components/
+public/upload/
 public-build/
 tmp
 .DS_Store

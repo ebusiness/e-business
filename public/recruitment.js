@@ -32,8 +32,17 @@ require([
   'waypoints'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
+  var $recruitInfoArea = $('#recruit-info');
+  var $recruitInfo = $('.service');
+
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -45,13 +54,12 @@ require([
     handleAnimation();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast', startAnimation);
-
+    $loading.fadeOut('fast', startAnimation);
   });
 
   // Fast Click
@@ -62,17 +70,17 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };
 
+  // Resume Template Download
   var handleModal = function() {
-
     $('#btn-download-resume').click(function() {
       window.location.href = "/resume-template";
       $('#privacy-modal').modal('hide');
@@ -82,15 +90,12 @@ require([
   // Animation initialize
   var handleAnimation = function() {
 
-    // element reference
-    $basicInfo = $('.service');
-
     // init tween
-    TweenMax.set($('#recruit-info'), {
+    TweenMax.set($recruitInfoArea, {
       perspective: 800
     });
 
-    TweenMax.set($basicInfo, {
+    TweenMax.set($recruitInfo, {
       transformPerspective: 800,
       rotationX: 90,
       autoAlpha: 0
@@ -100,12 +105,9 @@ require([
   // Animation
   var startAnimation = function() {
 
-    // element reference
-    $basicInfo = $('.service');
-
     // setup waypoints
-    $('#recruit-info').waypoint(function() {
-      TweenMax.staggerTo($basicInfo, 0.5, {
+    $recruitInfoArea.waypoint(function() {
+      TweenMax.staggerTo($recruitInfo, 0.5, {
         rotationX: 0,
         autoAlpha: 1
       }, 0.3);

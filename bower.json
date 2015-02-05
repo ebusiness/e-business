@@ -36,6 +36,7 @@
     "jquery-file-upload": "~9.9.2",
     "Jcrop": "~0.9.12",
     "blueimp-load-image": "~1.13.0",
-    "fastclick": "~1.0.6"
+    "fastclick": "~1.0.6",
+    "modernizr": "~2.8.3"
   }
 }

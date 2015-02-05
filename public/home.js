@@ -36,8 +36,18 @@ require([
   'waypoints'
 ], function(fastclick) {
 
+  // element reference
+  var $wrapper = $('.wrapper');
+  var $loading = $('#loading');
+  var $window = $(window);
+  var $header = $(".header-fixed .header-sticky");
+
+  var $banner = $('.tp-banner');
+  var $thumbnails = $('.thumbnails');
+  var $subcate = $('#sub-cate');
+
   // start proloader
-  $('.wrapper').jpreLoader({
+  $wrapper.jpreLoader({
     loaderVPos: '50%',
     autoClose: true
   }, function() {
@@ -49,12 +59,12 @@ require([
     handleAnimation();
 
     // display content
-    TweenMax.to($('.wrapper'), 0.7, {
+    TweenMax.to($wrapper, 0.7, {
       opacity: 1
     });
 
     // hide loader then start animation
-    $('#loading').fadeOut('fast', startAnimation);
+    $loading.fadeOut('fast', startAnimation);
 
   });
 
@@ -66,11 +76,11 @@ require([
   // Fixed Header
   var handleHeader = function() {
 
-    $(window).scroll(function() {
-      if ($(window).scrollTop() > 100) {
-        $(".header-fixed .header-sticky").addClass("header-fixed-shrink");
+    $window.scroll(function() {
+      if ($window.scrollTop() > 100) {
+        $header.addClass("header-fixed-shrink");
       } else {
-        $(".header-fixed .header-sticky").removeClass("header-fixed-shrink");
+        $header.removeClass("header-fixed-shrink");
       }
     });
   };
@@ -78,7 +88,7 @@ require([
   // Slider
   var handleSlider = function() {
 
-    $('.tp-banner').revolution({
+    $banner.revolution({
       delay: 9000,
       startwidth: 870,
       startheight: 400,
@@ -90,11 +100,8 @@ require([
   // Animation initialize
   var handleAnimation = function() {
 
-    // element reference
-    $thumbnails = $('.thumbnails');
-
     // init tween
-    TweenMax.set($('#sub-cate'), {
+    TweenMax.set($subcate, {
       perspective: 800,
     });
 
@@ -111,11 +118,8 @@ require([
   // Animation
   var startAnimation = function() {
 
-    // element reference
-    $thumbnails = $('.thumbnails');
-
     // setup waypoints
-    $('#sub-cate').waypoint(function() {
+    $subcate.waypoint(function() {
       TweenMax.staggerTo($thumbnails, 1, {
         rotationY: 0,
         autoAlpha: 1
