@@ -15,42 +15,17 @@ block js
   script(data-main="/admin", src="/components/requirejs/require.js")
 
 block content
-  .container.content(ng-app="FileUpload")
-    input#fileupload(type='file', name='pic', data-url='/pictures', multiple)
-    #sub-cate.row.margin-bottom-20
-      .col-md-3.col-sm-6
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/1.jpg', alt='')
-            a.btn-more.btn-blue.hover-effect(href='about-us') read more +
-          .caption
-            h3
-              a.hover-effect(href='about-us') #{__('home.subCate.sub1')}
-      .col-md-3.col-sm-6
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/16.jpg', alt='')
-            a.btn-more.hover-effect(href='services') read more +
-          .caption
-            h3
-              a.hover-effect(href='services') #{__('home.subCate.sub2')}
-      .col-md-3.col-sm-6
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/17.jpg', alt='')
-            a.btn-more.hover-effect(href='recruitment') read more +
-          .caption
-            h3
-              a.hover-effect(href='recruitment') #{__('home.subCate.sub3')}
-      .col-md-3.col-sm-6
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/11.jpg', alt='')
-            a.btn-more.hover-effect(href='contact') read more +
-          .caption
-            h3
-              a.hover-effect(href='contact') #{__('home.subCate.sub4')}
+  .content(ng-app="gallery")
+    .fusion-portfolio.wrapper-portfolio-no-space.cbp-5-col
+      input#fileupload(type='file', name='pic', data-url='/pictures', multiple)
+      #grid-container.cbp-l-grid-gallery(ng-controller="MainController as ctrl")
+        ul
+          li.cbp-item(ng-repeat="pictrue in ctrl.pictures")
+            a.cbp-caption(href='portfolio_item.html')
+              .cbp-caption-defaultWrap
+                img(src='/upload/{{pictrue.fileName}}', alt='', width='100%')
+              .cbp-caption-activeWrap
+                .cbp-l-caption-alignCenter
+                  .cbp-l-caption-body
+                    .cbp-l-caption-text {{pictrue.name}}
+                    p.cbp-l-caption-desc {{pictrue.createDate}}

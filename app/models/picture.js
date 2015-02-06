@@ -19,7 +19,7 @@ var Picture = new Schema({
     trim: true
   },
 
-  path: {
+  fileName: {
     type: String,
     trim: true
   },
