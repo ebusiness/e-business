@@ -38,16 +38,6 @@ module.exports = function(config) {
   // Override request method
   app.use(methodOverride());
 
-  // i18n config
-  i18n.configure({
-    // setup some locales - other locales default to ja silently
-    locales: ['ja', 'zh', 'en'],
-    directory: config.root + '/config/locales',
-    defaultLocale: 'ja',
-    cookie: 'language',
-    objectNotation: true
-  });
-
   // session
   app.use(session({
     resave: true,
@@ -63,6 +53,16 @@ module.exports = function(config) {
 
   // Parse cookie before session
   app.use(cookieParser('cookie secret sauce'));
+
+  // i18n config
+  i18n.configure({
+    // setup some locales - other locales default to ja silently
+    locales: ['ja', 'zh', 'en'],
+    directory: config.root + '/config/locales',
+    defaultLocale: 'ja',
+    cookie: 'language',
+    objectNotation: true
+  });
 
   // i18n init parses req for language headers, cookies, etc.
   app.use(i18n.init);
@@ -86,6 +86,7 @@ module.exports = function(config) {
     app.use(errorhandler());
   }
 
+  // Set locale by URL parameter
   app.param('lang', function(req, res, next, lang) {
     if (lang) {
       req.setLocale(lang);
@@ -95,7 +96,7 @@ module.exports = function(config) {
       });
     }
     next();
-  })
+  });
 
   // Routes
   require('./routes')(app, config);
