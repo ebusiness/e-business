@@ -23,7 +23,7 @@ block content
           li.cbp-item(ng-repeat="pictrue in ctrl.pictures")
             a.cbp-caption(href='portfolio_item.html')
               .cbp-caption-defaultWrap
-                img(src='/upload/{{pictrue.fileName}}', alt='', width='100%')
+                img(ng-src='/upload/{{pictrue.fileName}}', alt='', width='100%')
               .cbp-caption-activeWrap
                 .cbp-l-caption-alignCenter
                   .cbp-l-caption-body

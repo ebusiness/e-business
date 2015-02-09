@@ -21,11 +21,20 @@ block content
           .input-group.margin-bottom-20
             span.input-group-addon
               i.fa.fa-envelope-o
-            input.form-control(type='text', ng-model='ctrl.user.email', placeholder=' #{__("login.form.email")}', required)
+            input.form-control(type='email',
+              name='email',
+              placeholder=' #{__("login.form.email")}',
+              ng-model='ctrl.user.email',
+              required)
           .input-group.margin-bottom-20
             span.input-group-addon
               i.fa.fa-key
-            input.form-control(type='password', ng-model='ctrl.user.password', placeholder=' #{__("login.form.password")}', required)
+            input.form-control(type='password',
+              name='password',
+              placeholder=' #{__("login.form.password")}',
+              ng-model='ctrl.user.password',
+              ng-minlength='8'
+              required)
           .contex-bg(style="display:none;")
             p.bg-danger.rounded password error
           .row
@@ -33,7 +42,7 @@ block content
             .col-md-6
               button.btn.btn-u.pull-right(type='submit', ng-disabled='loginForm.$invalid') #{__('login.form.button')}
           hr
-          h4 #{__('login.form.forgotPass')}
-          p
+          p 
+            | #{__('login.form.forgotPass')}
             a.color-green(href='#') #{__('login.form.resetPassLink')}
             |  #{__('login.form.resetpass')}
