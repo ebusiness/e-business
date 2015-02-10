@@ -12,7 +12,7 @@ module.exports = function(grunt) {
           {
             expand: true,
             cwd: 'public/',
-            src: ['components/**', 'css/**', 'img/**'],
+            src: ['components/**', 'css/**', 'img/**', 'js/**', 'unify/**'],
             dest: 'public-build/'
           },
         ],
@@ -61,108 +61,108 @@ module.exports = function(grunt) {
 
       'compile-home': {
         options: {
-          name: "home",
+          name: "js/home",
           baseUrl: "public",
-          out: "./public-build/home.js",
+          out: "./public-build/js/home.js",
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/home.js"
+          mainConfigFile: "./public/js/home.js"
         }
       },
 
       'compile-about-us': {
         options: {
-          name: "about-us",
+          name: "js/about-us",
           baseUrl: "public",
-          out: "./public-build/about-us.js",
+          out: "./public-build/js/about-us.js",
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/about-us.js"
+          mainConfigFile: "./public/js/about-us.js"
         }
       },
 
       'compile-recruitment': {
         options: {
-          name: "recruitment",
+          name: "js/recruitment",
           baseUrl: "public",
-          out: "./public-build/recruitment.js",
+          out: "./public-build/js/recruitment.js",
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/recruitment.js"
+          mainConfigFile: "./public/js/recruitment.js"
         }
       },
 
       'compile-contact': {
         options: {
-          name: "contact",
+          name: "js/contact",
           baseUrl: "public",
-          out: "./public-build/contact.js",
+          out: "./public-build/js/contact.js",
           wrapShim: true,
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/contact.js"
+          mainConfigFile: "./public/js/contact.js"
         }
       },
 
       'compile-login': {
         options: {
-          name: "login",
+          name: "js/login",
           baseUrl: "public",
-          out: "./public-build/login.js",
+          out: "./public-build/js/login.js",
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/login.js"
+          mainConfigFile: "./public/js/login.js"
         }
       },
 
       'compile-common': {
         options: {
-          name: "common",
+          name: "js/common",
           baseUrl: "public",
-          out: "./public-build/common.js",
+          out: "./public-build/js/common.js",
           // optimize: "none",
           preserveLicenseComments: false,
-          mainConfigFile: "./public/common.js"
+          mainConfigFile: "./public/js/common.js"
         }
       },
 
       'compile-home-css': {
         options: {
           optimizeCss: "standard",
-          cssIn: "./public/home.css",
-          out: "./public-build/home.css",
+          cssIn: "./public/css/home.css",
+          out: "./public-build/css/home.css",
         }
       },
 
       'compile-about-us-css': {
         options: {
           optimizeCss: "standard",
-          cssIn: "./public/about-us.css",
-          out: "./public-build/about-us.css",
+          cssIn: "./public/css/about-us.css",
+          out: "./public-build/css/about-us.css",
         }
       },
 
       'compile-contact-css': {
         options: {
           optimizeCss: "standard",
-          cssIn: "./public/contact.css",
-          out: "./public-build/contact.css",
+          cssIn: "./public/css/contact.css",
+          out: "./public-build/css/contact.css",
         }
       },
 
       'compile-login-css': {
         options: {
           optimizeCss: "standard",
-          cssIn: "./public/login.css",
-          out: "./public-build/login.css",
+          cssIn: "./public/css/login.css",
+          out: "./public-build/css/login.css",
         }
       },
 
       'compile-common-css': {
         options: {
           optimizeCss: "standard",
-          cssIn: "./public/common.css",
-          out: "./public-build/common.css",
+          cssIn: "./public/css/common.css",
+          out: "./public-build/css/common.css",
         }
       },
 

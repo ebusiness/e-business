@@ -3,7 +3,7 @@ extends layout
 block css
   // CSS Global Compulsory
   link(rel='stylesheet', href='/components/bootstrap/dist/css/bootstrap.min.css')
-  link(rel='stylesheet', href='/css/style.css')
+  link(rel='stylesheet', href='/unify/style.css')
   // CSS Implementing Plugins
   link(rel='stylesheet', href='/components/simple-line-icons/css/simple-line-icons.css')
   link(rel='stylesheet', href='/components/font-awesome/css/font-awesome.min.css')
@@ -12,7 +12,7 @@ block css
   link(rel='stylesheet', href='/css/custom.css')
 
 block js
-  script(data-main="/admin", src="/components/requirejs/require.js")
+  script(data-main="js/admin", src="/components/requirejs/require.js")
 
 block content
   .content(ng-app="gallery")
