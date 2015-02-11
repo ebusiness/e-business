@@ -10,6 +10,8 @@ requirejs.config({
     'tween-max': 'components/gsap/src/minified/TweenMax.min',
     'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'angular': 'components/angular/angular.min',
+    'selink': 'js/selink/selink',
+    'selink-service': 'js/selink/service/user',
   },
 
   shim: {
@@ -17,6 +19,8 @@ requirejs.config({
     'back2top': ['jquery'],
     'tween-max': ['jquery'],
     'jpreloader': ['jquery'],
+    'selink': ['angular'],
+    'selink-service': ['selink'],
   }
 
 });
@@ -29,7 +33,7 @@ require([
   'back2top',
   'bootstrap',
   'tween-max',
-  'angular'
+  'selink-service'
 ], function(fastclick) {
 
   // element reference
@@ -78,11 +82,11 @@ require([
 
   var handleApp = function() {
 
-    angular.module('login', [])
-      .controller('MainController', ['$http', function($http) {
+    angular.module('login', ['selink'])
+      .controller('MainController', ['UserService', '$location', function(UserService, $location) {
 
         this.submit = function() {
-          $http.post('/login', this.user).then(function(resp) {
+          UserService.login(this.user).then(function(resp) {
             window.location.href = '/admin';
           }, function(resp) {
             $('.contex-bg').slideDown();
