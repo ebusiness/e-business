@@ -19,7 +19,7 @@ head
   // CSS
   block css
 
-body.header-fixed
+body.header-fixed(ng-app="e-business")
 
   // Loader
   #loading
@@ -54,20 +54,20 @@ body.header-fixed
           // Collect the nav links
           .collapse.navbar-collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
-              li(class=(path === "home")?"active":"")
-                a(href='/home')
+              li
+                a(href='#/')
                   | Home
-              li(class=(path === "about-us")?"active":"")
-                a(href='/about-us')
+              li
+                a(href='#/pictures')
                   | 画像管理
-              li(class=(path === "services")?"active":"")
-                a(href='/services')
+              li
+                a(href='#/pages')
                   | ページ管理
-              li(class=(path === "recruitment")?"active":"")
-                a(href='/recruitment')
+              li
+                a(href='#/contacts')
                   | 問合せ管理
-              li(class=(path === "contact")?"active":"")
-                a(href='/contact')
+              li
+                a(href='#/profile')
                   | プロフィール
 
     // Content

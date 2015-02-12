@@ -6,6 +6,7 @@ requirejs.config({
     'jquery': 'components/jquery/dist/jquery',
     'bootstrap': 'components/bootstrap/dist/js/bootstrap',
     'angular': 'components/angular/angular.min',
+    'angular-route': 'components/angular-route/angular-route.min',
     'fastclick': 'components/fastclick/lib/fastclick',
     'back2top': 'components/back-to-top/index',
     'tween-max': 'components/gsap/src/minified/TweenMax.min',
@@ -26,7 +27,9 @@ requirejs.config({
     'jquery.fileupload': 'components/jquery-file-upload/js/jquery.fileupload',
     'angular-upload': 'components/jquery-file-upload/js/jquery.fileupload-angular',
     // File upload end
-    'cubeportfolio': 'components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio'
+    'cubeportfolio': 'components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio',
+    'selink': 'js/selink/selink',
+    'selink-service': 'js/selink/service/user',
   },
 
   shim: {
@@ -34,6 +37,9 @@ requirejs.config({
     'fastclick': ['jquery'],
     'back2top': ['jquery'],
     'tween-max': ['jquery'],
+    'angular-route': ['angular'],
+    'selink': ['angular'],
+    'selink-service': ['selink'],
     'jpreloader': ['jquery'],
     'cubeportfolio': ['jquery'],
   }
@@ -48,7 +54,8 @@ require([
   'back2top',
   'bootstrap',
   'tween-max',
-  'angular',
+  'angular-route',
+  'selink-service',
   'jquery.fileupload',
   'cubeportfolio'
 ], function(fastclick) {
@@ -110,76 +117,89 @@ require([
       }
     });
 
-    angular.module('gallery', [])
+    angular.module('e-business', ['ngRoute', 'selink'])
+      .config(['$routeProvider', function($routeProvider) {
+        $routeProvider.when('/', {
+          template: '<p>page1</p>'
+        }).when('/pictures', {
+          template: '<p>page2</p>'
+        }).when('/pages', {
+          template: '<p>page3</p>'
+        }).when('/contacts', {
+          template: '<p>page4</p>'
+        }).when('/profile', {
+          template: '<p>page5</p>'
+        });
+      }])
       .controller('MainController', ['$http', function($http) {
 
         var self = this;
 
-        $http.get('/pictures').then(function(resp) {
-          console.log(resp);
-          self.pictures = resp.data;
+        // $http.get('/pictures').then(function(resp) {
+        //   console.log(resp);
+        //   self.pictures = resp.data;
 
-          setTimeout(function() {
+        //   setTimeout(function() {
 
-            // init cubeportfolio
-            $('#grid-container').cubeportfolio({
-              defaultFilter: '*',
-              animationType: 'fadeOut',
-              gapHorizontal: 0,
-              gapVertical: 0,
-              gridAdjustment: 'responsive',
-              caption: 'zoom',
-              displayType: 'sequentially',
-              displayTypeSpeed: 100,
-              // lightbox
-              lightboxDelegate: '.cbp-lightbox',
-              lightboxGallery: true,
-              lightboxTitleSrc: 'data-title',
-              lightboxShowCounter: true,
-              // singlePage popup
-              singlePageDelegate: '.cbp-singlePage',
-              singlePageDeeplinking: true,
-              singlePageStickyNavigation: true,
-              singlePageShowCounter: true,
-              singlePageCallback: function(url, element) {
-                // to update singlePage content use the following method: this.updateSinglePage(yourContent)
-              },
-              // singlePageInline
-              singlePageInlineDelegate: '.cbp-singlePageInline',
-              singlePageInlinePosition: 'below',
-              singlePageInlineShowCounter: true,
-              singlePageInlineInFocus: true,
-              singlePageInlineCallback: function(url, element) {
+        //     // init cubeportfolio
+        //     $('#grid-container').cubeportfolio({
+        //       defaultFilter: '*',
+        //       animationType: 'fadeOut',
+        //       gapHorizontal: 0,
+        //       gapVertical: 0,
+        //       gridAdjustment: 'responsive',
+        //       caption: 'zoom',
+        //       displayType: 'sequentially',
+        //       displayTypeSpeed: 100,
+        //       // lightbox
+        //       lightboxDelegate: '.cbp-lightbox',
+        //       lightboxGallery: true,
+        //       lightboxTitleSrc: 'data-title',
+        //       lightboxShowCounter: true,
+        //       // singlePage popup
+        //       singlePageDelegate: '.cbp-singlePage',
+        //       singlePageDeeplinking: true,
+        //       singlePageStickyNavigation: true,
+        //       singlePageShowCounter: true,
+        //       singlePageCallback: function(url, element) {
+        //         // to update singlePage content use the following method: this.updateSinglePage(yourContent)
+        //       },
+        //       // singlePageInline
+        //       singlePageInlineDelegate: '.cbp-singlePageInline',
+        //       singlePageInlinePosition: 'below',
+        //       singlePageInlineShowCounter: true,
+        //       singlePageInlineInFocus: true,
+        //       singlePageInlineCallback: function(url, element) {
 
-                // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
-                var t = this;
+        //         // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
+        //         var t = this;
 
-                $.ajax({
-                    url: url,
-                    type: 'GET',
-                    dataType: 'html',
-                    timeout: 5000
-                  })
-                  .done(function(result) {
+        //         $.ajax({
+        //             url: url,
+        //             type: 'GET',
+        //             dataType: 'html',
+        //             timeout: 5000
+        //           })
+        //           .done(function(result) {
 
-                    t.updateSinglePageInline(result);
+        //             t.updateSinglePageInline(result);
 
-                  })
-                  .fail(function() {
-                    t.updateSinglePageInline("Error! Please refresh the page!");
-                  });
+        //           })
+        //           .fail(function() {
+        //             t.updateSinglePageInline("Error! Please refresh the page!");
+        //           });
 
-              }
-            });
-          }, 1000);
+        //       }
+        //     });
+        //   }, 1000);
 
-        }, function(resp) {
-          console.log(resp);
-        });
+        // }, function(resp) {
+        //   console.log(resp);
+        // });
 
       }]);
 
-    angular.resumeBootstrap(['gallery']);
+    angular.resumeBootstrap(['e-business']);
   };
 
 });

@@ -46,6 +46,10 @@ module.exports = function(app, config) {
   app.post('/login', controller.user.login);
   // User Logout
   app.get('/logout', controller.user.logout);
+  // User Information
+  app.get('/session', checkLoginStatus, function(req, res, next) {
+    res.json(req.user);
+  });
 
   //////////////////////////////////////////////////
   /// Console route
