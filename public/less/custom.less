@@ -9,7 +9,7 @@
 //   -webkit-font-smoothing: antialiased;
 // }
 
-html[lang="ja"] body, h1, h2, h3, h4, h5, h6, p, td, label, button {
+html[lang="ja"] body, h1, h2, h3, h4, h5, h6, p, em, td, label, button {
   font-family: 'Hiragino Kaku Gothic ProN', Meiryo, 'MS PGothic', Sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -22,11 +22,13 @@ html[lang="ja"] body, h1, h2, h3, h4, h5, h6, p, td, label, button {
   z-index: 10000;
 }
 
-input.ng-dirty.ng-valid { 
+input.ng-dirty.ng-valid,
+textarea.ng-dirty.ng-valid { 
   background-color: #f0fff0;
 }
 
-input.ng-dirty.ng-invalid {
+input.ng-dirty.ng-invalid,
+textarea.ng-dirty.ng-invalid {
   background-color: #fff0f0; 
 }
 

@@ -8,6 +8,7 @@ block css
   link(rel='stylesheet', href='/components/simple-line-icons/css/simple-line-icons.css')
   link(rel='stylesheet', href='/components/font-awesome/css/font-awesome.min.css')
   link(rel='stylesheet', href='/components/cube-portfolio/cubeportfolio/css/cubeportfolio.css')
+  link(rel='stylesheet', href='/unify/pages/blog_masonry_3col.css')
   // CSS Customization
   link(rel='stylesheet', href='/css/custom.css')
 
@@ -18,18 +19,6 @@ block content
   .container.content
     .row
       .col-md-3(ng-controller='UserInfoController as info')
+        img.img-responsive.profile-img.margin-bottom-20(src='img/user.jpg', alt='')
         {{info.user.email}}
       .col-md-9(ng-view)
-    //- .fusion-portfolio.wrapper-portfolio-no-space.cbp-5-col
-    //-   input#fileupload(type='file', name='pic', data-url='/pictures', multiple)
-    //-   #grid-container.cbp-l-grid-gallery(ng-controller="MainController as ctrl")
-    //-     ul
-    //-       li.cbp-item(ng-repeat="pictrue in ctrl.pictures")
-    //-         a.cbp-caption(href='portfolio_item.html')
-    //-           .cbp-caption-defaultWrap
-    //-             img(ng-src='/upload/{{pictrue.fileName}}', alt='', width='100%')
-    //-           .cbp-caption-activeWrap
-    //-             .cbp-l-caption-alignCenter
-    //-               .cbp-l-caption-body
-    //-                 .cbp-l-caption-text {{pictrue.name}}
-    //-                 p.cbp-l-caption-desc {{pictrue.createDate}}

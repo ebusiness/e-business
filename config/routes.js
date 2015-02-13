@@ -61,6 +61,9 @@ module.exports = function(app, config) {
   app.get('/pictures', checkLoginStatus, controller.picture.index);
   app.post('/pictures', checkLoginStatus, controller.picture.create);
 
+  app.get('/inquiries', checkLoginStatus, controller.inquiry.index);
+  app.post('/inquiries', controller.inquiry.create);
+
   //////////////////////////////////////////////////
   /// Static route
   //////////////////////////////////////////////////

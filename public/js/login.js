@@ -80,6 +80,7 @@ require([
     });
   };
 
+  // Application
   var handleApp = function() {
 
     angular.module('login', ['selink'])

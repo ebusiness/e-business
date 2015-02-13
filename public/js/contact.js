@@ -11,7 +11,10 @@ requirejs.config({
     'waypoints': 'components/waypoints/waypoints.min',
     'jpreloader': 'components/jpreloader/js/jpreloader.min',
     'async': 'components/requirejs-plugins/src/async',
-    'gmap': 'components/gmaps/gmaps'
+    'gmap': 'components/gmaps/gmaps',
+    'angular': 'components/angular/angular.min',
+    'selink': 'js/selink/selink',
+    'selink-service': 'js/selink/service/inquiry',
   },
 
   shim: {
@@ -21,10 +24,14 @@ requirejs.config({
     'tween-max': ['jquery'],
     'waypoints': ['jquery'],
     'jpreloader': ['jquery'],
-    'gmap': ['async!http://maps.google.com/maps/api/js?sensor=true']
+    'gmap': ['async!http://maps.google.com/maps/api/js?sensor=true'],
+    'selink': ['angular'],
+    'selink-service': ['selink'],
   }
 
 });
+
+window.name = "NG_DEFER_BOOTSTRAP!";
 
 require([
   'fastclick',
@@ -33,7 +40,8 @@ require([
   'bootstrap',
   'tween-max',
   'waypoints',
-  'gmap'
+  'gmap',
+  'selink-service'
 ], function(fastclick) {
 
   // element reference
@@ -44,6 +52,8 @@ require([
 
   var $form = $('#sky-form3');
   var $input = $('section').add('button')
+
+  var tl = new TimelineMax();
 
   // init google map first cause it slow
   var map = new GMaps({
@@ -64,6 +74,7 @@ require([
     handleFastClick();
     handleHeader();
     handleMap();
+    handleApp();
     handleAnimation();
 
     // display content
@@ -127,6 +138,33 @@ require([
 
   };
 
+  // Application
+  var handleApp = function() {
+
+    angular.module('inquiry', ['selink'])
+      .controller('MainController', ['InquiryService', function(InquiryService) {
+
+        this.submit = function() {
+
+          InquiryService.create(this.inquiry).then(function(resp) {
+
+            tl.to($form, 0.3, {
+              alpha: 0,
+              display: 'none'
+            }).to($('.message'), 0.3, {
+              alpha: 1,
+              display: 'block'
+            });
+          }, function(resp) {
+
+          });
+        };
+
+      }]);
+
+    angular.resumeBootstrap(['inquiry']);
+  };
+
   // Animation
   var startAnimation = function() {
 
@@ -141,5 +179,4 @@ require([
       triggerOnce: true
     });
   };
-
 });

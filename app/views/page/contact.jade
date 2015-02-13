@@ -15,39 +15,42 @@ block breadcrumbs
 block content
   // Google Map
   #map.map
-  .container.content
-    .row.margin-bottom-30
+  .container.content(ng-app='inquiry')
+    .row.margin-bottom-30(ng-controller='MainController as ctrl')
       .col-md-9.mb-margin-bottom-30
         .headline
           h2 #{__('contact.form.title')}
         p
           | #{__('contact.form.description')}
         br
-        form#sky-form3.sky-form.sky-changes-3(action='assets/php/demo-contacts-process.php', method='post', novalidate='novalidate')
+        form#sky-form3.sky-form.sky-changes-3(ng-submit='ctrl.submit()', name="inquiryForm")
           fieldset
             .row
               section.col.col-6
                 label.label #{__('contact.form.name')}
-                label.input
+                label.input(ng-class='inquiryForm.name.$error.required && inquiryForm.name.$dirty ? "state-error" : ""')
                   i.icon-append.fa.fa-user
-                  input#name(type='text', name='name')
+                  input#name(type='text', name='name', ng-model='ctrl.inquiry.name', required)
+                em.invalid(for='name', ng-show='inquiryForm.name.$error.required && inquiryForm.name.$dirty') ご氏名を入力してください
               section.col.col-6
                 label.label #{__('contact.form.email')}
-                label.input
+                label.input(ng-class='(inquiryForm.email.$error.required || inquiryForm.email.$error.email) && inquiryForm.email.$dirty ? "state-error" : ""')
                   i.icon-append.fa.fa-envelope-o
-                  input#email(type='email', name='email')
+                  input#email(type='email', name='email', ng-model='ctrl.inquiry.email', required)
+                em.invalid(for='email', ng-show='inquiryForm.email.$error.required && inquiryForm.email.$dirty') メールアドレスを入力してください
+                em.invalid(for='email', ng-show='inquiryForm.email.$error.email && inquiryForm.email.$dirty') 正しいフォーマットでメールアドレスを入力してください
             section
               label.label #{__('contact.form.subject')}
               label.input
                 i.icon-append.fa.fa-tag
-                input#subject(type='text', name='subject')
+                input#subject(type='text', name='subject', ng-model='ctrl.inquiry.subject', required)
             section
               label.label #{__('contact.form.message')}
               label.textarea
                 i.icon-append.fa.fa-comment
-                textarea#message(rows='4', name='message')
+                textarea#message(rows='4', name='message', ng-model='ctrl.inquiry.message', required)
           footer
-            button.btn-u(type='submit') #{__('contact.form.send')}
+            button.btn.btn-u(type='submit', ng-disabled='inquiryForm.$invalid') #{__('contact.form.send')}
           .message
             i.rounded-x.fa.fa-check
             p #{__('contact.form.success')}

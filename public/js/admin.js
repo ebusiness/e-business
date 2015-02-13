@@ -29,7 +29,10 @@ requirejs.config({
     // File upload end
     'cubeportfolio': 'components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio',
     'selink': 'js/selink/selink',
-    'selink-service': 'js/selink/service/user',
+    'selink-user-service': 'js/selink/service/user',
+    'selink-inquiry-service': 'js/selink/service/inquiry',
+    'selink-user-controller': 'js/selink/controller/user',
+    'selink-inquiry-directive': 'js/selink/directive/inquiry',
   },
 
   shim: {
@@ -39,7 +42,10 @@ requirejs.config({
     'tween-max': ['jquery'],
     'angular-route': ['angular'],
     'selink': ['angular'],
-    'selink-service': ['selink'],
+    'selink-user-service': ['selink'],
+    'selink-inquiry-service': ['selink'],
+    'selink-user-controller': ['selink'],
+    'selink-inquiry-directive': ['selink'],
     'jpreloader': ['jquery'],
     'cubeportfolio': ['jquery'],
   }
@@ -55,7 +61,10 @@ require([
   'bootstrap',
   'tween-max',
   'angular-route',
-  'selink-service',
+  'selink-user-service',
+  'selink-inquiry-service',
+  'selink-user-controller',
+  'selink-inquiry-directive',
   'jquery.fileupload',
   'cubeportfolio'
 ], function(fastclick) {
@@ -126,10 +135,20 @@ require([
         }).when('/pages', {
           template: '<p>page3</p>'
         }).when('/contacts', {
-          template: '<p>page4</p>'
+          templateUrl: 'template/contact.html',
+          controller: 'InquiryController as ctrl'
         }).when('/profile', {
           template: '<p>page5</p>'
         });
+      }])
+      .controller('InquiryController', ['InquiryService', function(InquiryService) {
+
+        var self = this;
+
+        InquiryService.index().then(function(response) {
+          self.inquiries = response.data;
+        });
+
       }])
       .controller('MainController', ['$http', function($http) {
 
