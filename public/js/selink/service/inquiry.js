@@ -8,8 +8,15 @@ angular.module('selink')
         return $http.post('/inquiries', user);
       },
 
-      index: function() {
-        return $http.get('/inquiries');
+      index: function(before) {
+
+        console.log(before);
+
+        return $http.get('/inquiries', {
+          params: {
+            before: before
+          }
+        });
       }
     };
 

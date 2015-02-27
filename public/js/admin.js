@@ -5,29 +5,18 @@ requirejs.config({
   paths: {
     'jquery': 'components/jquery/dist/jquery',
     'bootstrap': 'components/bootstrap/dist/js/bootstrap',
-    'angular': 'components/angular/angular.min',
-    'angular-route': 'components/angular-route/angular-route.min',
+    'underscore': 'components/underscore/underscore',
+    'moment': 'components/moment/moment',
+    'angular': 'components/angular/angular',
+    'angular-route': 'components/angular-route/angular-route',
     'fastclick': 'components/fastclick/lib/fastclick',
     'back2top': 'components/back-to-top/index',
-    'tween-max': 'components/gsap/src/minified/TweenMax.min',
-    'jpreloader': 'components/jpreloader/js/jpreloader.min',
-    // File upload start
-    'transport': 'components/jquery-file-upload/js/jquery.iframe-transport',
-    'jquery.ui.widget': 'components/jquery-file-upload/js/vendor/jquery.ui.widget',
-    'jquery.fileupload-image': 'components/jquery-file-upload/js/jquery.fileupload-image',
-    'jquery.fileupload-audio': 'components/jquery-file-upload/js/jquery.fileupload-audio',
-    'jquery.fileupload-video': 'components/jquery-file-upload/js/jquery.fileupload-video',
-    'jquery.fileupload-validate': 'components/jquery-file-upload/js/jquery.fileupload-validate',
-    'jquery.fileupload-process': 'components/jquery-file-upload/js/jquery.fileupload-process',
-    'load-image': 'components/blueimp-load-image/js/load-image',
-    'load-image-meta': 'components/blueimp-load-image/js/load-image-meta',
-    'load-image-exif': 'components/blueimp-load-image/js/load-image-exif',
-    'load-image-ios': 'components/blueimp-load-image/js/load-image-ios',
-    'canvas-to-blob': 'components/blueimp-canvas-to-blob/js/canvas-to-blob',
-    'jquery.fileupload': 'components/jquery-file-upload/js/jquery.fileupload',
+    'tween-max': 'components/gsap/src/uncompressed/TweenMax',
+    'jpreloader': 'components/jpreloader/js/jpreloader',
     'angular-upload': 'components/jquery-file-upload/js/jquery.fileupload-angular',
-    // File upload end
     'cubeportfolio': 'components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio',
+    'isotope': 'components/isotope/dist/isotope.pkgd',
+    'infinite': 'components/ngInfiniteScroll/build/ng-infinite-scroll',
     'selink': 'js/selink/selink',
     'selink-user-service': 'js/selink/service/user',
     'selink-inquiry-service': 'js/selink/service/inquiry',
@@ -41,6 +30,7 @@ requirejs.config({
     'back2top': ['jquery'],
     'tween-max': ['jquery'],
     'angular-route': ['angular'],
+    'infinite': ['angular'],
     'selink': ['angular'],
     'selink-user-service': ['selink'],
     'selink-inquiry-service': ['selink'],
@@ -56,18 +46,21 @@ window.name = "NG_DEFER_BOOTSTRAP!";
 
 require([
   'fastclick',
+  'isotope',
+  'underscore',
+  'moment',
   'jpreloader',
   'back2top',
   'bootstrap',
   'tween-max',
   'angular-route',
+  'infinite',
   'selink-user-service',
   'selink-inquiry-service',
   'selink-user-controller',
   'selink-inquiry-directive',
-  'jquery.fileupload',
   'cubeportfolio'
-], function(fastclick) {
+], function(fastclick, isotope) {
 
   // element reference
   var $wrapper = $('.wrapper');
@@ -116,17 +109,7 @@ require([
   // Application
   var handleApp = function() {
 
-    $('#fileupload').fileupload({
-      dataType: 'json',
-      done: function(e, data) {
-        console.log(data);
-        // $.each(data.result.files, function(index, file) {
-        //   $('<p/>').text(file.name).appendTo(document.body);
-        // });
-      }
-    });
-
-    angular.module('e-business', ['ngRoute', 'selink'])
+    angular.module('e-business', ['ngRoute', 'infinite-scroll', 'selink'])
       .config(['$routeProvider', function($routeProvider) {
         $routeProvider.when('/', {
           template: '<p>page1</p>'
@@ -141,81 +124,27 @@ require([
           template: '<p>page5</p>'
         });
       }])
-      .controller('InquiryController', ['InquiryService', function(InquiryService) {
+      .controller('InquiryController', ['$scope', 'InquiryService', function($scope, InquiryService) {
 
         var self = this;
 
-        InquiryService.index().then(function(response) {
-          self.inquiries = response.data;
-        });
+        self.inquiries = [];
+        self.isLoading = false;
+
+        self.fetch = function() {
+          self.isLoading = true;
+          InquiryService.index(self.lastCreateDate).then(function(response) {
+            var inquiries = response.data
+            self.inquiries = self.inquiries.concat(inquiries);
+            if (inquiries.length > 0)
+              self.lastCreateDate = _.last(inquiries).createDate;
+            self.isLoading = false;
+          });
+        };
 
       }])
       .controller('MainController', ['$http', function($http) {
-
         var self = this;
-
-        // $http.get('/pictures').then(function(resp) {
-        //   console.log(resp);
-        //   self.pictures = resp.data;
-
-        //   setTimeout(function() {
-
-        //     // init cubeportfolio
-        //     $('#grid-container').cubeportfolio({
-        //       defaultFilter: '*',
-        //       animationType: 'fadeOut',
-        //       gapHorizontal: 0,
-        //       gapVertical: 0,
-        //       gridAdjustment: 'responsive',
-        //       caption: 'zoom',
-        //       displayType: 'sequentially',
-        //       displayTypeSpeed: 100,
-        //       // lightbox
-        //       lightboxDelegate: '.cbp-lightbox',
-        //       lightboxGallery: true,
-        //       lightboxTitleSrc: 'data-title',
-        //       lightboxShowCounter: true,
-        //       // singlePage popup
-        //       singlePageDelegate: '.cbp-singlePage',
-        //       singlePageDeeplinking: true,
-        //       singlePageStickyNavigation: true,
-        //       singlePageShowCounter: true,
-        //       singlePageCallback: function(url, element) {
-        //         // to update singlePage content use the following method: this.updateSinglePage(yourContent)
-        //       },
-        //       // singlePageInline
-        //       singlePageInlineDelegate: '.cbp-singlePageInline',
-        //       singlePageInlinePosition: 'below',
-        //       singlePageInlineShowCounter: true,
-        //       singlePageInlineInFocus: true,
-        //       singlePageInlineCallback: function(url, element) {
-
-        //         // to update singlePageInline content use the following method: this.updateSinglePageInline(yourContent)
-        //         var t = this;
-
-        //         $.ajax({
-        //             url: url,
-        //             type: 'GET',
-        //             dataType: 'html',
-        //             timeout: 5000
-        //           })
-        //           .done(function(result) {
-
-        //             t.updateSinglePageInline(result);
-
-        //           })
-        //           .fail(function() {
-        //             t.updateSinglePageInline("Error! Please refresh the page!");
-        //           });
-
-        //       }
-        //     });
-        //   }, 1000);
-
-        // }, function(resp) {
-        //   console.log(resp);
-        // });
-
       }]);
 
     angular.resumeBootstrap(['e-business']);
