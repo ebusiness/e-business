@@ -14,9 +14,12 @@ html[lang="ja"] body, h1, h2, h3, h4, h5, h6, p, em, td, label, button {
   -webkit-font-smoothing: antialiased;
 }
 
-/*.header .container > .navbar-header, .header .container-fluid > .navbar-header, .header .container > .navbar-collapse, .header .container-fluid > .navbar-collapse {
-    margin-bottom: -20px;
-}*/
+.header .navbar-default .navbar-nav > li > a:hover,
+.header .navbar-default .navbar-nav > .active > a {
+  bottom: -2px;
+  position: relative;
+  border-bottom: solid 2px #3498db;
+}
 
 .modal {
   z-index: 10000;
@@ -36,8 +39,25 @@ textarea.ng-dirty.ng-invalid {
   padding: 20px 0px;
 }
 
+@media (max-width: 768px) {
+  #sub-cate .col-sm-4 {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 #company-info .service {
   margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+  #greeting #photo {
+    margin-left: 20px;
+  }
+}
+
+#greeting small {
+  margin-top: 30px;
 }
 
 #organiztion table {
@@ -216,7 +236,7 @@ textarea.ng-dirty.ng-invalid {
   height: 5px !important;
   top: 0;
   left: 0;
-  background-color: #81b71a;
+  background-color: #3498db;
 }
 #jprePercentage {
   color: #424242;

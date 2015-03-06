@@ -136,9 +136,10 @@ require([
           InquiryService.index(self.lastCreateDate).then(function(response) {
             var inquiries = response.data
             self.inquiries = self.inquiries.concat(inquiries);
-            if (inquiries.length > 0)
+            if (inquiries.length > 0) {
               self.lastCreateDate = _.last(inquiries).createDate;
-            self.isLoading = false;
+              self.isLoading = false;
+            }
           });
         };
 

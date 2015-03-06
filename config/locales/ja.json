@@ -10,6 +10,7 @@
     "login": "ログイン"
   },
   "menu": {
+    "home": "トップ",
     "about": "会社概要",
     "service": "事業内容",
     "recruitment": "採用情報",
@@ -82,7 +83,7 @@
   },
   "aboutus": {
     "breadcrumb": {
-      "title": "株式会社 イー・ビジネス"
+      "title": "会社概要"
     },
     "message": {
       "title": "社長からのメッセージ",
@@ -93,14 +94,14 @@
       "paragraph5": "社長取締役　花 東江"
     },
     "info": {
-      "title": "会社概要",
       "date": {
         "title": "設立日",
         "content": "2007年6月（平成19年6月）"
       },
       "ceo": {
         "title": "代表者",
-        "content": "社長取締役 花東江"
+        "content": "社長取締役 花東江",
+        "btn": "ご挨拶"
       },
       "address": {
         "title": "所在地",
@@ -114,7 +115,8 @@
       "employee": {
         "title": "従業員数",
         "unit": "人",
-        "date": "平成27年1月現在"
+        "date": "平成27年1月現在",
+        "btn": "会社組織図"
       },
       "branch": {
         "title": "海外支社",

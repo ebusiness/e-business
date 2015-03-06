@@ -1,10 +1,10 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="css/about-us.css")
+  link(rel="stylesheet", href="/css/about-us.css")
 
 block js
-  script(data-main="js/about-us", src="/components/requirejs/require.js")
+  script(data-main="/js/about-us", src="/components/requirejs/require.js")
 
 block breadcrumbs
   .breadcrumbs
@@ -13,20 +13,23 @@ block breadcrumbs
 
 block content
 
-  .container.content
-    blockquote.hero-unify.row.shadow-wrapper
-      h2.color-green #{__('aboutus.message.title')}
-      .col-sm-4.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
-        img.img-responsive.margin-bottom-10(src='/img/main/6.jpg', alt='')
-      p #{__('aboutus.message.paragraph1')}
-      p #{__('aboutus.message.paragraph2')}
-      p #{__('aboutus.message.paragraph3')}
-      p #{__('aboutus.message.paragraph4')}
-      small #{__('aboutus.message.paragraph5')}
+  #greeting.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='greetingLabel', aria-hidden='true')
+    .modal-dialog.modal-lg
+      .modal-content
+        .modal-header
+          button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+          h4#greetingLabel.modal-title #{__('aboutus.message.title')}
+        .modal-body
+          blockquote.row.shadow-wrapper
+            #photo.col-sm-6.col-md-4.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
+              img.img-responsive.margin-bottom-10(src='/img/main/6.jpg', alt='')
+            p #{__('aboutus.message.paragraph1')}
+            p #{__('aboutus.message.paragraph2')}
+            p #{__('aboutus.message.paragraph3')}
+            p #{__('aboutus.message.paragraph4')}
+            small #{__('aboutus.message.paragraph5')}
 
   #company-info.container.content
-    .heading.heading-v4.margin-bottom-20
-      h2.color-green #{__('aboutus.info.title')}
     .row
       .col-sm-4
         .service
@@ -40,6 +43,7 @@ block content
           .desc
             h4.no-top-space #{__('aboutus.info.ceo.title')}
             p #{__('aboutus.info.ceo.content')}
+            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#greeting") #{__('aboutus.info.ceo.btn')}
       .col-sm-4
         .service
           i.service-icon.icon-pointer
@@ -65,7 +69,7 @@ block content
               span.counter 185
               | #{__('aboutus.info.employee.unit')}
             p #{__('aboutus.info.employee.date')}
-            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#organiztion") 会社組織図
+            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#organiztion") #{__('aboutus.info.employee.btn')}
       .col-sm-4
         .service
           i.service-icon.icon-globe-alt

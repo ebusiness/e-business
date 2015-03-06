@@ -2,4 +2,5 @@
 @import url(../components/simple-line-icons/css/simple-line-icons.css);
 @import url(../components/font-awesome/css/font-awesome.min.css);
 @import url(../unify/style.css);
+@import url(../unify/theme-colors/blue.css);
 @import url(custom.css);

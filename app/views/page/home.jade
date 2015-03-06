@@ -1,28 +1,28 @@
 extends ../layout
 
 block css
-  link(rel="stylesheet", href="css/home.css")
+  link(rel="stylesheet", href="/css/home.css")
 
 block js
-  script(data-main="js/home", src="/components/requirejs/require.js")
+  script(data-main="/js/home", src="/components/requirejs/require.js")
 
 block slider
   .tp-banner-container
     .tp-banner
       ul
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title1')}")
+        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title1')}")
           img(src='/img/sliders/4.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
             | #{__('home.slider.statement1')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
             | #{__('home.slider.statement2')}
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title2')}")
+        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title2')}")
           img(src='/img/sliders/3.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
             | #{__('home.slider.statement3')}
           .tp-caption.revolution-ch1.sft(data-x='center', data-hoffset='0', data-y='190', data-speed='1400', data-start='2000', data-easing='Power4.easeOut', data-endspeed='300', data-endeasing='Power1.easeIn', data-captionhidden='off', style='z-index: 6;')
             | #{__('home.slider.statement4')}
-        li.revolution-mch-1(data-transition='fade', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title3')}")
+        li.revolution-mch-1(data-transition='random', data-slotamount='5', data-masterspeed='1000', data-title="#{__('home.slider.title3')}")
           img(src='/img/sliders/2.jpg', alt='darkblurbg', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
           .tp-caption.revolution-ch1.sft.start(data-x='center', data-hoffset='0', data-y='100', data-speed='1500', data-start='500', data-easing='Back.easeInOut', data-endeasing='Power1.easeIn', data-endspeed='300')
             | #{__('home.slider.statement5')}
@@ -48,7 +48,7 @@ block breadcrumbs
 block content
   .container.content
     #sub-cate.row.margin-bottom-20
-      .col-md-3.col-xs-6
+      .col-sm-4
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
@@ -57,7 +57,7 @@ block content
           .caption
             h3
               a.hover-effect(href='about-us') #{__('home.subCate.sub1')}
-      .col-md-3.col-xs-6
+      .col-sm-4
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
@@ -66,7 +66,7 @@ block content
           .caption
             h3
               a.hover-effect(href='services') #{__('home.subCate.sub2')}
-      .col-md-3.col-xs-6
+      .col-sm-4
         .thumbnails.thumbnail-style.thumbnail-kenburn
           .thumbnail-img
             .overflow-hidden
@@ -75,12 +75,12 @@ block content
           .caption
             h3
               a.hover-effect(href='recruitment') #{__('home.subCate.sub3')}
-      .col-md-3.col-xs-6
-        .thumbnails.thumbnail-style.thumbnail-kenburn
-          .thumbnail-img
-            .overflow-hidden
-              img.img-responsive(src='/img/main/11.jpg', alt='')
-            a.btn-more.hover-effect(href='contact') read more +
-          .caption
-            h3
-              a.hover-effect(href='contact') #{__('home.subCate.sub4')}
+      //- .col-md-4.col-xs-6
+      //-   .thumbnails.thumbnail-style.thumbnail-kenburn
+      //-     .thumbnail-img
+      //-       .overflow-hidden
+      //-         img.img-responsive(src='/img/main/11.jpg', alt='')
+      //-       a.btn-more.hover-effect(href='contact') read more +
+      //-     .caption
+      //-       h3
+      //-         a.hover-effect(href='contact') #{__('home.subCate.sub4')}

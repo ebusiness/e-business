@@ -1,369 +1,371 @@
 {
-	"title": "E-Business Inc.",
-	"topBar": {
-		"language": "Language",
-		"languageOpt": {
-			"ja": "Japaneses",
-			"en": "English",
-			"zh": "Chinese"
-		},
-		"login": "Login"
-	},
-	"menu": {
-		"about": "About US",
-		"service": "Our Service",
-		"recruitment": "Recruitment",
-		"contact": "Contact Us"
-	},
-	"footer": {
-		"brand": "E-Business Inc.",
-		"statement": "For more beautiful society and individual life, a creative IT organization with evolution.",
-		"news": {
-			"header": "News",
-			"news1": {
-				"title": "ISO27001(ISMS) certification acquired",
-				"date": "May 30, 2014"
-			},
-			"news2": {
-				"title": "HQ move to Minatoku-Shiba Tokyo",
-				"date": "January 8, 2014"
-			},
-			"news3": {
-				"title": "Capital increased to 18.5 million yen",
-				"date": "December 20, 2013"
-			}
-		},
-		"links": {
-			"header": "Links",
-			"link1": "About US",
-			"link2": "Our Service",
-			"link3": "Recruitment",
-			"link4": "Contact Us"
-		},
-		"contact": {
-			"header": "Contact",
-			"address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F",
-			"zipCode": "〒 105-0014",
-			"tel": "Tel: 03-6809-3235",
-			"fax": "Fax: 03-6809-3238",
-			"email": "Email: "
-		}
-	},
-	"copyright": {
-		"statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
-		"privacy": "Privacy policy",
-		"terms": "Announcement about usage of personal information",
-		"margin": "The margin rate of dispatch workers"
-	},
-	"home": {
-		"slider": {
-			"title1": "Company Vision",
-			"title2": "Management Philosophy",
-			"title3": "To a great international company",
-			"statement1": "For more beautiful society and individual life",
-			"statement2": "To creative IT organization with evolution",
-			"statement3": "First priority -- Partner's happiness",
-			"statement4": "Maximization -- Customer's satisfaction",
-			"statement5": "With the view of global",
-			"statement6": "pursuit more convenience for customer",
-			"statement7": "provide high quality IT service"
-		},
-		"breadcrumb": {
-			"title": "E-Business Inc.",
-			"statement": "home.breadcrumb.statement",
-			"contact": "Contact"
-		},
-		"subCate": {
-			"sub1": "About US",
-			"sub2": "Our Service",
-			"sub3": "Recruitment",
-			"sub4": "Contact Us"
-		}
-	},
-	"aboutus": {
-		"breadcrumb": {
-			"title": "E-Business Inc."
-		},
-		"message": {
-			"title": "Messages From Representative",
-			"paragraph1": "In the short 8 years since E-Business was established, the global depression, the great earthquake in east Japan, Abenomics... We expirenced lots of intense changes of the society. With the support of our customers and partners, we conquered all of those difficulties, and finally meet up with the vigorous 8th year. Please allow me express my appreciation to all of our friends.",
-			"paragraph2": "As our society progressing forward, the revolution in IT industry happened even faster, and we deeply felt the fierceness of modern company competition. With such sense of crisis, we think it is very important to follow up to the trend, imporve our internal communicate and initiative.",
-			"paragraph3": "To build a more professional and more reliable company, and also for the profits of our customers and employees, we will take new challenges and innovations as usual, keep the endless self improvement as daily task.",
-			"paragraph4": "In the coming days, we sincerely need every precious instructions and suggestions from all of our friends.",
-			"paragraph5": "CEO of E-Business Inc. Hua DongJiang"
-		},
-		"info": {
-			"title": "About E-Business Inc.",
-			"date": {
-				"title": "Found Date",
-				"content": "June 2007"
-			},
-			"ceo": {
-				"title": "Representative",
-				"content": "CEO Hua DongJiang"
-			},
-			"address": {
-				"title": "Address",
-				"content": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
-			},
-			"capital": {
-				"title": "Capital",
-				"unit": " Man Yen",
-				"date": "Up to Jan. 2015"
-			},
-			"employee": {
-				"title": "Employees",
-				"unit": " ",
-				"date": "Up to Jan. 2015"
-			},
-			"branch": {
-				"title": "Branch",
-				"content": "YiShangGongChuang Inc. DaiLian, China"
-			},
-			"profit": {
-				"title": "Last Year Sales",
-				"unit": " Oku Yen",
-				"date": "2014 fiscal year"
-			},
-			"profit2": {
-				"title": "This Year Sales",
-				"unit": " Oku Yen",
-				"date": "2015 fiscal year estimate"
-			},
-			"certification": {
-				"title": " Authentication",
-				"name1": " Qualification of General Labor Dispatch",
-				"name2": " Qualification of General Competition Auction",
-				"name3": " Management Innovation Certification",
-				"name4": " Privacy Mark",
-				"name5": " ISO27001(ISMS) Certification"
-			}
-		},
-		"profit": "Sales Achievement",
-		"organization": "Our Organization",
-		"customer": {
-			"title": "Our Customers",
-			"name1": "Information Services International-Dentsu, Ltd.",
-			"name2": "IX Knowledge Inc.",
-			"name3": "DTS CORPORATION",
-			"name4": "NSD CO., LTD.",
-			"name5": "TDC SOFTWARE ENGINEERING Inc.",
-			"name6": "Fujikura　Ltd.",
-			"name7": "TouHou System Science Ltd.",
-			"name8": "Hitachi Solutions, Ltd."
-		},
-		"history": {
-			"title": "Our History",
-			"event1": {
-				"title": "Capital increased to 30.5 million yen",
-				"date": " Jan 2015"
-			},
-			"event2": {
-				"title": "Acquired ISO27001(ISMS) Certification",
-				"content": "aboutus.history.event2.content",
-				"date": " May 30 2014"
-			},
-			"event3": {
-				"title": "Established YiShangGongChuang Inc. in DaiLian China",
-				"content": "aboutus.history.event3.content",
-				"date": " Apr 4 2014",
-				"btn": "YiShangGongChuang"
-			},
-			"event4": {
-				"title": "HQ moved to Minatoku-Shiba Tokyo",
-				"content": "As the business grow, the HQ moved to Minatoku-Shiba Tokyo.",
-				"date": " Jan 2014",
-				"btn": "Access"
-			},
-			"event5": {
-				"title": "Capital increased to 18.5 million yen",
-				"date": " July 2013"
-			},
-			"event6": {
-				"title": "Acquired General Competition Auction Qualification",
-				"content": "aboutus.history.event6.content",
-				"date": " Apr 2012"
-			},
-			"event7": {
-				"title": "Acquired Privacy Mark",
-				"content": "aboutus.history.event7.content",
-				"date": " Mar 2012"
-			},
-			"event8": {
-				"title": "Appointed as representative of China-Japan trade communicate acgency",
-				"content": "Our CEO Mr. Hua DongJiang, as the invitation of the goverment of YanCheng City Chian, appointed as representative of China-Japan trade communicate acgency.",
-				"date": " Sept 2009"
-			},
-			"event9": {
-				"title": "Acquired Management Innovation Certification",
-				"content": "aboutus.history.event9.content",
-				"date": " Aug 2009",
-				"btn": "Authorization of management innovation plan Aug 2009"
-			},
-			"event10": {
-				"title": "Found",
-				"content": "E-Business Inc. was founded in Chiyoda Tokyo, with registered capital 8 million yen.",
-				"date": " June 2007"
-			}
-		}
-	},
-	"recruitment": {
-		"breadcrumb": {
-			"title": "Recruitment"
-		},
-		"info": {
-			"employ": {
-				"title": "Type of Employment",
-				"content": "Full-time employee, Contract employee"
-			},
-			"education": {
-				"title": "Educational Background",
-				"content": "Technical school graduate or above",
-				"remark": "* 2 years working expirence needed in case of high school graduate "
-			},
-			"workplace": {
-				"title": "Work locations",
-				"content": "Tokyo, Yokohama, Chiba",
-				"remark": "* Decide according to your current residence"
-			},
-			"category": {
-				"title": "Positions",
-				"content": "Project manager, Project leader, System engineer, programmer"
-			},
-			"job": {
-				"title": "Job Description",
-				"content1": "Application design/development for large-sacle computer.",
-				"remark1": " ",
-				"content2": "Application design/development for Windows systems.",
-				"remark2": " "
-			},
-			"qualification": {
-				"title": "Application Qualification",
-				"content1": "Graduate of IT relate technical school or college/university.",
-				"content2": "22 - 38 years old expirencer in case of career change.",
-				"remark": " "
-			},
-			"application": {
-				"title": "Application Method",
-				"content": "Please fill the resume template and mail to: saiyou@e-business.co.jp"
-			},
-			"selection": {
-				"title": "Selection Method",
-				"content": "Resume selection, interviews"
-			},
-			"holiday": {
-				"title": "Leave",
-				"content": "Two days off per week, national holiday",
-				"remark": "* May adjust according to customer"
-			},
-			"contact": {
-				"title": "Consultation"
-			}
-		},
-		"download": "Download Resume Template",
-		"agreement": {
-			"title": "Announcement about private information",
-			"info1": {
-				"title": "The purpose of using and providing",
-				"content": "The personal information we required from you like name, birth day, address etc. are used and only used in the process of our recruitment. We will not publish or transfer your private information for other purpose."
-			},
-			"info2": {
-				"title": "The usage of private information",
-				"content": "The E-Business Inc. will in charge of the management of your private information. As our recruitment events finish, your private information will be eliminate/delete by us as part of our responsibility."
-			},
-			"info3": {
-				"title": "The range of private information",
-				"content": "The personal information we required are limited in the minimun range for finish recruitment events. If you don't agree with this announcement, we may not accept your application."
-			},
-			"info4": {
-				"title": "Publish, modification and elimination",
-				"content": "You can ask us to publish your private information to 3rd-party. and you can also ask us to modifty or delete the published information. In such cases, please contact us with the method below."
-			},
-			"info5": {
-				"title": "Contact",
-				"content": "To publish, modify or delete your private information, plases contact us with: ",
-				"contact": " E-Business Inc.",
-				"window": " Hua DongJiang",
-				"tel": " Tel: ",
-				"fax": " Fax: "
-			},
-			"disagree": "disagree",
-			"agree": "agree"
-		},
-		"voices": {
-			"title": "Employee's Voices",
-			"voice1": {
-				"content": "recruitment.voices.voice1.content",
-				"name": "Peter",
-				"position": "Sales Division 1"
-			},
-			"voice2": {
-				"content": "recruitment.voices.voice2.content",
-				"name": "John",
-				"position": "Product Dision 2"
-			},
-			"voice3": {
-				"content": "recruitment.voices.voice3.content",
-				"name": "Lisa",
-				"position": "HR"
-			}
-		},
-		"photos": {
-			"title": "Life in E-Business",
-			"title1": "Project leader training",
-			"title2": "Learning new skills",
-			"title3": "Education for fresher",
-			"title4": "iOS education 1",
-			"title5": "iOS education 2",
-			"title6": "Ready for Babeqe",
-			"title7": "A fun party",
-			"title8": "Warm like home",
-			"title9": "Taste the tasty",
-			"title10": "The happy timie in E-Business"
-		}
-	},
-	"contact": {
-		"breadcrumb": {
-			"title": "Contact Us"
-		},
-		"form": {
-			"title": "Contact Us",
-			"description": "If you have questions, please feel free to contact us. Fill the form below and press send button.",
-			"name": "Your Name",
-			"email": "Your E-mail",
-			"subject": "Subject",
-			"message": "Message",
-			"send": "Send",
-			"success": "contact.form.success"
-		},
-		"info": {
-			"title": "Guide",
-			"address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
-		},
-		"time": {
-			"title": "Office Hours",
-			"workday": "Mon-Fri:",
-			"saturday": "Sat:",
-			"sunday": "Sun:",
-			"rest": " Close"
-		}
-	},
-	"login": {
-		"breadcrumb": {
-			"title": "System Login"
-		},
-		"form": {
-			"title": "Login",
-			"email": "E-mail address",
-			"password": "Password",
-			"button": "Login",
-			"forgotPass": "Forgot password?",
-			"resetPassLink": "Click here ",
-			"resetpass": "to reset your password"
-		}
-	},
-	"error": {
-		"404": "Sorry, the page your requested is not exists. Please click the button below back to home page.",
-		"backBtn": "Back Home"
-	}
+  "title": "E-Business Inc.",
+  "topBar": {
+    "language": "Language",
+    "languageOpt": {
+      "ja": "Japaneses",
+      "en": "English",
+      "zh": "Chinese"
+    },
+    "login": "Login"
+  },
+  "menu": {
+    "home": "HOME",
+    "about": "About US",
+    "service": "Our Service",
+    "recruitment": "Recruitment",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "brand": "E-Business Inc.",
+    "statement": "For more beautiful society and individual life, a creative IT organization with evolution.",
+    "news": {
+      "header": "News",
+      "news1": {
+        "title": "ISO27001(ISMS) certification acquired",
+        "date": "May 30, 2014"
+      },
+      "news2": {
+        "title": "HQ move to Minatoku-Shiba Tokyo",
+        "date": "January 8, 2014"
+      },
+      "news3": {
+        "title": "Capital increased to 18.5 million yen",
+        "date": "December 20, 2013"
+      }
+    },
+    "links": {
+      "header": "Links",
+      "link1": "About US",
+      "link2": "Our Service",
+      "link3": "Recruitment",
+      "link4": "Contact Us"
+    },
+    "contact": {
+      "header": "Contact",
+      "address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F",
+      "zipCode": "〒 105-0014",
+      "tel": "Tel: 03-6809-3235",
+      "fax": "Fax: 03-6809-3238",
+      "email": "Email: "
+    }
+  },
+  "copyright": {
+    "statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Announcement about usage of personal information",
+    "margin": "The margin rate of dispatch workers"
+  },
+  "home": {
+    "slider": {
+      "title1": "Company Vision",
+      "title2": "Management Philosophy",
+      "title3": "To a great international company",
+      "statement1": "For more beautiful society and individual life",
+      "statement2": "To creative IT organization with evolution",
+      "statement3": "First priority -- Partner's happiness",
+      "statement4": "Maximization -- Customer's satisfaction",
+      "statement5": "With the view of global",
+      "statement6": "pursuit more convenience for customer",
+      "statement7": "provide high quality IT service"
+    },
+    "breadcrumb": {
+      "title": "E-Business Inc.",
+      "statement": "home.breadcrumb.statement",
+      "contact": "Contact"
+    },
+    "subCate": {
+      "sub1": "About US",
+      "sub2": "Our Service",
+      "sub3": "Recruitment",
+      "sub4": "Contact Us"
+    }
+  },
+  "aboutus": {
+    "breadcrumb": {
+      "title": "About E-Business Inc."
+    },
+    "message": {
+      "title": "Messages From Representative",
+      "paragraph1": "In the short 8 years since E-Business was established, the global depression, the great earthquake in east Japan, Abenomics... We expirenced lots of intense changes of the society. With the support of our customers and partners, we conquered all of those difficulties, and finally meet up with the vigorous 8th year. Please allow me express my appreciation to all of our friends.",
+      "paragraph2": "As our society progressing forward, the revolution in IT industry happened even faster, and we deeply felt the fierceness of modern company competition. With such sense of crisis, we think it is very important to follow up to the trend, imporve our internal communicate and initiative.",
+      "paragraph3": "To build a more professional and more reliable company, and also for the profits of our customers and employees, we will take new challenges and innovations as usual, keep the endless self improvement as daily task.",
+      "paragraph4": "In the coming days, we sincerely need every precious instructions and suggestions from all of our friends.",
+      "paragraph5": "CEO of E-Business Inc. Hua DongJiang"
+    },
+    "info": {
+      "date": {
+        "title": "Found Date",
+        "content": "June 2007"
+      },
+      "ceo": {
+        "title": "Representative",
+        "content": "CEO Hua DongJiang",
+        "btn": "Messge from CEO"
+      },
+      "address": {
+        "title": "Address",
+        "content": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
+      },
+      "capital": {
+        "title": "Capital",
+        "unit": " Man Yen",
+        "date": "Up to Jan. 2015"
+      },
+      "employee": {
+        "title": "Employees",
+        "unit": " ",
+        "date": "Up to Jan. 2015",
+        "btn": "Organization Chart"
+      },
+      "branch": {
+        "title": "Branch",
+        "content": "YiShangGongChuang Inc. DaiLian, China"
+      },
+      "profit": {
+        "title": "Last Year Sales",
+        "unit": " Oku Yen",
+        "date": "2014 fiscal year"
+      },
+      "profit2": {
+        "title": "This Year Sales",
+        "unit": " Oku Yen",
+        "date": "2015 fiscal year estimate"
+      },
+      "certification": {
+        "title": " Authentication",
+        "name1": " Qualification of General Labor Dispatch",
+        "name2": " Qualification of General Competition Auction",
+        "name3": " Management Innovation Certification",
+        "name4": " Privacy Mark",
+        "name5": " ISO27001(ISMS) Certification"
+      }
+    },
+    "profit": "Sales Achievement",
+    "organization": "Our Organization",
+    "customer": {
+      "title": "Our Customers",
+      "name1": "Information Services International-Dentsu, Ltd.",
+      "name2": "IX Knowledge Inc.",
+      "name3": "DTS CORPORATION",
+      "name4": "NSD CO., LTD.",
+      "name5": "TDC SOFTWARE ENGINEERING Inc.",
+      "name6": "Fujikura　Ltd.",
+      "name7": "TouHou System Science Ltd.",
+      "name8": "Hitachi Solutions, Ltd."
+    },
+    "history": {
+      "title": "Our History",
+      "event1": {
+        "title": "Capital increased to 30.5 million yen",
+        "date": " Jan 2015"
+      },
+      "event2": {
+        "title": "Acquired ISO27001(ISMS) Certification",
+        "content": "aboutus.history.event2.content",
+        "date": " May 30 2014"
+      },
+      "event3": {
+        "title": "Established YiShangGongChuang Inc. in DaiLian China",
+        "content": "aboutus.history.event3.content",
+        "date": " Apr 4 2014",
+        "btn": "YiShangGongChuang"
+      },
+      "event4": {
+        "title": "HQ moved to Minatoku-Shiba Tokyo",
+        "content": "As the business grow, the HQ moved to Minatoku-Shiba Tokyo.",
+        "date": " Jan 2014",
+        "btn": "Access"
+      },
+      "event5": {
+        "title": "Capital increased to 18.5 million yen",
+        "date": " July 2013"
+      },
+      "event6": {
+        "title": "Acquired General Competition Auction Qualification",
+        "content": "aboutus.history.event6.content",
+        "date": " Apr 2012"
+      },
+      "event7": {
+        "title": "Acquired Privacy Mark",
+        "content": "aboutus.history.event7.content",
+        "date": " Mar 2012"
+      },
+      "event8": {
+        "title": "Appointed as representative of China-Japan trade communicate acgency",
+        "content": "Our CEO Mr. Hua DongJiang, as the invitation of the goverment of YanCheng City Chian, appointed as representative of China-Japan trade communicate acgency.",
+        "date": " Sept 2009"
+      },
+      "event9": {
+        "title": "Acquired Management Innovation Certification",
+        "content": "aboutus.history.event9.content",
+        "date": " Aug 2009",
+        "btn": "Authorization of management innovation plan Aug 2009"
+      },
+      "event10": {
+        "title": "Found",
+        "content": "E-Business Inc. was founded in Chiyoda Tokyo, with registered capital 8 million yen.",
+        "date": " June 2007"
+      }
+    }
+  },
+  "recruitment": {
+    "breadcrumb": {
+      "title": "Recruitment"
+    },
+    "info": {
+      "employ": {
+        "title": "Type of Employment",
+        "content": "Full-time employee, Contract employee"
+      },
+      "education": {
+        "title": "Educational Background",
+        "content": "Technical school graduate or above",
+        "remark": "* 2 years working expirence needed in case of high school graduate "
+      },
+      "workplace": {
+        "title": "Work locations",
+        "content": "Tokyo, Yokohama, Chiba",
+        "remark": "* Decide according to your current residence"
+      },
+      "category": {
+        "title": "Positions",
+        "content": "Project manager, Project leader, System engineer, programmer"
+      },
+      "job": {
+        "title": "Job Description",
+        "content1": "Application design/development for large-sacle computer.",
+        "remark1": " ",
+        "content2": "Application design/development for Windows systems.",
+        "remark2": " "
+      },
+      "qualification": {
+        "title": "Application Qualification",
+        "content1": "Graduate of IT relate technical school or college/university.",
+        "content2": "22 - 38 years old expirencer in case of career change.",
+        "remark": " "
+      },
+      "application": {
+        "title": "Application Method",
+        "content": "Please fill the resume template and mail to: saiyou@e-business.co.jp"
+      },
+      "selection": {
+        "title": "Selection Method",
+        "content": "Resume selection, interviews"
+      },
+      "holiday": {
+        "title": "Leave",
+        "content": "Two days off per week, national holiday",
+        "remark": "* May adjust according to customer"
+      },
+      "contact": {
+        "title": "Consultation"
+      }
+    },
+    "download": "Download Resume Template",
+    "agreement": {
+      "title": "Announcement about private information",
+      "info1": {
+        "title": "The purpose of using and providing",
+        "content": "The personal information we required from you like name, birth day, address etc. are used and only used in the process of our recruitment. We will not publish or transfer your private information for other purpose."
+      },
+      "info2": {
+        "title": "The usage of private information",
+        "content": "The E-Business Inc. will in charge of the management of your private information. As our recruitment events finish, your private information will be eliminate/delete by us as part of our responsibility."
+      },
+      "info3": {
+        "title": "The range of private information",
+        "content": "The personal information we required are limited in the minimun range for finish recruitment events. If you don't agree with this announcement, we may not accept your application."
+      },
+      "info4": {
+        "title": "Publish, modification and elimination",
+        "content": "You can ask us to publish your private information to 3rd-party. and you can also ask us to modifty or delete the published information. In such cases, please contact us with the method below."
+      },
+      "info5": {
+        "title": "Contact",
+        "content": "To publish, modify or delete your private information, plases contact us with: ",
+        "contact": " E-Business Inc.",
+        "window": " Hua DongJiang",
+        "tel": " Tel: ",
+        "fax": " Fax: "
+      },
+      "disagree": "disagree",
+      "agree": "agree"
+    },
+    "voices": {
+      "title": "Employee's Voices",
+      "voice1": {
+        "content": "recruitment.voices.voice1.content",
+        "name": "Peter",
+        "position": "Sales Division 1"
+      },
+      "voice2": {
+        "content": "recruitment.voices.voice2.content",
+        "name": "John",
+        "position": "Product Dision 2"
+      },
+      "voice3": {
+        "content": "recruitment.voices.voice3.content",
+        "name": "Lisa",
+        "position": "HR"
+      }
+    },
+    "photos": {
+      "title": "Life in E-Business",
+      "title1": "Project leader training",
+      "title2": "Learning new skills",
+      "title3": "Education for fresher",
+      "title4": "iOS education 1",
+      "title5": "iOS education 2",
+      "title6": "Ready for Babeqe",
+      "title7": "A fun party",
+      "title8": "Warm like home",
+      "title9": "Taste the tasty",
+      "title10": "The happy timie in E-Business"
+    }
+  },
+  "contact": {
+    "breadcrumb": {
+      "title": "Contact Us"
+    },
+    "form": {
+      "title": "Contact Us",
+      "description": "If you have questions, please feel free to contact us. Fill the form below and press send button.",
+      "name": "Your Name",
+      "email": "Your E-mail",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send",
+      "success": "contact.form.success"
+    },
+    "info": {
+      "title": "Guide",
+      "address": "Tokyo Minatoku Shiba 2-28-2 Shiba 2 Choume Building 10F"
+    },
+    "time": {
+      "title": "Office Hours",
+      "workday": "Mon-Fri:",
+      "saturday": "Sat:",
+      "sunday": "Sun:",
+      "rest": " Close"
+    }
+  },
+  "login": {
+    "breadcrumb": {
+      "title": "System Login"
+    },
+    "form": {
+      "title": "Login",
+      "email": "E-mail address",
+      "password": "Password",
+      "button": "Login",
+      "forgotPass": "Forgot password?",
+      "resetPassLink": "Click here ",
+      "resetpass": "to reset your password"
+    }
+  },
+  "error": {
+    "404": "Sorry, the page your requested is not exists. Please click the button below back to home page.",
+    "backBtn": "Back Home"
+  }
 }

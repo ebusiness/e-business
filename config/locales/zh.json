@@ -10,6 +10,7 @@
     "login": "登录"
   },
   "menu": {
+    "home": "首页",
     "about": "关于我们",
     "service": "服务内容",
     "recruitment": "招聘信息",
@@ -82,7 +83,7 @@
   },
   "aboutus": {
     "breadcrumb": {
-      "title": "株式会社イー・ビジネス"
+      "title": "公司概况"
     },
     "message": {
       "title": "来自社长的话",
@@ -93,14 +94,14 @@
       "paragraph5": "公司法人代表  花 东江"
     },
     "info": {
-      "title": "公司概况",
       "date": {
         "title": "成立日期",
         "content": "2007年6月"
       },
       "ceo": {
         "title": "代表者",
-        "content": "公司法人代表  花 东江"
+        "content": "公司法人代表  花 东江",
+        "btn": "来自社长的话"
       },
       "address": {
         "title": "所在地",
@@ -114,7 +115,8 @@
       "employee": {
         "title": "从业职工",
         "unit": "人",
-        "date": "截至2015年1月计算"
+        "date": "截至2015年1月计算",
+        "btn": "公司组织图"
       },
       "branch": {
         "title": "海外分公司",
