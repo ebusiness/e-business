@@ -97,7 +97,7 @@ module.exports = function(grunt) {
           name: "js/contact",
           baseUrl: "public",
           out: "./public-build/js/contact.js",
-          wrapShim: true,
+          // wrapShim: true,
           // optimize: "none",
           preserveLicenseComments: false,
           mainConfigFile: "./public/js/contact.js"

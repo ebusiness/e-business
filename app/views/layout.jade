@@ -37,20 +37,20 @@ body.header-fixed
         .container
           // Topbar Navigation 
           ul.loginbar.pull-right
-            li.languagesSelector
-              i.fa.fa-globe
-              | 
-              a #{__('topBar.language')}
-              ul.languages
-                li(class=(locale === "ja")?"active":"")
-                  a(href='/ja/#{path}', hreflang="ja") #{__('topBar.languageOpt.ja')}
-                li(class=(locale === "zh")?"active":"")
-                  a(href='/zh/#{path}', hreflang="zh") #{__('topBar.languageOpt.zh')}
-                li(class=(locale === "en")?"active":"")
-                  a(href='/en/#{path}', hreflang="en") #{__('topBar.languageOpt.en')}
-            li.topbar-devider
-            li
-              a(href='/login') #{__('topBar.login')}
+            //- li.languagesSelector
+            //-   i.fa.fa-globe
+            //-   | 
+            //-   a #{__('topBar.language')}
+            //-   ul.languages
+            //-     li(class=(locale === "ja")?"active":"")
+            //-       a(href='/ja/#{path}', hreflang="ja") #{__('topBar.languageOpt.ja')}
+            //-     li(class=(locale === "zh")?"active":"")
+            //-       a(href='/zh/#{path}', hreflang="zh") #{__('topBar.languageOpt.zh')}
+            //-     li(class=(locale === "en")?"active":"")
+            //-       a(href='/en/#{path}', hreflang="en") #{__('topBar.languageOpt.en')}
+            //- li.topbar-devider
+            //- li
+            //-   a(href='/login') #{__('topBar.login')}
 
       // Navbar 
       .navbar.navbar-default.mega-menu(role='navigation')
@@ -61,9 +61,8 @@ body.header-fixed
               span.sr-only Toggle navigation
               span.fa.fa-bars
             a.navbar-brand(href='/home')
-              //- img#logo-header(src='/img/logo1-default.png', alt='Logo')
-              img#logo-header(src='/img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto;")
-              //- h1 E-Business Inc.
+              img#logo-header(src='/img/eb/logo.gif', alt='Logo', style="height: 39px; width: auto; margin-bottom: 5px;")
+              h1 E-Business Inc.
           // Collect the nav links
           .collapse.navbar-collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
@@ -104,8 +103,9 @@ body.header-fixed
                 h2 #{__('footer.brand')}
               p
                 | #{__('footer.statement')}
-              img#logo-footer.footer-logo(src='/img/eb/pmark.gif', alt='', style="width: auto; height: 75px;")
-              img#logo-footer.footer-logo(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px;")
+              img#logo-footer.footer-logo(src='/img/eb/pmark.jpg', alt='', style="width: 65px; height: 75px;")
+              img#logo-footer.footer-logo(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
+              img#logo-footer.footer-logo(src='/img/eb/isa.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
             // Latest 
             .col-sm-6.col-md-3.md-margin-bottom-40
               .posts

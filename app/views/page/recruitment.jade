@@ -163,7 +163,7 @@ block content
           h2 #{__('recruitment.voices.title')}
         #testimonials-6.carousel.slide.testimonials.testimonials-v1.margin-bottom-40
           .carousel-inner
-            .item.active
+            .item
               p
                 | #{__('recruitment.voices.voice1.content')}
               .testimonial-info
@@ -171,11 +171,11 @@ block content
                 span.testimonial-author
                   | #{__('recruitment.voices.voice1.name')}
                   em #{__('recruitment.voices.voice1.position')}
-            .item
+            .item.active
               p
                 | #{__('recruitment.voices.voice2.content')}
               .testimonial-info
-                img(src='/img/testimonials/img1.jpg', alt='')
+                img(src='/img/testimonials/user.jpg', alt='')
                 span.testimonial-author
                   | #{__('recruitment.voices.voice2.name')}
                   em #{__('recruitment.voices.voice2.position')}
@@ -183,10 +183,18 @@ block content
               p
                 | #{__('recruitment.voices.voice3.content')}
               .testimonial-info
-                img(src='/img/testimonials/img2.jpg', alt='')
+                img(src='/img/testimonials/user.jpg', alt='')
                 span.testimonial-author
                   | #{__('recruitment.voices.voice3.name')}
                   em #{__('recruitment.voices.voice3.position')}
+            .item
+              p
+                | #{__('recruitment.voices.voice4.content')}
+              .testimonial-info
+                img(src='/img/testimonials/user.jpg', alt='')
+                span.testimonial-author
+                  | #{__('recruitment.voices.voice4.name')}
+                  em #{__('recruitment.voices.voice4.position')}
           .carousel-arrow
             a.left.carousel-control(href='#testimonials-6', data-slide='prev')
               i.fa.fa-angle-left

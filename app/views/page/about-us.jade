@@ -22,7 +22,7 @@ block content
         .modal-body
           blockquote.row.shadow-wrapper
             #photo.col-sm-6.col-md-4.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
-              img.img-responsive.margin-bottom-10(src='/img/main/6.jpg', alt='')
+              img.img-responsive.margin-bottom-10(src='/img/eb/DSC_2573.jpg', alt='')
             p #{__('aboutus.message.paragraph1')}
             p #{__('aboutus.message.paragraph2')}
             p #{__('aboutus.message.paragraph3')}
@@ -57,7 +57,7 @@ block content
           .desc
             h4.no-top-space #{__('aboutus.info.capital.title')}
               | 
-              span.counter 3050
+              span.counter 3800
               | #{__('aboutus.info.capital.unit')}
             p #{__('aboutus.info.capital.date')}
       .col-sm-4
@@ -83,7 +83,7 @@ block content
           .desc
             h4.no-top-space #{__('aboutus.info.profit.title')}
               | 
-              span.counter 10.7
+              span.counter 16
               | #{__('aboutus.info.profit.unit')}
             p #{__('aboutus.info.profit.date')}
       .col-sm-4
@@ -92,7 +92,7 @@ block content
           .desc
             h4.no-top-space #{__('aboutus.info.profit2.title')}
               | 
-              span.counter 15.7
+              span.counter 21
               | #{__('aboutus.info.profit2.unit')}
             p #{__('aboutus.info.profit2.date')}
       .col-sm-4
@@ -116,6 +116,9 @@ block content
               li
                 i.fa.fa-check.color-green
                 | #{__('aboutus.info.certification.name5')}
+              li
+                i.fa.fa-check.color-green
+                | #{__('aboutus.info.certification.name6')}
 
   #graph.container.content
     .row
@@ -241,6 +244,7 @@ block content
   .container.content.job-partners
     .heading.heading-v4.margin-bottom-20
       h2.color-green #{__('aboutus.customer.title')}
+      p 敬称略・順不同
     ul#effect-2.list-inline.our-clients
       li
         figure
@@ -282,12 +286,38 @@ block content
           img#hitachi.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
             h4 #{__('aboutus.customer.name8')}
+      li
+        figure
+          img#slc.client-logo(src='/img/eb/customer/transparent.png', alt='')
+          .img-hover
+            h4 #{__('aboutus.customer.name9')}
 
   .container.content
     .heading.heading-v4.margin-bottom-20
       h2.color-green #{__('aboutus.history.title')}
     .row
       ul.timeline-v1
+        li
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4 ISO9001(ISA)認証を取得
+              p
+                img(src='/img/eb/isa.jpg', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
+                | ISO 9001は、製品やサービスの品質保証を通じて、顧客満足向上と品質マネジメントシステムの継続的な改善を実現する国際規格です。
+              span
+                i.fa.fa-clock-o
+                |  平成27年4月
+        li.timeline-inverted
+          .timeline-badge.primary
+            i.glyphicon.glyphicon-record
+          .timeline-panel
+            .timeline-body.text-justify
+              h4 グローバル　イー・コーマス（GEC）事業部設立
+              span
+                i.fa.fa-clock-o
+                |  平成27年4月
         li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record
@@ -350,17 +380,6 @@ block content
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
-            .timeline-body.text-justify
-              h4 #{__('aboutus.history.event6.title')}
-              p
-                | #{__('aboutus.history.event6.content')}
-              span
-                i.fa.fa-clock-o
-                | #{__('aboutus.history.event6.date')}
-        li
-          .timeline-badge.primary
-            i.glyphicon.glyphicon-record.invert
-          .timeline-panel
             .timeline-body
               h4 #{__('aboutus.history.event7.title')}
               p
@@ -369,7 +388,7 @@ block content
               span
                 i.fa.fa-clock-o
                 | #{__('aboutus.history.event7.date')}
-        li.timeline-inverted
+        li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
@@ -380,7 +399,7 @@ block content
               span
                 i.fa.fa-clock-o
                 | #{__('aboutus.history.event8.date')}
-        li
+        li.timeline-inverted
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
@@ -394,7 +413,7 @@ block content
               span.pull-right
                 a.btn-u.btn-u-xs(href='/certification') #{__('aboutus.history.event9.btn')}
               .clearfix
-        li.timeline-inverted
+        li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel

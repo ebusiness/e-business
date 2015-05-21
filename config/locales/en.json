@@ -51,7 +51,7 @@
     }
   },
   "copyright": {
-    "statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
+    "statement": "Copyright © 2007-2015 E-Business Inc. All Rights Reserved.",
     "privacy": "Privacy policy",
     "terms": "Announcement about usage of personal information",
     "margin": "The margin rate of dispatch workers"
@@ -110,7 +110,7 @@
       "capital": {
         "title": "Capital",
         "unit": " Man Yen",
-        "date": "Up to Jan. 2015"
+        "date": "Up to May. 2015"
       },
       "employee": {
         "title": "Employees",
@@ -125,12 +125,12 @@
       "profit": {
         "title": "Last Year Sales",
         "unit": " Oku Yen",
-        "date": "2014 fiscal year"
+        "date": "2015 fiscal year"
       },
       "profit2": {
         "title": "This Year Sales",
         "unit": " Oku Yen",
-        "date": "2015 fiscal year estimate"
+        "date": "2016 fiscal year estimate"
       },
       "certification": {
         "title": " Authentication",
@@ -138,7 +138,8 @@
         "name2": " Qualification of General Competition Auction",
         "name3": " Management Innovation Certification",
         "name4": " Privacy Mark",
-        "name5": " ISO27001(ISMS) Certification"
+        "name5": " ISO27001(ISMS) Certification",
+        "name6": " ISO9001(ISA) Certification"
       }
     },
     "profit": "Sales Achievement",
@@ -152,12 +153,13 @@
       "name5": "TDC SOFTWARE ENGINEERING Inc.",
       "name6": "Fujikura　Ltd.",
       "name7": "TouHou System Science Ltd.",
-      "name8": "Hitachi Solutions, Ltd."
+      "name8": "Hitachi Solutions, Ltd.",
+      "name9": "Sumitomo Life Information Systems Co.,Ltd."
     },
     "history": {
       "title": "Our History",
       "event1": {
-        "title": "Capital increased to 30.5 million yen",
+        "title": "Capital increased to 38 million yen",
         "date": " Jan 2015"
       },
       "event2": {
@@ -225,7 +227,7 @@
       },
       "workplace": {
         "title": "Work locations",
-        "content": "Tokyo, Yokohama, Chiba",
+        "content": "Tokyo, Nagoya, Oosaka",
         "remark": "* Decide according to your current residence"
       },
       "category": {

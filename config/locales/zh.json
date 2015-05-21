@@ -51,7 +51,7 @@
     }
   },
   "copyright": {
-    "statement": "Copyright © 2007-2014 E-Business Corporation. All Rights Reserved.",
+    "statement": "Copyright © 2007-2015 E-Business Inc. All Rights Reserved.",
     "privacy": "个人信息保护方针",
     "terms": "关于个人信息使用的公告",
     "margin": "关于劳动者派遣的毛利率"
@@ -110,7 +110,7 @@
       "capital": {
         "title": "注册资本金",
         "unit": "万日元",
-        "date": "截至2015年1月计算"
+        "date": "截至2015年5月计算"
       },
       "employee": {
         "title": "从业职工",
@@ -125,12 +125,12 @@
       "profit": {
         "title": "上一年度营业额",
         "unit": "亿日元",
-        "date": "2014年度"
+        "date": "2015年度"
       },
       "profit2": {
         "title": "本年度营业额",
         "unit": "亿日元",
-        "date": "2015年度预计"
+        "date": "2016年度预计"
       },
       "certification": {
         "title": "取得资格",
@@ -138,7 +138,8 @@
         "name2": " 一般竞争竞标资格",
         "name3": " 中小企业经营革新认证",
         "name4": " Privacy Mark",
-        "name5": " ISO27001(ISMS)认证"
+        "name5": " ISO27001(ISMS)认证",
+        "name6": " ISO9001(ISA)认证"
       }
     },
     "profit": "营业实绩",
@@ -152,12 +153,13 @@
       "name5": "TDC软件工程株式会社",
       "name6": "株式会社 藤仓",
       "name7": "东邦系统科技株式会社",
-      "name8": "日立解决方案株式会社"
+      "name8": "日立解决方案株式会社",
+      "name9": "住友生活信息系统株式会社"
     },
     "history": {
       "title": "公司沿革",
       "event1": {
-        "title": "注册资本金增资至3050万日元",
+        "title": "注册资本金增资至3800万日元",
         "date": " 2015年1月"
       },
       "event2": {
@@ -225,7 +227,7 @@
       },
       "workplace": {
         "title": "勤务地",
-        "content": "东京都内各地，横滨，千叶",
+        "content": "东京周边，名古屋，大阪",
         "remark": "※根据住所考虑决定"
       },
       "category": {
