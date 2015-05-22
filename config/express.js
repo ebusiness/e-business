@@ -22,10 +22,10 @@ module.exports = function(config) {
   app.set('view engine', 'jade');
 
   // Fav-icon
-  app.use(favicon());
+  app.use(favicon(path.join(config.root, '/public/favicon.ico')));
 
   // Compress all requests
-  app.use(compression())
+  app.use(compression());
 
   // Logger use express-logger in production, otherwise use morgan
   if ('production' !== config.app.env)

@@ -20,7 +20,7 @@ html[lang="ja"] body, h1, h2, h3, h4, h5, h6, p, em, td, label, button {
 
 .navbar-header {
 
-  img, h1 {
+  img, h3 {
     display: inline-block;
   }
 }
@@ -71,100 +71,114 @@ textarea.ng-dirty.ng-invalid {
   margin-top: 30px;
 }
 
-#organiztion table {
-
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.table-responsive {
+  border: 0px;
 
   td {
-    width: 250px;
-    height: 53px;
-    min-height: 53px;
-    vertical-align: middle;
-    position: relative;
-    // border: 1px solid grey;
-    border-top: 0px;
+    text-align: center;
+    vertical-align: middle !important;
   }
 
-  .btn-u {
-    position: absolute;
-    left: 60px;
-    top: 10px;
-  }
-
-  .org-head-1:after {
-    content: " ";
-    position: absolute;
-    top: 40px;
-    left: 105px;
-    height: 130px;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;    
-  }
-
-  .org-head-2:after {
-    content: " ";
-    position: absolute;
-    top: 40px;
-    left: 105px;
-    height: 76px;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;    
-  }
-
-  .org-root:after {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    right: -8px;
-    width: 89px;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;
-  }
-
-  .org-branch .btn-u {
-    width: 104px;
-  }
-
-  .org-branch:before {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    width: 52px;
-    height: 100%;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;
-  }
-
-  .org-branch:after {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    right: -8px;
-    width: 77px;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;
-  }
-
-  .org-leaf:before {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    width: 52px;
-    height: 55px;
-    border-top: 1px solid #72c02c;
-    border-left: 1px solid #72c02c;
-  }
-
-  .org-leaf-last:before {
-    content: " ";
-    position: absolute;
-    top: 25px;
-    width: 52px;
-    border-top: 1px solid #72c02c;
-  }
 }
+
+.table-responsive>.table-bordered>tbody>tr:last-child>td, .table-responsive>.table-bordered>tbody>tr:last-child>th, .table-responsive>.table-bordered>tfoot>tr:last-child>td, .table-responsive>.table-bordered>tfoot>tr:last-child>th {
+  border-bottom: 1px solid #ddd;
+}
+
+// #organiztion table {
+
+//   width: 700px;
+//   margin-left: auto;
+//   margin-right: auto;
+
+//   td {
+//     width: 250px;
+//     height: 53px;
+//     min-height: 53px;
+//     vertical-align: middle;
+//     position: relative;
+//     // border: 1px solid grey;
+//     border-top: 0px;
+//   }
+
+//   .btn-u {
+//     position: absolute;
+//     left: 60px;
+//     top: 10px;
+//   }
+
+//   .org-head-1:after {
+//     content: " ";
+//     position: absolute;
+//     top: 40px;
+//     left: 105px;
+//     height: 130px;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;    
+//   }
+
+//   .org-head-2:after {
+//     content: " ";
+//     position: absolute;
+//     top: 40px;
+//     left: 105px;
+//     height: 76px;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;    
+//   }
+
+//   .org-root:after {
+//     content: " ";
+//     position: absolute;
+//     top: 25px;
+//     right: -8px;
+//     width: 89px;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;
+//   }
+
+//   .org-branch .btn-u {
+//     width: 104px;
+//   }
+
+//   .org-branch:before {
+//     content: " ";
+//     position: absolute;
+//     top: 25px;
+//     width: 52px;
+//     height: 100%;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;
+//   }
+
+//   .org-branch:after {
+//     content: " ";
+//     position: absolute;
+//     top: 25px;
+//     right: -8px;
+//     width: 77px;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;
+//   }
+
+//   .org-leaf:before {
+//     content: " ";
+//     position: absolute;
+//     top: 25px;
+//     width: 52px;
+//     height: 55px;
+//     border-top: 1px solid #72c02c;
+//     border-left: 1px solid #72c02c;
+//   }
+
+//   .org-leaf-last:before {
+//     content: " ";
+//     position: absolute;
+//     top: 25px;
+//     width: 52px;
+//     border-top: 1px solid #72c02c;
+//   }
+// }
 
 .client-logo {
   width: 103px !important;

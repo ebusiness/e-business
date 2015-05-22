@@ -50,9 +50,6 @@ require([
   var $window = $(window);
   var $header = $(".header-fixed .header-sticky");
 
-  var $form = $('#sky-form3');
-  var $input = $('section').add('button')
-
   var tl = new TimelineMax();
 
   // init google map first cause it slow
@@ -74,8 +71,6 @@ require([
     handleFastClick();
     handleHeader();
     handleMap();
-    handleApp();
-    handleAnimation();
 
     // display content
     TweenMax.to($wrapper, 0.7, {
@@ -83,7 +78,7 @@ require([
     });
 
     // hide loader then start animation
-    $loading.fadeOut('fast', startAnimation);
+    $loading.fadeOut('fast');
 
   });
 
@@ -122,61 +117,5 @@ require([
     marker.infoWindow.open(map, marker);
   };
 
-  // Animation initialize
-  var handleAnimation = function() {
 
-    // init tween
-    TweenMax.set($form, {
-      perspective: 800
-    });
-
-    TweenMax.set($input, {
-      transformPerspective: 800,
-      rotationX: 90,
-      alpha: 0
-    });
-
-  };
-
-  // Application
-  var handleApp = function() {
-
-    angular.module('inquiry', ['selink'])
-      .controller('MainController', ['InquiryService', function(InquiryService) {
-
-        this.submit = function() {
-
-          InquiryService.create(this.inquiry).then(function(resp) {
-
-            tl.to($form, 0.3, {
-              alpha: 0,
-              display: 'none'
-            }).to($('.message'), 0.3, {
-              alpha: 1,
-              display: 'block'
-            });
-          }, function(resp) {
-
-          });
-        };
-
-      }]);
-
-    angular.resumeBootstrap(['inquiry']);
-  };
-
-  // Animation
-  var startAnimation = function() {
-
-    // setup waypoints
-    $form.waypoint(function() {
-      TweenMax.staggerTo($input, 0.2, {
-        rotationX: 0,
-        alpha: 1
-      }, 0.3);
-    }, {
-      offset: '100%',
-      triggerOnce: true
-    });
-  };
 });

@@ -10,10 +10,6 @@ module.exports = {
       name: 'EBusiness - HomePage [TEST]',
       env: 'test'
     },
-    // ssl: {
-    //   key: fs.readFileSync(rootPath + '/resources/ssl/test/e-business.pem'),
-    //   cert: fs.readFileSync(rootPath + '/resources/ssl/test/e-business.crt')
-    // },
     mongodb: {
       host: 'mongodb://localhost/e-business_test',
     },
@@ -32,10 +28,6 @@ module.exports = {
       name: 'EBusiness - HomePage [DEV]',
       env: 'development'
     },
-    // ssl: {
-    //   key: fs.readFileSync(rootPath + '/resources/ssl/development/e-business.pem'),
-    //   cert: fs.readFileSync(rootPath + '/resources/ssl/development/e-business.crt')
-    // },
     mongodb: {
       host: 'mongodb://localhost/e-business_dev'
     },
@@ -54,10 +46,6 @@ module.exports = {
       name: 'EBusiness - HomePage',
       env: 'production'
     },
-    // ssl: {
-    //   key: fs.readFileSync(rootPath + '/resources/ssl/development/e-business.pem'),
-    //   cert: fs.readFileSync(rootPath + '/resources/ssl/development/e-business.crt')
-    // },
     mongodb: {
       host: 'mongodb://localhost/e-business'
     },

@@ -1,373 +1,378 @@
 {
-  "title": "株式会社イー・ビジネス(E-Business)",
-  "topBar": {
-    "language": "语言选择",
-    "languageOpt": {
-      "ja": "日语",
-      "en": "英语",
-      "zh": "中文"
-    },
-    "login": "登录"
-  },
-  "menu": {
-    "home": "首页",
-    "about": "关于我们",
-    "service": "服务内容",
-    "recruitment": "招聘信息",
-    "contact": "联系我们"
-  },
-  "footer": {
-    "brand": "株式会社イー・ビジネス",
-    "statement": "让社会和人们的生活更加富裕多彩，建设不断创新和进化的IT企业",
-    "news": {
-      "header": "最新动态",
-      "news1": {
-        "title": "取得ISO27001(ISMS)认证",
-        "date": "2014年5月30日"
-      },
-      "news2": {
-        "title": "随着事业的扩大，总公司迁至东京都港区",
-        "date": "2014年1月8日"
-      },
-      "news3": {
-        "title": "资本金增资至1850万日元",
-        "date": "2013年12月20日"
-      }
-    },
-    "links": {
-      "header": "相关链接",
-      "link1": "关于我们",
-      "link2": "服务内容",
-      "link3": "招聘信息",
-      "link4": "联系我们"
-    },
-    "contact": {
-      "header": "联系我们",
-      "address": "东京都港区芝2-28-8芝2丁目大厦10层",
-      "zipCode": "〒 105-0014",
-      "tel": "Tel: 03-6809-3235",
-      "fax": "Fax: 03-6809-3238",
-      "email": "Email: "
-    }
-  },
-  "copyright": {
-    "statement": "Copyright © 2007-2015 E-Business Inc. All Rights Reserved.",
-    "privacy": "个人信息保护方针",
-    "terms": "关于个人信息使用的公告",
-    "margin": "关于劳动者派遣的毛利率"
-  },
-  "home": {
-    "slider": {
-      "title1": "公司视野",
-      "title2": "经营理念",
-      "title3": "迈向优秀的国际公司",
-      "statement1": "让社会和人们的生活更加富裕多彩",
-      "statement2": "建设不断创新和进化的IT企业",
-      "statement3": "以员工福利为优先的公司文化",
-      "statement4": "将客户满意度最大化为中心的事业进程",
-      "statement5": "在国际化视野的高度上",
-      "statement6": "追求更高的便利性",
-      "statement7": "提供更高品质的IT服务"
-    },
-    "breadcrumb": {
-      "title": "株式会社 イー・ビジネス",
-      "statement": "以高效的生产性和值得信赖的高品质，伴随您的事业发展壮大。融合各种不同的文化，挑战不断进化的先进技术，以成为业内的先驱者为目标不断努力。",
-      "contact": "联系我们"
-    },
-    "subCate": {
-      "sub1": "关于我们",
-      "sub2": "服务内容",
-      "sub3": "招聘信息",
-      "sub4": "联系我们"
-    }
-  },
-  "aboutus": {
-    "breadcrumb": {
-      "title": "公司概况"
-    },
-    "message": {
-      "title": "来自社长的话",
-      "paragraph1": "本公司自2008年设立以来，短短8年时间，经历了经济萧条，东日本大地震，安倍经济学等一系列激烈的社会变革。我们在客户与合作伙伴的支持下披荆斩棘，终于越过了艰苦的创业期，迎来了蓬勃发展的第8个年头。在这里向大家表示深深的感谢。",
-      "paragraph2": "随着社会环境的变化，IT业界的技术革新越来越快，我们也越发感受到企业竞争中优胜劣汰的残酷。抱着这样的危机感，我们认为把握业界最新的动向，提高全公司的交流，思考和行动能力是极为重要的。",
-      "paragraph3": "为了成为更加专业，实用，耐久的公司，也为了公司社员的福利与客户的满意，我们将一如既往地进行创新与挑战，坚持不懈地进化和成长。",
-      "paragraph4": "在今后的日子里，也还请各位同仁给予我们更多更宝贵的鞭策和指导。",
-      "paragraph5": "公司法人代表  花 东江"
-    },
-    "info": {
-      "date": {
-        "title": "成立日期",
-        "content": "2007年6月"
-      },
-      "ceo": {
-        "title": "代表者",
-        "content": "公司法人代表  花 东江",
-        "btn": "来自社长的话"
-      },
-      "address": {
-        "title": "所在地",
-        "content": "东京都港区芝2-28-8芝2丁目大厦10层"
-      },
-      "capital": {
-        "title": "注册资本金",
-        "unit": "万日元",
-        "date": "截至2015年5月计算"
-      },
-      "employee": {
-        "title": "从业职工",
-        "unit": "人",
-        "date": "截至2015年1月计算",
-        "btn": "公司组织图"
-      },
-      "branch": {
-        "title": "海外分公司",
-        "content": "中国・大連易商共創科技株式会社"
-      },
-      "profit": {
-        "title": "上一年度营业额",
-        "unit": "亿日元",
-        "date": "2015年度"
-      },
-      "profit2": {
-        "title": "本年度营业额",
-        "unit": "亿日元",
-        "date": "2016年度预计"
-      },
-      "certification": {
-        "title": "取得资格",
-        "name1": " 一般劳动者派遣资格",
-        "name2": " 一般竞争竞标资格",
-        "name3": " 中小企业经营革新认证",
-        "name4": " Privacy Mark",
-        "name5": " ISO27001(ISMS)认证",
-        "name6": " ISO9001(ISA)认证"
-      }
-    },
-    "profit": "营业实绩",
-    "organization": "公司组织图",
-    "customer": {
-      "title": "主要客户",
-      "name1": "电通国际信息服务株式会社",
-      "name2": "IX Knowledge 株式会社",
-      "name3": "株式会社 DTS",
-      "name4": "株式会社 NSD",
-      "name5": "TDC软件工程株式会社",
-      "name6": "株式会社 藤仓",
-      "name7": "东邦系统科技株式会社",
-      "name8": "日立解决方案株式会社",
-      "name9": "住友生活信息系统株式会社"
-    },
-    "history": {
-      "title": "公司沿革",
-      "event1": {
-        "title": "注册资本金增资至3800万日元",
-        "date": " 2015年1月"
-      },
-      "event2": {
-        "title": "获得ISO27001(ISMS)认证",
-        "content": "ISO27001是一个证明某组织对自己持有的信息进行了适当的风险管理，提高组织社会价值的国际规格认证。",
-        "date": " 2014年5月30日"
-      },
-      "event3": {
-        "title": "成立中国大连易商共创科技股份有限公司",
-        "content": "大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。",
-        "date": " 2014年4月4日",
-        "btn": "易商共創科技"
-      },
-      "event4": {
-        "title": "公司总部迁至东京都港区",
-        "content": "随着事业的扩大，总公司迁至东京都港区",
-        "date": " 2014年1月",
-        "btn": "地图"
-      },
-      "event5": {
-        "title": "注册资本金增资至1850万日元",
-        "date": " 2013年7月"
-      },
-      "event6": {
-        "title": "取得一般竞争竞标资格",
-        "content": "一般竞争竞标，是指公示竞标活动的投标信息，募集参加者，竞标者之间通过竞争的方式决定中标者。",
-        "date": " 2012年4月"
-      },
-      "event7": {
-        "title": "获得 Privacy Mark",
-        "content": "Privacy Mark是指针对满足了个人信息保护相关要件的企业，由日本信息经济社会推进协会(JIPDEC)认可和颁发的登录商标。也简称为P-Mark。",
-        "date": " 2012年3月"
-      },
-      "event8": {
-        "title": "就任驻日经贸联络事务所招商代表",
-        "content": "公司法人代表花东江，受中国盐城市政府邀请，就任驻日经贸联络事务所招商代表",
-        "date": " 2009年9月"
-      },
-      "event9": {
-        "title": "获得经营革新企业认证",
-        "content": "根据日本中小企业新事业活动促进法，通过了相关评估，并取得了经营革新企业认证",
-        "date": " 2009年8月",
-        "btn": "2009年度8月经营革新计划承认书"
-      },
-      "event10": {
-        "title": "公司成立",
-        "content": "于东京都千代田区以注册资本金800万日元成立",
-        "date": " 2007年6月"
-      }
-    }
-  },
-  "recruitment": {
-    "breadcrumb": {
-      "title": "招聘信息"
-    },
-    "info": {
-      "employ": {
-        "title": "雇佣形态",
-        "content": "全职社员，契约社员"
-      },
-      "education": {
-        "title": "学历",
-        "content": "专门学校以上毕业",
-        "remark": "※高中毕业者须有两年以上工作经验"
-      },
-      "workplace": {
-        "title": "勤务地",
-        "content": "东京周边，名古屋，大阪",
-        "remark": "※根据住所考虑决定"
-      },
-      "category": {
-        "title": "职务",
-        "content": "项目经理，项目领队，系统工程师，程序员"
-      },
-      "job": {
-        "title": "工作内容",
-        "content1": "大型泛用计算机系——应用程序设计，开发",
-        "remark1": "※金融系，流通系，COBOL，PL/1等",
-        "content2": "开放系——Windows应用程序设计，开发",
-        "remark2": "※Java VB C C++ C# ASP.NET SQL Server Oracle　视频/图像等"
-      },
-      "qualification": {
-        "title": "应聘资格",
-        "content1": "IT相关专业的大学或专科学校的应届毕业生",
-        "content2": "22岁至38岁的有工作经验的转职者",
-        "remark": "无关种类IT相关经验即可"
-      },
-      "application": {
-        "title": "应聘方法",
-        "content": "填写简历后， 电子邮件至saiyou@e-business.co.jp"
-      },
-      "selection": {
-        "title": "录取方法",
-        "content": "简历选考，面试"
-      },
-      "holiday": {
-        "title": "休假制度",
-        "content": "每周2天，法定节假日",
-        "remark": "※有根据客户需求变动的可能性"
-      },
-      "contact": {
-        "title": "咨询窗口"
-      }
-    },
-    "download": "简历模板下载",
-    "agreement": {
-      "title": "关于招聘时个人信息使用的通知",
-      "info1": {
-        "title": "实用及提供的目的",
-        "content": "本公司从您处获得的姓名，生年月日，住所等个人信息，仅在本公司的招聘活动中使用，不会因其他的目的使用，亦不会向第三方提供，开示。"
-      },
-      "info2": {
-        "title": "个人信息的使用方法",
-        "content": "本公司从您处获得的个人信息，由本公司负责适当的管理和使用。当招聘活动终止时，亦由本公司负责废弃或删除。"
-      },
-      "info3": {
-        "title": "关于向本公司提供个人信息的范畴",
-        "content": "本公司从您处获得的个人信息，仅维持在本公司业务能够进行的最小范围内。如果您不同意本通知中的事项，我们会拒绝您的应征。"
-      },
-      "info4": {
-        "title": "关于您的个人信息的开示，订正以及删除",
-        "content": "对于您向本公司提供的个人信息，您可以要求我们向第三方开示或提供。另外，您也可以要求我们对您的个人信息进行订正或删除。如果您有这样的需要，请用以下方式联系我们。"
-      },
-      "info5": {
-        "title": "联系方式",
-        "content": "对个人信息的开示，订正，删除等要求，或您有不明事项时用一下方式联系我们。",
-        "contact": " 联系人： 株式会社イー・ビジネス",
-        "window": " 责任人： 花东江",
-        "tel": " 电话： ",
-        "fax": " 传真： "
-      },
-      "disagree": "不同意",
-      "agree": "同意"
-    },
-    "voices": {
-      "title": "社员心声",
-      "voice1": {
-        "content": "recruitment.voices.voice1.content",
-        "name": "陈岳阳",
-        "position": "营业部 营业一科"
-      },
-      "voice2": {
-        "content": "recruitment.voices.voice2.content",
-        "name": "山本 五十七",
-        "position": "系统开发部 产品一科"
-      },
-      "voice3": {
-        "content": "recruitment.voices.voice3.content",
-        "name": "宫崎骏",
-        "position": "总务部"
-      }
-    },
-    "photos": {
-      "title": "社内生活",
-      "title1": "社员研修",
-      "title2": "社内教育",
-      "title3": "培养新人",
-      "title4": "iOS学习会1",
-      "title5": "iOS学习会2",
-      "title6": "准备烧烤",
-      "title7": "Party开始了",
-      "title8": "家一样的气氛",
-      "title9": "品美食",
-      "title10": "快乐时光"
-    }
-  },
-  "contact": {
-    "breadcrumb": {
-      "title": "联系我们"
-    },
-    "form": {
-      "title": "联系我们",
-      "description": "如果您有任何希望咨询我们的事项，请填写下面的表单，之后点击发送。",
-      "name": "您的称呼",
-      "email": "您的电子邮件地址",
-      "subject": "消息标题",
-      "message": "消息内容",
-      "send": "发送",
-      "success": "Your message was successfully sent!"
-    },
-    "info": {
-      "title": "公司信息",
-      "address": "东京都港区芝2-28-8芝2丁目大厦10层"
-    },
-    "time": {
-      "title": "营业时间",
-      "workday": "平日:",
-      "saturday": "周六:",
-      "sunday": "周日:",
-      "rest": " 休日"
-    }
-  },
-  "login": {
-    "breadcrumb": {
-      "title": "系统登录"
-    },
-    "form": {
-      "title": "登录",
-      "email": "电子邮件地址",
-      "password": "密码",
-      "button": "登录",
-      "forgotPass": "忘记密码了？",
-      "resetPassLink": "点击这里",
-      "resetpass": "重置密码"
-    }
-  },
-  "error": {
-    "404": "非常抱歉，您访问的网页不存在。请点击下面的按钮回到首页。",
-    "backBtn": "回到首页"
-  }
+	"title": "株式会社イー・ビジネス(E-Business)",
+	"topBar": {
+		"language": "语言选择",
+		"languageOpt": {
+			"ja": "日语",
+			"en": "英语",
+			"zh": "中文"
+		},
+		"login": "登录"
+	},
+	"menu": {
+		"home": "首页",
+		"about": "关于我们",
+		"service": "服务内容",
+		"recruitment": "招聘信息",
+		"contact": "联系我们"
+	},
+	"footer": {
+		"brand": "株式会社イー・ビジネス",
+		"statement": "让社会和人们的生活更加富裕多彩，建设不断创新和进化的IT企业",
+		"news": {
+			"header": "最新动态",
+			"news1": {
+				"title": "取得ISO27001(ISMS)认证",
+				"date": "2014年5月30日"
+			},
+			"news2": {
+				"title": "随着事业的扩大，总公司迁至东京都港区",
+				"date": "2014年1月8日"
+			},
+			"news3": {
+				"title": "资本金增资至1850万日元",
+				"date": "2013年12月20日"
+			}
+		},
+		"links": {
+			"header": "相关链接",
+			"link1": "关于我们",
+			"link2": "服务内容",
+			"link3": "招聘信息",
+			"link4": "联系我们"
+		},
+		"contact": {
+			"header": "联系我们",
+			"address": "东京都港区芝2-28-8芝2丁目大厦10层",
+			"zipCode": "〒 105-0014",
+			"tel": "Tel: 03-6809-3235",
+			"fax": "Fax: 03-6809-3238",
+			"email": "Email: "
+		}
+	},
+	"copyright": {
+		"statement": "Copyright © 2007-2015 E-Business Inc. All Rights Reserved.",
+		"privacy": "个人信息保护方针",
+		"terms": "关于个人信息使用的公告",
+		"margin": "关于劳动者派遣的毛利率"
+	},
+	"home": {
+		"slider": {
+			"title1": "公司视野",
+			"title2": "经营理念",
+			"title3": "迈向优秀的国际公司",
+			"statement1": "让社会和人们的生活更加富裕多彩",
+			"statement2": "建设不断创新和进化的IT企业",
+			"statement3": "以员工福利为优先的公司文化",
+			"statement4": "将客户满意度最大化为中心的事业进程",
+			"statement5": "在国际化视野的高度上",
+			"statement6": "追求更高的便利性",
+			"statement7": "提供更高品质的IT服务"
+		},
+		"breadcrumb": {
+			"title": "株式会社 イー・ビジネス",
+			"statement": "以高效的生产性和值得信赖的高品质，伴随您的事业发展壮大。融合各种不同的文化，挑战不断进化的先进技术，以成为业内的先驱者为目标不断努力。",
+			"contact": "联系我们"
+		},
+		"subCate": {
+			"sub1": "关于我们",
+			"sub2": "服务内容",
+			"sub3": "招聘信息",
+			"sub4": "联系我们"
+		}
+	},
+	"aboutus": {
+		"breadcrumb": {
+			"title": "公司概况"
+		},
+		"message": {
+			"title": "来自社长的话",
+			"paragraph1": "本公司自2008年设立以来，短短8年时间，经历了经济萧条，东日本大地震，安倍经济学等一系列激烈的社会变革。我们在客户与合作伙伴的支持下披荆斩棘，终于越过了艰苦的创业期，迎来了蓬勃发展的第8个年头。在这里向大家表示深深的感谢。",
+			"paragraph2": "随着社会环境的变化，IT业界的技术革新越来越快，我们也越发感受到企业竞争中优胜劣汰的残酷。抱着这样的危机感，我们认为把握业界最新的动向，提高全公司的交流，思考和行动能力是极为重要的。",
+			"paragraph3": "为了成为更加专业，实用，耐久的公司，也为了公司社员的福利与客户的满意，我们将一如既往地进行创新与挑战，坚持不懈地进化和成长。",
+			"paragraph4": "在今后的日子里，也还请各位同仁给予我们更多更宝贵的鞭策和指导。",
+			"paragraph5": "公司法人代表  花 东江"
+		},
+		"info": {
+			"date": {
+				"title": "成立日期",
+				"content": "2007年6月"
+			},
+			"ceo": {
+				"title": "代表者",
+				"content": "公司法人代表  花 东江",
+				"btn": "来自社长的话"
+			},
+			"address": {
+				"title": "所在地",
+				"content": "东京都港区芝2-28-8芝2丁目大厦10层"
+			},
+			"capital": {
+				"title": "注册资本金",
+				"unit": "万日元",
+				"date": "截至2015年5月计算"
+			},
+			"employee": {
+				"title": "从业职工",
+				"unit": "人",
+				"date": "截至2015年1月计算",
+				"btn": "公司组织图"
+			},
+			"branch": {
+				"title": "海外分公司",
+				"content": "中国・大連易商共創科技株式会社"
+			},
+			"profit": {
+				"title": "上一年度营业额",
+				"unit": "亿日元",
+				"date": "2015年度"
+			},
+			"profit2": {
+				"title": "本年度营业额",
+				"unit": "亿日元",
+				"date": "2016年度预计"
+			},
+			"certification": {
+				"title": "取得资格",
+				"name1": " 一般劳动者派遣资格",
+				"name2": " 一般竞争竞标资格",
+				"name3": " 中小企业经营革新认证",
+				"name4": " Privacy Mark",
+				"name5": " ISO27001(ISMS)认证",
+				"name6": " ISO9001(ISA)认证"
+			}
+		},
+		"profit": "营业实绩",
+		"organization": "公司组织图",
+		"customer": {
+			"title": "主要客户",
+			"name1": "电通国际信息服务株式会社",
+			"name2": "IX Knowledge 株式会社",
+			"name3": "株式会社 DTS",
+			"name4": "株式会社 NSD",
+			"name5": "TDC软件工程株式会社",
+			"name6": "株式会社 藤仓",
+			"name7": "东邦系统科技株式会社",
+			"name8": "日立解决方案株式会社",
+			"name9": "住友生活信息系统株式会社"
+		},
+		"history": {
+			"title": "公司沿革",
+			"event1": {
+				"title": "注册资本金增资至3800万日元",
+				"date": " 2015年1月"
+			},
+			"event2": {
+				"title": "获得ISO27001(ISMS)认证",
+				"content": "ISO27001是一个证明某组织对自己持有的信息进行了适当的风险管理，提高组织社会价值的国际规格认证。",
+				"date": " 2014年5月30日"
+			},
+			"event3": {
+				"title": "成立中国大连易商共创科技股份有限公司",
+				"content": "大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。",
+				"date": " 2014年4月4日",
+				"btn": "易商共創科技"
+			},
+			"event4": {
+				"title": "公司总部迁至东京都港区",
+				"content": "随着事业的扩大，总公司迁至东京都港区",
+				"date": " 2014年1月",
+				"btn": "地图"
+			},
+			"event5": {
+				"title": "注册资本金增资至1850万日元",
+				"date": " 2013年7月"
+			},
+			"event6": {
+				"title": "取得一般竞争竞标资格",
+				"content": "一般竞争竞标，是指公示竞标活动的投标信息，募集参加者，竞标者之间通过竞争的方式决定中标者。",
+				"date": " 2012年4月"
+			},
+			"event7": {
+				"title": "获得 Privacy Mark",
+				"content": "Privacy Mark是指针对满足了个人信息保护相关要件的企业，由日本信息经济社会推进协会(JIPDEC)认可和颁发的登录商标。也简称为P-Mark。",
+				"date": " 2012年3月"
+			},
+			"event8": {
+				"title": "就任驻日经贸联络事务所招商代表",
+				"content": "公司法人代表花东江，受中国盐城市政府邀请，就任驻日经贸联络事务所招商代表",
+				"date": " 2009年9月"
+			},
+			"event9": {
+				"title": "获得经营革新企业认证",
+				"content": "根据日本中小企业新事业活动促进法，通过了相关评估，并取得了经营革新企业认证",
+				"date": " 2009年8月",
+				"btn": "2009年度8月经营革新计划承认书"
+			},
+			"event10": {
+				"title": "公司成立",
+				"content": "于东京都千代田区以注册资本金800万日元成立",
+				"date": " 2007年6月"
+			}
+		}
+	},
+	"recruitment": {
+		"breadcrumb": {
+			"title": "招聘信息"
+		},
+		"info": {
+			"employ": {
+				"title": "雇佣形态",
+				"content": "全职社员，契约社员"
+			},
+			"education": {
+				"title": "学历",
+				"content": "专门学校以上毕业",
+				"remark": "※高中毕业者须有两年以上工作经验"
+			},
+			"workplace": {
+				"title": "勤务地",
+				"content": "东京周边，名古屋，大阪",
+				"remark": "※根据住所考虑决定"
+			},
+			"category": {
+				"title": "职务",
+				"content": "项目经理，项目领队，系统工程师，程序员"
+			},
+			"job": {
+				"title": "工作内容",
+				"content1": "大型泛用计算机系——应用程序设计，开发",
+				"remark1": "※金融系，流通系，COBOL，PL/1等",
+				"content2": "开放系——Windows应用程序设计，开发",
+				"remark2": "※Java VB C C++ C# ASP.NET SQL Server Oracle　视频/图像等"
+			},
+			"qualification": {
+				"title": "应聘资格",
+				"content1": "IT相关专业的大学或专科学校的应届毕业生",
+				"content2": "22岁至38岁的有工作经验的转职者",
+				"remark": "无关种类IT相关经验即可"
+			},
+			"application": {
+				"title": "应聘方法",
+				"content": "填写简历后， 电子邮件至saiyou@e-business.co.jp"
+			},
+			"selection": {
+				"title": "录取方法",
+				"content": "简历选考，面试"
+			},
+			"holiday": {
+				"title": "休假制度",
+				"content": "每周2天，法定节假日",
+				"remark": "※有根据客户需求变动的可能性"
+			},
+			"contact": {
+				"title": "咨询窗口"
+			}
+		},
+		"download": "简历模板下载",
+		"agreement": {
+			"title": "关于招聘时个人信息使用的通知",
+			"info1": {
+				"title": "实用及提供的目的",
+				"content": "本公司从您处获得的姓名，生年月日，住所等个人信息，仅在本公司的招聘活动中使用，不会因其他的目的使用，亦不会向第三方提供，开示。"
+			},
+			"info2": {
+				"title": "个人信息的使用方法",
+				"content": "本公司从您处获得的个人信息，由本公司负责适当的管理和使用。当招聘活动终止时，亦由本公司负责废弃或删除。"
+			},
+			"info3": {
+				"title": "关于向本公司提供个人信息的范畴",
+				"content": "本公司从您处获得的个人信息，仅维持在本公司业务能够进行的最小范围内。如果您不同意本通知中的事项，我们会拒绝您的应征。"
+			},
+			"info4": {
+				"title": "关于您的个人信息的开示，订正以及删除",
+				"content": "对于您向本公司提供的个人信息，您可以要求我们向第三方开示或提供。另外，您也可以要求我们对您的个人信息进行订正或删除。如果您有这样的需要，请用以下方式联系我们。"
+			},
+			"info5": {
+				"title": "联系方式",
+				"content": "对个人信息的开示，订正，删除等要求，或您有不明事项时用一下方式联系我们。",
+				"contact": " 联系人： 株式会社イー・ビジネス",
+				"window": " 责任人： 花东江",
+				"tel": " 电话： ",
+				"fax": " 传真： "
+			},
+			"disagree": "不同意",
+			"agree": "同意"
+		},
+		"voices": {
+			"title": "社员心声",
+			"voice1": {
+				"content": "recruitment.voices.voice1.content",
+				"name": "陈岳阳",
+				"position": "营业部 营业一科"
+			},
+			"voice2": {
+				"content": "recruitment.voices.voice2.content",
+				"name": "山本 五十七",
+				"position": "系统开发部 产品一科"
+			},
+			"voice3": {
+				"content": "recruitment.voices.voice3.content",
+				"name": "宫崎骏",
+				"position": "总务部"
+			},
+			"voice4": {
+				"content": "recruitment.voices.voice4.content",
+				"name": "recruitment.voices.voice4.name",
+				"position": "recruitment.voices.voice4.position"
+			}
+		},
+		"photos": {
+			"title": "社内生活",
+			"title1": "社员研修",
+			"title2": "社内教育",
+			"title3": "培养新人",
+			"title4": "iOS学习会1",
+			"title5": "iOS学习会2",
+			"title6": "准备烧烤",
+			"title7": "Party开始了",
+			"title8": "家一样的气氛",
+			"title9": "品美食",
+			"title10": "快乐时光"
+		}
+	},
+	"contact": {
+		"breadcrumb": {
+			"title": "联系我们"
+		},
+		"form": {
+			"title": "联系我们",
+			"description": "如果您有任何希望咨询我们的事项，请填写下面的表单，之后点击发送。",
+			"name": "您的称呼",
+			"email": "您的电子邮件地址",
+			"subject": "消息标题",
+			"message": "消息内容",
+			"send": "发送",
+			"success": "Your message was successfully sent!"
+		},
+		"info": {
+			"title": "公司信息",
+			"address": "东京都港区芝2-28-8芝2丁目大厦10层"
+		},
+		"time": {
+			"title": "营业时间",
+			"workday": "平日:",
+			"saturday": "周六:",
+			"sunday": "周日:",
+			"rest": " 休日"
+		}
+	},
+	"login": {
+		"breadcrumb": {
+			"title": "系统登录"
+		},
+		"form": {
+			"title": "登录",
+			"email": "电子邮件地址",
+			"password": "密码",
+			"button": "登录",
+			"forgotPass": "忘记密码了？",
+			"resetPassLink": "点击这里",
+			"resetpass": "重置密码"
+		}
+	},
+	"error": {
+		"404": "非常抱歉，您访问的网页不存在。请点击下面的按钮回到首页。",
+		"backBtn": "回到首页"
+	}
 }

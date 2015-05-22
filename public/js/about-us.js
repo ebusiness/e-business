@@ -52,6 +52,8 @@ require([
   var $counter = $('.counter');
   var $companyInfoArea = $('#company-info');
   var $companyInfo = $('.service');
+  var $organizationArea = $('#organization');
+  var $organization = $('.table-responsive');
   var $barGraphArea = $('#graph');
   var $barGraph = $('#bar-graph');
   var $clinetsArea = $('.job-partners');
@@ -216,11 +218,17 @@ require([
   var handleAnimation = function() {
 
     // init tween
-    TweenMax.set([$companyInfoArea, $barGraphArea, $clinetsArea], {
+    TweenMax.set([$companyInfoArea, $organizationArea, $barGraphArea, $clinetsArea], {
       perspective: 800
     });
 
     TweenMax.set($companyInfo, {
+      transformPerspective: 800,
+      rotationX: 90,
+      autoAlpha: 0
+    });
+
+    TweenMax.set($organization, {
       transformPerspective: 800,
       rotationX: 90,
       autoAlpha: 0
@@ -255,6 +263,16 @@ require([
       }, 0.3);
     }, {
       offset: '100%',
+      triggerOnce: true
+    });
+
+    $organizationArea.waypoint(function() {
+      TweenMax.to($organization, 0.5, {
+        rotationX: 0,
+        autoAlpha: 1
+      });
+    }, {
+      offset: '70%',
       triggerOnce: true
     });
 
