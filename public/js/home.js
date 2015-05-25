@@ -1,133 +1,93 @@
-requirejs.config({
+// element reference
+var $wrapper = $('.wrapper');
+var $loading = $('#loading');
+var $window = $(window);
+var $header = $(".header-fixed .header-sticky");
 
-  baseUrl: "/",
+var $banner = $('.tp-banner');
+var $thumbnails = $('.thumbnails');
+var $subcate = $('#sub-cate');
 
-  paths: {
-    'jquery': 'components/jquery/dist/jquery',
-    'bootstrap': 'components/bootstrap/dist/js/bootstrap',
-    'fastclick': 'components/fastclick/lib/fastclick',
-    'back2top': 'components/back-to-top/index',
-    'tween-max': 'components/gsap/src/minified/TweenMax.min',
-    'waypoints': 'components/waypoints/waypoints.min',
-    'jpreloader': 'components/jpreloader/js/jpreloader.min',
-    'touchswipe': 'components/jquery-touchswipe/jquery.touchSwipe.min',
-    'rs-slider': 'components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min',
-  },
+// start proloader
+$wrapper.jpreLoader({
+  loaderVPos: '50%',
+  autoClose: true
+}, function() {
 
-  shim: {
-    'bootstrap': ['jquery'],
-    'fastclick': ['jquery'],
-    'back2top': ['jquery'],
-    'tween-max': ['jquery'],
-    'waypoints': ['jquery'],
-    'jpreloader': ['jquery'],
-    'rs-slider': ['touchswipe', 'tween-max']
-  }
+  // setup page
+  handleFastClick();
+  handleHeader();
+  handleSlider();
+  handleAnimation();
 
-});
-
-require([
-  'fastclick',
-  'jpreloader',
-  'back2top',
-  'bootstrap',
-  'touchswipe',
-  'rs-slider',
-  'waypoints'
-], function(fastclick) {
-
-  // element reference
-  var $wrapper = $('.wrapper');
-  var $loading = $('#loading');
-  var $window = $(window);
-  var $header = $(".header-fixed .header-sticky");
-
-  var $banner = $('.tp-banner');
-  var $thumbnails = $('.thumbnails');
-  var $subcate = $('#sub-cate');
-
-  // start proloader
-  $wrapper.jpreLoader({
-    loaderVPos: '50%',
-    autoClose: true
-  }, function() {
-
-    // setup page
-    handleFastClick();
-    handleHeader();
-    handleSlider();
-    handleAnimation();
-
-    // display content
-    TweenMax.to($wrapper, 0.7, {
-      opacity: 1
-    });
-
-    // hide loader then start animation
-    $loading.fadeOut('fast', startAnimation);
-
+  // display content
+  TweenMax.to($wrapper, 0.7, {
+    opacity: 1
   });
 
-  // Fast Click
-  var handleFastClick = function() {
-    fastclick.attach(document.body);
-  };
-
-  // Fixed Header
-  var handleHeader = function() {
-
-    $window.scroll(function() {
-      if ($window.scrollTop() > 100) {
-        $header.addClass("header-fixed-shrink");
-      } else {
-        $header.removeClass("header-fixed-shrink");
-      }
-    });
-  };
-
-  // Slider
-  var handleSlider = function() {
-
-    $banner.revolution({
-      delay: 9000,
-      startwidth: 870,
-      startheight: 400,
-      hideThumbs: 10,
-      navigationStyle: "preview4"
-    });
-  };
-
-  // Animation initialize
-  var handleAnimation = function() {
-
-    // init tween
-    TweenMax.set($subcate, {
-      perspective: 800,
-    });
-
-    // init tween
-    TweenMax.set($thumbnails, {
-      transformPerspective: 800,
-      backfaceVisibility: "hidden",
-      transformStyle: "preserve-3d",
-      rotationY: 90,
-      autoAlpha: 0
-    });
-  };
-
-  // Animation
-  var startAnimation = function() {
-
-    // setup waypoints
-    $subcate.waypoint(function() {
-      TweenMax.staggerTo($thumbnails, 1, {
-        rotationY: 0,
-        autoAlpha: 1
-      }, 0.3);
-    }, {
-      offset: '100%',
-      triggerOnce: true
-    });
-  };
+  // hide loader then start animation
+  $loading.fadeOut('fast', startAnimation);
 
 });
+
+// Fast Click
+var handleFastClick = function() {
+  FastClick.attach(document.body);
+};
+
+// Fixed Header
+var handleHeader = function() {
+
+  $window.scroll(function() {
+    if ($window.scrollTop() > 100) {
+      $header.addClass("header-fixed-shrink");
+    } else {
+      $header.removeClass("header-fixed-shrink");
+    }
+  });
+};
+
+// Slider
+var handleSlider = function() {
+
+  $banner.revolution({
+    delay: 9000,
+    startwidth: 870,
+    startheight: 400,
+    hideThumbs: 10,
+    navigationStyle: "preview4"
+  });
+};
+
+// Animation initialize
+var handleAnimation = function() {
+
+  // init tween
+  TweenMax.set($subcate, {
+    perspective: 800,
+  });
+
+  // init tween
+  TweenMax.set($thumbnails, {
+    transformPerspective: 800,
+    backfaceVisibility: "hidden",
+    transformStyle: "preserve-3d",
+    rotationY: 90,
+    autoAlpha: 0
+  });
+};
+
+// Animation
+var startAnimation = function() {
+
+  // setup waypoints
+  $subcate.waypoint(function() {
+    TweenMax.staggerTo($thumbnails, 1, {
+      rotationY: 0,
+      autoAlpha: 1
+    }, 0.3);
+  }, {
+    offset: '100%',
+    triggerOnce: true
+  });
+};

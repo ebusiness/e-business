@@ -1,10 +1,10 @@
 doctype html
-<!--[if IE 8]><html lang="#{locale}" class="ie8"><![endif]-->
-<!--[if IE 9]><html lang="#{locale}" class="ie9"><![endif]-->
-<!--[if !IE]><!--><html lang="#{locale}"><!--<![endif]-->
+<!--[if IE 8]><html lang="ja" class="ie8"><![endif]-->
+<!--[if IE 9]><html lang="ja" class="ie9"><![endif]-->
+<!--[if !IE]><!--><html lang="ja"><!--<![endif]-->
 head
 
-  title #{__('title')}
+  title 株式会社イー・ビジネス(E-Business)
 
   // Meta 
   meta(charset='utf-8')
@@ -68,19 +68,19 @@ body.header-fixed
             ul.nav.navbar-nav
               li(class=(path === "home")?"active":"")
                 a(href='/home')
-                  | #{__('menu.home')}
+                  | トップ
               li(class=(path === "about-us")?"active":"")
                 a(href='/about-us')
-                  | #{__('menu.about')}
+                  | 会社概要
               li(class=(path === "services")?"active":"")
                 a(href='/services')
-                  | #{__('menu.service')}
+                  | 事業内容
               li(class=(path === "recruitment")?"active":"")
                 a(href='/recruitment')
-                  | #{__('menu.recruitment')}
+                  | 採用情報
               li(class=(path === "contact")?"active":"")
                 a(href='/contact')
-                  | #{__('menu.contact')}
+                  | お問合せ
 
     // Slider
     block slider
@@ -100,9 +100,9 @@ body.header-fixed
             .col-sm-6.col-md-3.md-margin-bottom-40
               a(href='/home')
                 //- img#logo-footer.footer-logo(src='/img/logo2-default.png', alt='')
-                h2 #{__('footer.brand')}
+                h2 株式会社イー・ビジネス
               p
-                | #{__('footer.statement')}
+                | 社会と人々の生活をより豊かなものへと推進し、進化をもたらせるIT組織を目指していきます
               img#logo-footer.footer-logo(src='/img/eb/pmark.jpg', alt='', style="width: 65px; height: 75px;")
               img#logo-footer.footer-logo(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
               img#logo-footer.footer-logo(src='/img/eb/isa.jpg', alt='', style="width: auto; height: 75px; margin-left: 10px;")
@@ -110,51 +110,51 @@ body.header-fixed
             .col-sm-6.col-md-3.md-margin-bottom-40
               .posts
                 .headline
-                  h2 #{__('footer.news.header')}
+                  h2 最新ニュース
                 ul.list-unstyled.latest-list
                   li
-                    a(href='#') #{__('footer.news.news1.title')}
-                    small #{__('footer.news.news1.date')}
+                    a(href='#') ISO27001(ISMS)認証を取得しました
+                    small 2014年5月30日
                   li
-                    a(href='#') #{__('footer.news.news2.title')}
-                    small #{__('footer.news.news2.date')}
+                    a(href='#') 事業拡大のため、本社を東京都港区芝に移転
+                    small 2014年1月8日
                   li
-                    a(href='#') #{__('footer.news.news3.title')}
-                    small #{__('footer.news.news3.date')}
+                    a(href='#') 資本金を1850万円に増資
+                    small 2013年12月20日
             // Link List 
             .col-sm-6.col-md-3.md-margin-bottom-40
               .headline
-                h2 #{__('footer.links.header')}
+                h2 リンク集
               ul.list-unstyled.link-list
                 li
-                  a(href='/home') HOME
+                  a(href='/home') トップ
                   i.fa.fa-angle-right
                 li
-                  a(href='/about-us') #{__('footer.links.link1')}
+                  a(href='/about-us') 会社概要
                   i.fa.fa-angle-right
                 li
-                  a(href='/services') #{__('footer.links.link2')}
+                  a(href='/services') 事業内容
                   i.fa.fa-angle-right
                 li
-                  a(href='/recruitment') #{__('footer.links.link3')}
+                  a(href='/recruitment') 採用情報
                   i.fa.fa-angle-right
                 li
-                  a(href='/contact') #{__('footer.links.link4')}
+                  a(href='/contact') お問合せ
                   i.fa.fa-angle-right
             // Contact
             .col-sm-6.col-md-3.map-img.md-margin-bottom-40
               .headline
-                h2 #{__('footer.contact.header')}
+                h2 お問合せ
               address.md-margin-bottom-40
-                | #{__('footer.contact.address')}
+                | 東京都港区芝2-28-8芝2丁目ビル10階
                 br
-                | #{__('footer.contact.zipCode')}
+                | 〒 105-0014
                 br
-                | #{__('footer.contact.tel')}
+                | Tel: 03-6809-3235
                 br
-                | #{__('footer.contact.fax')}
+                | Fax: 03-6809-3238
                 br
-                | #{__('footer.contact.email')}
+                | Email: 
                 a(href='mailto:info@e-business.co.jp') info@e-business.co.jp
                 br
                 img#logo-footer.footer-logo(src='/img/eb/E-businessQR.jpg', alt='', style="width: auto; height: 75px;")
@@ -163,14 +163,14 @@ body.header-fixed
         .container
           .row
             .col-md-6
-              p #{__('copyright.statement')}
+              p Copyright © 2007-2015 E-Business Corporation. All Rights Reserved.
             .col-md-6
               p.pull-right
-                a(href='/privacy') #{__('copyright.privacy')}
+                a(href='/privacy') 個人情報保護方針
                 |  |
-                a(href='/terms-of-service')  #{__('copyright.terms')}
+                a(href='/terms-of-service')  個人情報の利用目的の公表に関する事項
                 |  |
-                a(href='/margin-rate')  #{__('copyright.margin')}
+                a(href='/margin-rate')  労働者派遣のマージン率等
 
   // JS
   block js

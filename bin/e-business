@@ -4,16 +4,16 @@ var app = require('../app');
 
 function start() {
 
-  var server = app.listen(process.env.PORT || 8083, function() {
-    console.log('Express server listening on port ' + server.address().port);
-  });
+	var server = app.listen(config.app.port || 8083, function() {
+		console.log('Express server listening on port ' + server.address().port);
+	});
 }
 
 if (require.main === module) {
-  // application run directly; start app server
-  start();
+	// application run directly; start app server
+	start();
 } else {
-  // application imported as a module via "require": export function
-  // to create server
-  module.exports = start;
+	// application imported as a module via "require": export function
+	// to create server
+	module.exports = start;
 }

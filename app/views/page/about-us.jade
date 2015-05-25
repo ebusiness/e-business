@@ -4,12 +4,23 @@ block css
   link(rel="stylesheet", href="/css/about-us.css")
 
 block js
-  script(data-main="/js/about-us", src="/components/requirejs/require.js")
+  //- script(src="components/jquery/dist/jquery.js")
+  //- script(src="components/bootstrap/dist/js/bootstrap.js")
+  //- script(src="components/fastclick/lib/fastclick.js")
+  //- script(src="components/back-to-top/index.js")
+  //- script(src="components/gsap/src/minified/TweenMax.min.js")
+  //- script(src="components/waypoints/waypoints.min.js")
+  //- script(src="components/jpreloader/js/jpreloader.min.js")
+  //- script(src="components/modernizr/modernizr.js")
+  //- script(src="components/flot/jquery.flot.js")
+  //- script(src="components/flot/jquery.flot.resize.js")
+  //- script(src="components/counter-up/jquery.counterup.min.js")
+  script(src="js/about-us.js")
 
 block breadcrumbs
   .breadcrumbs
     .container
-      h1.pull-left #{__('aboutus.breadcrumb.title')}
+      h1.pull-left 会社概要
 
 block content
 
@@ -18,16 +29,16 @@ block content
       .modal-content
         .modal-header
           button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
-          h4#greetingLabel.modal-title #{__('aboutus.message.title')}
+          h4#greetingLabel.modal-title 社長からのメッセージ
         .modal-body
           blockquote.row.shadow-wrapper
             #photo.col-sm-6.col-md-4.pull-right.box-shadow.shadow-effect-2.margin-bottom-10
               img.img-responsive.margin-bottom-10(src='/img/eb/DSC_2573.jpg', alt='')
-            p #{__('aboutus.message.paragraph1')}
-            p #{__('aboutus.message.paragraph2')}
-            p #{__('aboutus.message.paragraph3')}
-            p #{__('aboutus.message.paragraph4')}
-            small #{__('aboutus.message.paragraph5')}
+            p 当社は2007年に発足して以来、短い８年間と言いながら、リーマンショックをきっかけとした不況、東日本大震災、アベノミクス等、いろんな激しい変化を経験して参りました。その厳しい創業期を乗り越え、無事第8期を迎える事が出来ましたのも、当社のお客様、ビジネスパートナー様、 その他関係者全ての皆様のお力によるものでございます。ここで改めて深く御礼申し上げます。
+            p 社会環境の変化に伴い、IT業界でも技術革新のスピードがますます速くなり、企業の優勝劣敗の残酷さをしみじみ感じております。この危機感を抱えながら、いかに業界最新動向を捉え、会社全体のコミュニケーション力、思考力と実行力を高めることが極めて重要だと思っております。
+            p 専門性、実用性、耐久性の高い会社になるため、社員満足から始まる顧客満足を向上させるために、当社は試行錯誤を重ねて、常に進化を追求し続けて参ります。
+            p 今後とも変わらぬ、一層の皆様のご愛顧とご指導、ご支援賜りますようお願い申し上げます。
+            small 社長取締役　花 東江
 
   #company-info.container.content
     .row
@@ -35,89 +46,89 @@ block content
         .service
           i.service-icon.icon-star
           .desc
-            h4.no-top-space #{__('aboutus.info.date.title')}
-            p #{__('aboutus.info.date.content')}
+            h4.no-top-space 設立日
+            p 2007年6月（平成19年6月）
       .col-sm-4
         .service
           i.service-icon.icon-user-following
           .desc
-            h4.no-top-space #{__('aboutus.info.ceo.title')}
-            p #{__('aboutus.info.ceo.content')}
-            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#greeting") #{__('aboutus.info.ceo.btn')}
+            h4.no-top-space 代表者
+            p 社長取締役 花東江
+            button.btn-u.btn-u-xs(data-toggle="modal",data-target="#greeting") ご挨拶
       .col-sm-4
         .service
           i.service-icon.icon-pointer
           .desc
-            h4.no-top-space #{__('aboutus.info.address.title')}
-            p #{__('aboutus.info.address.content')}
+            h4.no-top-space 所在地
+            p 東京都港区芝2-28-8芝2丁目ビル10階
     .row
       .col-sm-4
         .service
           i.service-icon.icon-diamond
           .desc
-            h4.no-top-space #{__('aboutus.info.capital.title')}
+            h4.no-top-space 資本金
               | 
               span.counter 3800
-              | #{__('aboutus.info.capital.unit')}
-            p #{__('aboutus.info.capital.date')}
+              | 万円
+            p 平成27年1月現在
       .col-sm-4
         .service
           i.service-icon.icon-users
           .desc
-            h4.no-top-space #{__('aboutus.info.employee.title')}
+            h4.no-top-space 従業員数
               | 
               span.counter 185
-              | #{__('aboutus.info.employee.unit')}
-            p #{__('aboutus.info.employee.date')}
+              | 人
+            p 平成27年1月現在
       .col-sm-4
         .service
           i.service-icon.icon-globe-alt
           .desc
-            h4.no-top-space #{__('aboutus.info.branch.title')}
-            p #{__('aboutus.info.branch.content')}
+            h4.no-top-space 海外支社
+            p 中国・大連易商共創科技株式会社
     .row
       .col-sm-4
         .service
           i.service-icon.icon-bar-chart
           .desc
-            h4.no-top-space #{__('aboutus.info.profit.title')}
+            h4.no-top-space 直近年商
               | 
               span.counter 16
-              | #{__('aboutus.info.profit.unit')}
-            p #{__('aboutus.info.profit.date')}
+              | 億円
+            p 平成26年度
       .col-sm-4
         .service
           i.service-icon.icon-graph
           .desc
-            h4.no-top-space #{__('aboutus.info.profit2.title')}
+            h4.no-top-space 本年度売上
               | 
               span.counter 21
-              | #{__('aboutus.info.profit2.unit')}
-            p #{__('aboutus.info.profit2.date')}
+              | 億円
+            p 平成27年度見込み
       .col-sm-4
         .service
           i.service-icon.icon-badge
           .desc
-            h4.no-top-space #{__('aboutus.info.certification.title')}
+            h4.no-top-space 取得資格
             ul.list-unstyled
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name1')}
+                |  一般労働者派遣資格
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name2')}
+                |  一般競争入札資格
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name3')}
+                |  中小企業経営革新認定企業認定
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name4')}
+                |  プライバシーマーク
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name5')}
+                |  ISO27001(ISMS)認証
               li
                 i.fa.fa-check.color-green
-                | #{__('aboutus.info.certification.name6')}
+                |  ISO9001(ISA)認証
 
   #organization.container.content
     .row
@@ -237,63 +248,63 @@ block content
     .row
       .col-md-8.col-md-offset-2
         .heading.heading-v4.margin-bottom-20
-          h2.color-green #{__('aboutus.profit')}
+          h2.color-green 売上実績
         #bar-graph(style="width:100%; height: 300px;")
 
   .container.content.job-partners
     .heading.heading-v4.margin-bottom-20
-      h2.color-green #{__('aboutus.customer.title')}
+      h2.color-green 主な取引先
       p 敬称略・順不同
     ul#effect-2.list-inline.our-clients
       li
         figure
           img#isid.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name1')}
+            h4 株式会社電通国際情報サービス(ISID)
       li
         figure
           img#iki.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name2')}
+            h4 アイエックス・ナレッジ株式会社(IKI)
       li
         figure
           img#dts.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name3')}
+            h4 株式会社　DTS
       li
         figure
           img#nsd.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name4')}
+            h4 株式会社ＮＳＤ
       li
         figure
           img#tdc.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name5')}
+            h4 ＴＤＣソフトウェアエンジニアリング株式会社
       li
         figure
           img#fujikura.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name6')}
+            h4 株式会社フジクラ
       li
         figure
           img#tss.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name7')}
+            h4 株式会社東邦システムサイエンス
       li
         figure
           img#hitachi.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name8')}
+            h4 株式会社日立ソリューションズ
       li
         figure
           img#slc.client-logo(src='/img/eb/customer/transparent.png', alt='')
           .img-hover
-            h4 #{__('aboutus.customer.name9')}
+            h4 スミセイ情報システム株式会社
 
   .container.content
     .heading.heading-v4.margin-bottom-20
-      h2.color-green #{__('aboutus.history.title')}
+      h2.color-green 会社沿革
     .row
       ul.timeline-v1
         li
@@ -322,105 +333,105 @@ block content
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event1.title')}
+              h4 資本金を3800万円に増資
               span
                 i.fa.fa-clock-o
-                |  #{__('aboutus.history.event1.date')}
+                |  平成27年1月
         li.timeline-inverted
           .timeline-badge.primary
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event2.title')}
+              h4 ISO27001(ISMS)認証を取得
               p
                 img(src='/img/eb/isms.jpg', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
-                | #{__('aboutus.history.event2.content')}
+                | ISO27001は、組織が保有する情報にかかわるさまざまなリスクを適切に管理し、組織の価値向上をもたらすISMSの国際規格です。
               span
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event2.date')}
+                |  平成26年5月30日
         li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event3.title')}
+              h4 中国・大連易商共創科技株式会社を設立
               p
-                | #{__('aboutus.history.event3.content')}
+                | 大連易商共創科技有限公司成立於2014年4月。 做為株式會社イー.ビジネス（英文社名E-BUSINESS Inc.）的第一家中國地區子公司。是為順應日本總公司的高速發展而成立的海外據點。伴隨著日本經濟的逐步復蘇，イー.ビジネス所接手的項目激增，需要大量優秀人才。大連易商共創科技有限公司初期的主要職能是為總公司召集優秀人才，重視實戰性，同時也保證優秀人才的豐厚待遇。另一個職能是作為總公司在海外的據點拓展海外業務。我們歡迎優秀的各位加入易商共創。我們會給您提供最好的發展平臺。
               span.pull-left
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event3.date')}
+                |  平成26年4月4日
               span.pull-right
-                a.btn-u.btn-u-xs(href='http://big5.51job.com/gate/big5/companyadc.51job.com/companyads/ads/17/16458/16457658/index.htm', target='blank') #{__('aboutus.history.event3.btn')}
+                a.btn-u.btn-u-xs(href='http://big5.51job.com/gate/big5/companyadc.51job.com/companyads/ads/17/16458/16457658/index.htm', target='blank') 易商共創科技
               .clearfix
         li.timeline-inverted
           .timeline-badge.primarya
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event4.title')}
+              h4 本社を東京都港区芝に移転
               p
-                | #{__('aboutus.history.event4.content')}
+                | 事業拡大に伴い、本社を東京都港区芝に移転
               span.pull-left
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event4.date')}
+                |  平成26年1月
               span.pull-right
-                a.btn-u.btn-u-xs(href='/contact') #{__('aboutus.history.event4.btn')}
+                a.btn-u.btn-u-xs(href='/contact') アクセス
               .clearfix
         li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event5.title')}
+              h4 資本金を1850万円に増資
               span
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event5.date')}
+                |  平成25年7月
         li.timeline-inverted
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body
-              h4 #{__('aboutus.history.event7.title')}
+              h4 プライバシーマーク取得
               p
                 img(src='/img/eb/pmark.gif', alt='', style="width: auto; height: 75px; margin-right: 15px; margin-bottom: 10px; float: left;")
-                | #{__('aboutus.history.event7.content')}
+                | プライバシーマークとは、個人情報保護に関して一定の要件を満たした事業者（基本的には法人単位。ただし、医療関連については病院ごとなど例外あり）に対し、一般財団法人日本情報経済社会推進協会 (JIPDEC) により使用を認められる登録商標（サービスマーク）の事である。Pマークと略して呼ばれることもある。
               span
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event7.date')}
+                |  平成24年3月
         li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event8.title')}
+              h4 駐日経貿連絡事務所招商代表に就任
               p
-                | #{__('aboutus.history.event8.content')}
+                | 代表取締役社長花東江が、中国塩城市政府の要請を受け、駐日経貿連絡事務所招商代表に就任。
               span
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event8.date')}
+                |  平成21年9月
         li.timeline-inverted
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body
-              h4 #{__('aboutus.history.event9.title')}
+              h4 経営革新企業認定取得
               p
-                | #{__('aboutus.history.event9.content')}
+                | 中小企業新事業活動促進法に準じ、中小企業経営革新認定企業の認定を受ける。
               span.pull-left
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event9.date')}
+                |  平成21年8月
               span.pull-right
-                a.btn-u.btn-u-xs(href='/certification') #{__('aboutus.history.event9.btn')}
+                a.btn-u.btn-u-xs(href='/certification') 平成21年度8月経営革新計画承認書
               .clearfix
         li
           .timeline-badge.primary
             i.glyphicon.glyphicon-record.invert
           .timeline-panel
             .timeline-body.text-justify
-              h4 #{__('aboutus.history.event10.title')}
+              h4 会社設立
               p
-                | #{__('aboutus.history.event10.content')}
+                | 東京都千代田区において資本金800万円にて設立
               span
                 i.fa.fa-clock-o
-                | #{__('aboutus.history.event10.date')}
+                |  平成19年6月
         li.clearfix(style='float: none;')

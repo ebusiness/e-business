@@ -8,17 +8,8 @@ module.exports = {
     root: rootPath,
     app: {
       name: 'EBusiness - HomePage [TEST]',
-      env: 'test'
-    },
-    mongodb: {
-      host: 'mongodb://localhost/e-business_test',
-    },
-    mail: {
-      service: "Gmail",
-      auth: {
-        user: "joe.19840729.china@gmail.com",
-        pass: "19840729"
-      }
+      env: 'test',
+      port: 8080
     }
   },
 
@@ -26,17 +17,8 @@ module.exports = {
     root: rootPath,
     app: {
       name: 'EBusiness - HomePage [DEV]',
-      env: 'development'
-    },
-    mongodb: {
-      host: 'mongodb://localhost/e-business_dev'
-    },
-    mail: {
-      service: "Gmail",
-      auth: {
-        user: "joe.19840729.china@gmail.com",
-        pass: "19840729"
-      }
+      env: 'development',
+      port: 8081
     }
   },
 
@@ -44,17 +26,8 @@ module.exports = {
     root: rootPath,
     app: {
       name: 'EBusiness - HomePage',
-      env: 'production'
-    },
-    mongodb: {
-      host: 'mongodb://localhost/e-business'
-    },
-    mail: {
-      port: 587,
-      auth: {
-        user: "administrator@e-business.jp",
-        pass: "ZSkikuD2O5"
-      }
+      env: 'production',
+      port: 80
     }
   }
 };

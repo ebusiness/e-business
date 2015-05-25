@@ -5,12 +5,19 @@ block css
 
 block js
   script(src="http://maps.google.com/maps/api/js?sensor=true")
-  script(data-main="/js/contact", src="/components/requirejs/require.js")
+  //- script(src="components/jquery/dist/jquery.js")
+  //- script(src="components/bootstrap/dist/js/bootstrap.js")
+  //- script(src="components/fastclick/lib/fastclick.js")
+  //- script(src="components/back-to-top/index.js")
+  //- script(src="components/gsap/src/minified/TweenMax.min.js")
+  //- script(src="components/jpreloader/js/jpreloader.min.js")
+  //- script(src="components/gmaps/gmaps.js")
+  script(src="js/contact.js")
 
 block breadcrumbs
   .breadcrumbs
     .container
-      h1.pull-left #{__('contact.breadcrumb.title')}
+      h1.pull-left お問合せ
 
 block content
   // Google Map
@@ -58,11 +65,11 @@ block content
       .col-md-4
         // Contacts
         .headline
-          h2 #{__('contact.info.title')}
+          h2 会社案内
         ul.list-unstyled.who.margin-bottom-30
           li
             i.fa.fa-home
-            | #{__('contact.info.address')}
+            | 東京都港区芝2-28-8 芝2丁目ビル10階
           li
             i.fa.fa-envelope
             | info@e-business.co.jp
@@ -75,10 +82,10 @@ block content
       .col-md-4
         // Business Hours
         .headline
-          h2 #{__('contact.time.title')}
+          h2 営業時間
         ul.list-unstyled.margin-bottom-30
           li
-            strong #{__('contact.time.workday')}
+            strong 平日:
             |  9:30 〜 18:00
           //- li
           //-   strong #{__('contact.time.saturday')}
@@ -86,4 +93,3 @@ block content
           //- li
           //-   strong #{__('contact.time.sunday')}
           //-   | #{__('contact.time.rest')}
-

@@ -3,84 +3,48 @@ var fs = require('fs'),
 
 module.exports = function(app, config) {
 
-  //////////////////////////////////////////////////
-  /// Static route
-  //////////////////////////////////////////////////
   app.get('/', function(req, res, next) {
-    res.render('page/home', {
-      locale: req.getLocale(),
-      path: 'home'
-    });
+    res.render('page/home');
   });
 
-  app.get('/:lang?/home', function(req, res, next) {
-    res.render('page/home', {
-      locale: req.getLocale(),
-      path: 'home'
-    });
+  app.get('/home', function(req, res, next) {
+    res.render('page/home');
   });
 
-  app.get('/:lang?/about-us', function(req, res, next) {
-    res.render('page/about-us', {
-      locale: req.getLocale(),
-      path: 'about-us'
-    });
+  app.get('/about-us', function(req, res, next) {
+    res.render('page/about-us');
   });
 
-  app.get('/:lang?/services', function(req, res, next) {
-    res.render('page/services', {
-      locale: req.getLocale(),
-      path: 'services'
-    });
+  app.get('/services', function(req, res, next) {
+    res.render('page/services');
   });
 
-  app.get('/:lang?/products', function(req, res, next) {
-    res.render('page/products', {
-      locale: req.getLocale(),
-      path: 'products'
-    });
+  app.get('/products', function(req, res, next) {
+    res.render('page/products');
   });
 
-  app.get('/:lang?/recruitment', function(req, res, next) {
-    res.render('page/recruitment', {
-      locale: req.getLocale(),
-      path: 'recruitment'
-    });
+  app.get('/recruitment', function(req, res, next) {
+    res.render('page/recruitment');
   });
 
-  app.get('/:lang?/contact', function(req, res, next) {
-    res.render('page/contact', {
-      locale: req.getLocale(),
-      path: 'contact'
-    });
+  app.get('/contact', function(req, res, next) {
+    res.render('page/contact');
   });
 
-  app.get('/:lang?/login', function(req, res, next) {
-    res.render('page/login', {
-      locale: req.getLocale(),
-      path: 'login'
-    });
+  app.get('/login', function(req, res, next) {
+    res.render('page/login');
   });
 
-  app.get('/:lang?/privacy', function(req, res, next) {
-    res.render('page/privacy', {
-      locale: req.getLocale(),
-      path: 'privacy'
-    });
+  app.get('/privacy', function(req, res, next) {
+    res.render('page/privacy');
   });
 
-  app.get('/:lang?/terms-of-service', function(req, res, next) {
-    res.render('page/terms-of-service', {
-      locale: req.getLocale(),
-      path: 'terms-of-service'
-    });
+  app.get('/terms-of-service', function(req, res, next) {
+    res.render('page/terms-of-service');
   });
 
-  app.get('/:lang?/margin-rate', function(req, res, next) {
-    res.render('page/margin-rate', {
-      locale: req.getLocale(),
-      path: 'margin-rate'
-    });
+  app.get('/margin-rate', function(req, res, next) {
+    res.render('page/margin-rate');
   });
 
   app.get('/resume-template', function(req, res, next) {
