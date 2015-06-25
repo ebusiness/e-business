@@ -134,7 +134,7 @@ var handleFlot = function() {
       [23, 360],
       [24, 630],
       [25, 1070],
-      [26, 1500]
+      [26, 1700]
     ],
     bars: {
       show: true,
@@ -149,7 +149,7 @@ var handleFlot = function() {
       position: "right"
     }, {
       min: 0,
-      max: 1600,
+      max: 2000,
       position: "left"
     }],
     xaxis: {
