@@ -55,11 +55,9 @@ module.exports = function(app, config) {
 
     res.sendFile('resume.xls', options, function(err) {
       if (err) {
-        res
-          .set('Content-disposition', 'attachment; filename=resume.xls')
-          .set('Content-Type', 'application/vnd.ms-excel')
-          .status(err.status)
-          .end();
+        res.setHeader('Content-disposition', 'attachment; filename=resume.xls');
+        res.setHeader('Content-Type', 'application/vnd.ms-excel');
+        res.status(err.status).end();
       }
     });
   });
