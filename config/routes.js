@@ -49,27 +49,25 @@ module.exports = function(app, config) {
 
   app.get('/resume-template', function(req, res, next) {
 
-    res.setHeader('Content-disposition', 'attachment; filename=resume.xls');
+    res.setHeader('Content-Disposition', 'attachment; filename=resume.xls');
     res.setHeader('Content-Type', 'application/vnd.ms-excel');
     var file = GLOBAL.config.root + '/resources/resume.xls';
     var filestream = fs.createReadStream(file);
     filestream.pipe(res);
 
-return ;
-
-    var options = {
-      root: GLOBAL.config.root + '/resources/',
-    };
-
-    res.sendFile('resume.xls', options, function(err) {
-      if (err) {
-        res.attachment("resume.xls");
-        res.set("Content-Disposition", "attachment;filename=resume.xls");
-        // res.setHeader('Content-Disposition', 'attachment; filename="resume.xls"');
-        res.setHeader('Content-Type', 'application/vnd.ms-excel');
-        res.status(err.status).end();
-      }
-    });
+    // var options = {
+    //   root: GLOBAL.config.root + '/resources/',
+    // };
+    //
+    // res.sendFile('resume.xls', options, function(err) {
+    //   if (err) {
+    //     res.attachment("resume.xls");
+    //     res.set("Content-Disposition", "attachment;filename=resume.xls");
+    //     // res.setHeader('Content-Disposition', 'attachment; filename="resume.xls"');
+    //     res.setHeader('Content-Type', 'application/vnd.ms-excel');
+    //     res.status(err.status).end();
+    //   }
+    // });
   });
 
   app.get('/certification', function(req, res, next) {
