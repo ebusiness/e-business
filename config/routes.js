@@ -80,4 +80,15 @@ module.exports = function(app, config) {
       if (err) res.status(err.status).end();
     });
   });
+
+  app.get('/openRequest', function(req, res, next) {
+
+    var options = {
+      root: GLOBAL.config.root + '/resources/',
+    };
+
+    res.sendFile('openRequest.pdf', options, function(err) {
+      if (err) res.status(err.status).end();
+    });
+  });
 };
