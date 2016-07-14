@@ -51,7 +51,7 @@ module.exports = function(app, config) {
 
     res.setHeader('Content-Disposition', 'attachment; filename=resume.xls');
     res.setHeader('Content-Type', 'application/vnd.ms-excel');
-    var file = GLOBAL.config.root + '/resources/resume.xls';
+    var file = global.config.root + '/resources/resume.xls';
     var filestream = fs.createReadStream(file);
     filestream.pipe(res);
 
@@ -73,7 +73,7 @@ module.exports = function(app, config) {
   app.get('/certification', function(req, res, next) {
 
     var options = {
-      root: GLOBAL.config.root + '/resources/',
+      root: global.config.root + '/resources/',
     };
 
     res.sendFile('ninsyo2009.pdf', options, function(err) {
@@ -84,7 +84,7 @@ module.exports = function(app, config) {
   app.get('/openRequest', function(req, res, next) {
 
     var options = {
-      root: GLOBAL.config.root + '/resources/',
+      root: global.config.root + '/resources/',
     };
 
     res.sendFile('openRequest.pdf', options, function(err) {

@@ -28,6 +28,11 @@ module.exports = {
       name: 'EBusiness - HomePage',
       env: 'production',
       port: 80
+    },
+    https: {
+        port: 443,
+        key: fs.readFileSync(rootPath + '/resources/key.pem').toString(),
+        cert: fs.readFileSync(rootPath + '/resources/cert.pem').toString()
     }
   }
 };

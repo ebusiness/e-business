@@ -1,12 +1,20 @@
 #!/usr/bin/env node
  // var debug = require('debug')('ebusiness');
-var app = require('../app');
+var app = require('../app')
+    , https = require("https");
 
 function start() {
 
 	var server = app.listen(config.app.port || 8083, function() {
 		console.log('Express server listening on port ' + server.address().port);
 	});
+
+	if (config.https) {
+		var options = {key: config.https.key, cert: config.https.cert};
+		https.createServer( options, function(req,res) {
+		    app.handle( req, res );
+		} ).listen( config.https.port || 8443 );
+	}
 }
 
 if (require.main === module) {
