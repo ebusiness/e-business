@@ -1,5 +1,11 @@
 e-business homepage
 
+# docker
+
+```sh
+docker run -itd --restart=always --name=homepage -p 80:80 -p 443:443 -v /home/ec2-user/ebsm:/root/e-business/public-build/ebsm -v /var/gogs/gogs/conf/rapid-cer.pem:/root/e-business/resources/cert.pem -v /var/gogs/gogs/conf/server-key.pem:/root/e-business/resources/key.pem ebusinessdocker/home
+```
+
 # webhook
 
 ```json

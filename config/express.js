@@ -8,7 +8,17 @@ var path = require('path'),
 module.exports = function(config) {
 
   var app = express();
-
+  //redirect to https
+  if (config.https) {
+    app.use (function (req, res, next) {
+      if (!req.secure) {
+        var host = req.hostname + ":" + ( config.https.port || 8443 );
+        res.redirect('https://' + host + req.url);
+        return;
+      }
+      return next();
+    });
+  }
   // View directory
   app.set('views', path.join(config.root, '/app/views'));
 
