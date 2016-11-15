@@ -115,7 +115,8 @@ var handleFlot = function() {
       [23, 60],
       [24, 90],
       [25, 135],
-      [26, 185]
+      [26, 185],
+      [27, 230]
     ],
     lines: {
       show: true
@@ -134,7 +135,8 @@ var handleFlot = function() {
       [23, 360],
       [24, 630],
       [25, 1070],
-      [26, 1700]
+      [26, 1700],
+      [27, 2500]
     ],
     bars: {
       show: true,
@@ -145,11 +147,11 @@ var handleFlot = function() {
   }], {
     yaxes: [{
       min: 0,
-      max: 200,
+      max: 300,
       position: "right"
     }, {
       min: 0,
-      max: 2000,
+      max: 3000,
       position: "left"
     }],
     xaxis: {
