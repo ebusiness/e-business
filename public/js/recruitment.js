@@ -18,6 +18,7 @@ $wrapper.jpreLoader({
   handleHeader();
   handleModal();
   handleAnimation();
+  handleNextpage();
 
   // display content
   TweenMax.to($wrapper, 0.7, {
@@ -82,4 +83,14 @@ var startAnimation = function() {
     triggerOnce: true
   });
 
+};
+
+// Nextpage
+var handleNextpage = function() {
+  $('#link-btn-graduates').click(function () {
+    window.location.href = "/recruitment/graduates";
+  });
+  $('#link-btn-career').click(function () {
+    window.location.href = "/recruitment/career";
+  });
 };

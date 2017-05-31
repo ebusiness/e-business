@@ -5,10 +5,50 @@
 @import url(../unify/theme-colors/blue.css);
 @import url(custom.css);
 
-.interactive-slider {
-  background: url("../img/bg/12.jpg") no-repeat;
+.banner {
+  background: url("../img/eb/banner.png") no-repeat;
+  padding: 100px;
+  background-size: cover;
 }
 
+.banner h1 {
+  color: white;
+  text-align: center;
+}
+
+.hiring {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.recruit-link-btn {
+  padding-top: 18px;
+  height: 100px;
+  width: 100%;
+  border: solid 2px #3498db;
+  border-radius: 50px !important;
+  text-align: center;
+  cursor: pointer;
+}
+
+.recruit-link-btn,
+.recruit-link-btn h4 {
+    color: #3498db;
+}
+
+.recruit-link-btn:hover {
+  background-color: #3498db;
+}
+
+.recruit-link-btn:hover,
+.recruit-link-btn:hover h4 {
+  color: white;
+}
+
+.recruit-link-btn i {
+  font-size: 30px;
+}
 
 /*Breadcrumbs v5
 ------------------------------------*/
