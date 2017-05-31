@@ -72,21 +72,21 @@ gulp.task('css-contact', function() {
     }));
 });
 
-gulp.task('css-common', function() {
-  gulp.src('public/css/common.css')
-    .pipe(minifycss())
-    .pipe(gulp.dest('public-build/css/'))
-    .pipe(notify({
-      message: 'Css-common task complete'
-    }));
-});
-
 gulp.task('css-recruitment', function() {
   gulp.src('public/css/recruitment.css')
     .pipe(minifycss())
     .pipe(gulp.dest('public-build/css/'))
     .pipe(notify({
       message: 'Css-recruitment task complete'
+    }));
+});
+
+gulp.task('css-common', function() {
+  gulp.src('public/css/common.css')
+    .pipe(minifycss())
+    .pipe(gulp.dest('public-build/css/'))
+    .pipe(notify({
+      message: 'Css-common task complete'
     }));
 });
 
@@ -195,5 +195,5 @@ gulp.task('js-common', function() {
 });
 
 gulp.task('default', function() {
-  gulp.start('img', 'bootstrap', 'font-awesome', 'line-icon', 'slider', 'css-home', 'css-about', 'css-services', 'css-contact', 'css-common', 'js-home', 'js-about', 'js-recruitment', 'js-contact', 'js-common');
+  gulp.start('img', 'bootstrap', 'font-awesome', 'line-icon', 'slider', 'css-home', 'css-about', 'css-services', 'css-contact', 'css-common', 'css-recruitment','js-home', 'js-about', 'js-recruitment', 'js-contact', 'js-common');
 });
