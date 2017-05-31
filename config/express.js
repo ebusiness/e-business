@@ -38,13 +38,14 @@ module.exports = function(config) {
     app.use(require('morgan')('dev'));
 
     // Less Middleware
-    app.use(lessMiddleware('/less', {
-      dest: '/css',
-      pathRoot: path.join(config.root, 'public')
-    }));
+    // app.use(lessMiddleware('/less', {
+    //   dest: '/css',
+    //   pathRoot: path.join(config.root, 'public')
+    // }));
 
     // Public folder
-    app.use(express.static(path.join(config.root, 'public')));
+    // app.use(express.static(path.join(config.root, 'public')));
+    app.use(express.static(path.join(config.root, 'public-build')));
 
     // Error handler, not linked in production
     app.use(errorhandler());

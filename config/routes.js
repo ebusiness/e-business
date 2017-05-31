@@ -24,7 +24,15 @@ module.exports = function(app, config) {
   });
 
   app.get('/recruitment', function(req, res, next) {
-    res.render('page/recruitment');
+    res.render('page/recruitment/index');
+  });
+
+  app.get('/recruitment/graduates', function(req, res, next) {
+    res.render('page/recruitment/graduates');
+  });
+
+  app.get('/recruitment/career', function(req, res, next) {
+    res.render('page/recruitment/career');
   });
 
   app.get('/contact', function(req, res, next) {

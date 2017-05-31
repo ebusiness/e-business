@@ -1,4 +1,4 @@
-extends ../layout
+extends ../../layout
 
 block css
   link(rel="stylesheet", href="/css/common.css")
@@ -11,8 +11,8 @@ block js
   //- script(src="components/gsap/src/minified/TweenMax.min.js")
   //- script(src="components/waypoints/waypoints.min.js")
   //- script(src="components/jpreloader/js/jpreloader.min.js")
-  script(src="js/recruitment.js")
-    
+  script(src="../js/recruitment.js")
+
 block breadcrumbs
   .breadcrumbs
     .container
@@ -166,7 +166,7 @@ block content
                         |  E-Mail: katoko@e-business.co.jp
               .modal-footer
                 button.btn-u.btn-u-default(data-dismiss='modal', type='button') 同意しない
-                | 
+                | &nbsp;
                 button#btn-download-resume.btn-u(type='button') 同意
         .headline
           h2 社員たちの声

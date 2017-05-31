@@ -18,7 +18,12 @@ module.exports = {
     app: {
       name: 'EBusiness - HomePage [DEV]',
       env: 'development',
-      port: 8081
+      port: 80
+    },
+    https: {
+        port: 443,
+        key: fs.readFileSync(rootPath + '/resources/key.pem').toString(),
+        cert: fs.readFileSync(rootPath + '/resources/cert.pem').toString()
     }
   },
 
