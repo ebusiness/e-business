@@ -74,7 +74,11 @@ var startAnimation = function() {
 
   // setup waypoints
   $recruitInfoArea.waypoint(function() {
-    TweenMax.staggerTo($recruitInfo, 0.5, {
+    TweenMax.staggerTo($('.col-sm-7 .service'), 0.5, {
+      rotationX: 0,
+      autoAlpha: 1
+    }, 0.3);
+    TweenMax.staggerTo($('.col-sm-5 .service'), 0.5, {
       rotationX: 0,
       autoAlpha: 1
     }, 0.3);
