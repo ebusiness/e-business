@@ -81,6 +81,15 @@ gulp.task('css-common', function() {
     }));
 });
 
+gulp.task('css-recruitment', function() {
+  gulp.src('public/css/recruitment.css')
+    .pipe(minifycss())
+    .pipe(gulp.dest('public-build/css/'))
+    .pipe(notify({
+      message: 'Css-recruitment task complete'
+    }));
+});
+
 gulp.task('js-home', function() {
   return gulp.src([
       "public/components/jquery/dist/jquery.js",
