@@ -2,21 +2,21 @@ extends ../../layout
 
 block css
   link(rel="stylesheet", href="/css/common.css")
+  link(rel="stylesheet", href="/css/recruitment.css")
 
 block js
-  //- script(src="components/jquery/dist/jquery.js")
-  //- script(src="components/bootstrap/dist/js/bootstrap.js")
-  //- script(src="components/fastclick/lib/fastclick.js")
-  //- script(src="components/back-to-top/index.js")
-  //- script(src="components/gsap/src/minified/TweenMax.min.js")
-  //- script(src="components/waypoints/waypoints.min.js")
-  //- script(src="components/jpreloader/js/jpreloader.min.js")
   script(src="js/recruitment.js")
 
 block breadcrumbs
   .breadcrumbs
     .container
       h1.pull-left 採用情報
+      
+block slider
+  .interactive-slider
+    .container
+      h1 Hello
+    
 
 block content
   .container.content
