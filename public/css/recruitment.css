@@ -141,3 +141,9 @@
 .breadcrumb-v5 li a:hover {
     color: #3498db;
 }
+
+
+/*Service Info*/
+.service-info {
+  background:none;
+}

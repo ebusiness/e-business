@@ -75,9 +75,11 @@ gulp.task('css-contact', function() {
 gulp.task('css-recruitment', function() {
   gulp.src([
     'public/css/recruitment.css',
-    'public/components/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css'
+    'public/components/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css',
+    "public/components/fancybox/dist/jquery.fancybox.min.css",
   ])
     .pipe(minifycss())
+    .pipe(concat('recruitment.css'))
     .pipe(gulp.dest('public-build/css/'))
     .pipe(notify({
       message: 'Css-recruitment task complete'
@@ -151,6 +153,7 @@ gulp.task('js-recruitment', function() {
       "public/components/waypoints/waypoints.min.js",
       "public/components/jpreloader/js/jpreloader.min.js",
       "public/components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js",
+      "public/components/fancybox/dist/jquery.fancybox.min.js",
       "public/js/recruitment.js"
     ])
     .pipe(concat('recruitment.js'))

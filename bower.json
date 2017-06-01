@@ -31,6 +31,7 @@
     "fastclick": "~1.0.6",
     "modernizr": "~2.8.3",
     "back-to-top": "./public/plugins/back-to-top.js",
-    "image-hover": "./public/plugins/image-hover"
+    "image-hover": "./public/plugins/image-hover",
+    "fancybox": "^3.0.47"
   }
 }

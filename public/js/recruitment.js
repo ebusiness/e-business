@@ -147,3 +147,19 @@ var handleAutoload = function() {
   var pathname = window.location.pathname;
   $("a[href='"+ pathname +"']").click()
 }
+
+var initFancybox = function () {
+    $(".fancybox").fancybox({
+    groupAttr: 'data-rel',
+    prevEffect: 'fade',
+    nextEffect: 'fade',
+    openEffect  : 'elastic',
+    closeEffect  : 'fade',
+    closeBtn: true,
+    helpers: {
+        title: {
+                type: 'float'
+            }
+        }
+    });
+}
