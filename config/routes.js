@@ -31,6 +31,10 @@ module.exports = function(app, config) {
     res.render('page/recruitment/a');
   });
 
+  app.get('/recruitment/future', function(req, res, next) {
+    res.render('page/recruitment/future');
+  });
+
   app.get('/recruitment/graduates', function(req, res, next) {
     res.render('page/recruitment/graduates');
   });

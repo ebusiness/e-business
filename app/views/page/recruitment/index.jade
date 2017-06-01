@@ -1,7 +1,6 @@
 extends ../../layout
 
 block css
-  link(rel="stylesheet", href="/css/common.css")
   link(rel="stylesheet", href="/css/recruitment.css")
   link(rel="stylesheet", href="/css/cubeportfolio.min.css")
 
@@ -18,25 +17,19 @@ block content
     .container
       h1 ようこそ！
       h1 イー・ビジネスの採用ページへ
-  .hiring
-    .container
-      .row
-        .col-sm-1
-        .col-sm-4
-          .recruit-link-btn#link-btn-graduates(role="button")
-            i.service-icon.icon-graduation
-            h4.no-top-space 新卒採用
-        .col-sm-2
-        .col-sm-4
-          .recruit-link-btn#link-btn-career(role="button")
-            i.service-icon.icon-badge
-            h4.no-top-space 経験者採用
-        .col-sm-1
+      ul.list-inline.text-center
+        li.recruit-link-btn#link-btn-graduates(role="button")
+          i.service-icon.icon-graduation
+          h4 &nbsp;新卒採用
+        li.recruit-link-btn#link-btn-career(role="button")
+          i.service-icon.icon-badge
+          h4 &nbsp;経験者採用
+
   .container.content
     #grid-container.cbp-l-grid-gallery
       ul.list-unstyled
         li.cbp-item
-          a(href="/recruitment/a").cbp-singlePageInline
+          a(href="/recruitment/future").cbp-singlePageInline
             .service-bg
             .desc-btn.desc-btn-deep-green.text-center
               .vcenter
@@ -46,7 +39,7 @@ block content
                   br
                   | 目指す未来
         li.cbp-item
-          a(href="/recruitment/a").cbp-singlePageInline
+          a(href="/recruitment/grade").cbp-singlePageInline
             .service-bg
             .desc-btn.desc-btn-red.text-center
               .vcenter
@@ -54,7 +47,7 @@ block content
                 h4.no-top-space
                   | キャリア制度
         li.cbp-item
-          a(href="/recruitment/a").cbp-singlePageInline
+          a(href="/recruitment/benefit").cbp-singlePageInline
             .service-bg
             .desc-btn.desc-btn-deep-blue.text-center
               .vcenter

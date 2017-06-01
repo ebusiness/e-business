@@ -16,38 +16,35 @@
   text-align: center;
 }
 
-.hiring {
-  background-color: #eee;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
 .recruit-link-btn {
-  padding-top: 18px;
-  height: 100px;
-  width: 100%;
-  border: solid 2px #3498db;
-  border-radius: 50px !important;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 4px;
+  width: 140px;
+  border: solid 2px white;
+  border-radius: 100px !important;
   text-align: center;
 }
 
 .recruit-link-btn,
 .recruit-link-btn h4 {
-    color: #3498db;
+    color: white;
+    display: inline-block;
 }
 
 .recruit-link-btn:hover {
-  background-color: #3498db;
+  background-color: white;
 }
 
 .recruit-link-btn:hover,
 .recruit-link-btn:hover h4 {
-  color: white;
+  color: #666;
 }
 
 .recruit-link-btn i,
 i.service-icon {
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .cbp-item {
@@ -55,6 +52,7 @@ i.service-icon {
 }
 
 .desc-btn {
+  padding-top: 4px;
   width: 100%;
   height: 100%;
   display: table;
