@@ -1,6 +1,19 @@
 var fs = require('fs'),
   path = require('path');
 
+var isSpider = function(req) {
+   ua = req.headers["user-agent"].toLowerCase()
+   if (ua.indexOf("bot") != -1) {
+     return true
+   }
+   if (ua.indexOf("spider") != -1) {
+     return true
+   }
+   if (ua.indexOf("yahoo") != -1) {
+     return true
+   }
+   return false
+}
 module.exports = function(app, config) {
 
   app.get('/', function(req, res, next) {
@@ -37,6 +50,30 @@ module.exports = function(app, config) {
 
   app.get('/recruitment/graduates', function(req, res, next) {
     res.render('page/recruitment/graduates');
+  });
+
+  app.get('/recruitment/office', function(req, res, next) {
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/office');
+      return
+    }
+    res.render('page/recruitment/index');
+  });
+
+  app.get('/recruitment/employee', function(req, res, next) {
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/employee');
+      return
+    }
+    res.render('page/recruitment/index');
+  });
+
+  app.get('/recruitment/faq', function(req, res, next) {
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/faq');
+      return
+    }
+    res.render('page/recruitment/index');
   });
 
   app.get('/recruitment/career', function(req, res, next) {
