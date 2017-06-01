@@ -20,6 +20,7 @@ $wrapper.jpreLoader({
   handleAnimation();
   handleNextpage();
   handleCbp();
+  handleAutoload();
 
   // display content
   TweenMax.to($wrapper, 0.7, {
@@ -125,7 +126,7 @@ var handleCbp = function() {
             var t = this;
 
             $.ajax({
-                url: url,
+                url: url + "?ajax=1",
                 type: 'GET',
                 dataType: 'html',
                 timeout: 5000
@@ -140,4 +141,9 @@ var handleCbp = function() {
             });
         }
     });
+}
+
+var handleAutoload = function() {
+  var pathname = window.location.pathname;
+  $("a[href='"+ pathname +"']").click()
 }
