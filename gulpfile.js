@@ -73,7 +73,10 @@ gulp.task('css-contact', function() {
 });
 
 gulp.task('css-recruitment', function() {
-  gulp.src('public/css/recruitment.css')
+  gulp.src([
+    'public/css/recruitment.css',
+    'public/components/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css'
+  ])
     .pipe(minifycss())
     .pipe(gulp.dest('public-build/css/'))
     .pipe(notify({
@@ -147,6 +150,7 @@ gulp.task('js-recruitment', function() {
       "public/components/gsap/src/minified/TweenMax.min.js",
       "public/components/waypoints/waypoints.min.js",
       "public/components/jpreloader/js/jpreloader.min.js",
+      "public/components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js",
       "public/js/recruitment.js"
     ])
     .pipe(concat('recruitment.js'))

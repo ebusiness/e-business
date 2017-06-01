@@ -29,7 +29,6 @@
   border: solid 2px #3498db;
   border-radius: 50px !important;
   text-align: center;
-  cursor: pointer;
 }
 
 .recruit-link-btn,
@@ -46,8 +45,53 @@
   color: white;
 }
 
-.recruit-link-btn i {
+.recruit-link-btn i,
+i.service-icon {
   font-size: 30px;
+}
+
+.cbp-item {
+  height: 150px !important;
+}
+
+.desc-btn {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+.desc-btn,
+.desc-btn h4 {
+  color: white;
+}
+
+.desc-btn .vcenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.desc-btn-deep-green {
+  background-color: #1ABC9C;
+}
+
+.desc-btn-red {
+  background-color: #E74C3C;
+}
+
+.desc-btn-deep-blue {
+  background-color: #3498DB;
+}
+
+.desc-btn-light-blue {
+  background-color: #27D7E7;
+}
+
+.desc-btn-purple {
+  background-color: #9B6BCC;
+}
+
+.desc-btn-light-green {
+  background-color: #72C02C;
 }
 
 /*Breadcrumbs v5

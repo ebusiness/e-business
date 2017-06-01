@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node ./bin/e-business"
+    "start": "node ./bin/e-business"
   },
   "dependencies": {
     "body-parser": "^1.12.4",

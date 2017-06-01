@@ -3,6 +3,7 @@ extends ../../layout
 block css
   link(rel="stylesheet", href="/css/common.css")
   link(rel="stylesheet", href="/css/recruitment.css")
+  link(rel="stylesheet", href="/css/cubeportfolio.min.css")
 
 block js
   script(src="js/recruitment.js")
@@ -22,251 +23,66 @@ block content
       .row
         .col-sm-1
         .col-sm-4
-          .recruit-link-btn#link-btn-graduates
+          .recruit-link-btn#link-btn-graduates(role="button")
             i.service-icon.icon-graduation
             h4.no-top-space 新卒採用
         .col-sm-2
         .col-sm-4
-          .recruit-link-btn#link-btn-career
+          .recruit-link-btn#link-btn-career(role="button")
             i.service-icon.icon-badge
             h4.no-top-space 経験者採用
         .col-sm-1
   .container.content
-    .row
-      #recruit-info.col-md-8
-        .row
-          .col-sm-6
-            .service
-              i.service-icon.icon-briefcase
-              .desc
-                h4.no-top-space 雇用形態
-                p 正社員、契約社員
-          .col-sm-6
-            .service
-              i.service-icon.icon-graduation
-              .desc
-                h4.no-top-space 学歴
-                p 専門学校卒業以上
+    #grid-container.cbp-l-grid-gallery
+      ul.list-unstyled
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-deep-green.text-center
+              .vcenter
+                i.service-icon.icon-rocket
+                h4.no-top-space
+                  | イー・ビジネスが
                   br
-                  small ※高校卒業の場合は二年以上実務経験者のみ可
-        .row
-          .col-sm-6
-            .service
-              i.service-icon.icon-pointer
-              .desc
-                h4.no-top-space 勤務地
-                p 東京近辺・名古屋・大阪
-                  br
-                  small ※現住所を考慮し決定します
-          .col-sm-6
-            .service
-              i.service-icon.icon-settings
-              .desc
-                h4.no-top-space 職種
-                p PM、PL、システムエンジニア、プログラマー
-        .row
-          .col-sm-6
-            .service
-              i.service-icon.icon-note
-              .desc
-                h4.no-top-space 仕事内容
-                p 大型汎用機系−各種アプリケーションの設計・開発
-                  br
-                  small ※金融系、流通系、COBOL、PL/1他
-                  | オープン系−Windowsアプリケーションの設計・開発
-                  br
-                small ※Java VB C C++ C# ASP.NET SQL Server Oracle　映像・画像 他
-          .col-sm-6
-            .service
-              i.service-icon.icon-badge
-              .desc
-                h4.no-top-space 応募資格
-                p 新卒の場合はIT関連大学また専門学校の卒業生のみ
-                  br
-                  | 転職の場合は22歳～38歳位迄の実務経験者
-                  br
-                  small ＳＥ・ＰＧ・ＯＰ・機種・言語不問　※ＯＡ操作経験のみは不可
-        .row
-          .col-sm-6
-            .service
-              i.service-icon.icon-envelope
-              .desc
-                h4.no-top-space 応募方法
-                p 経歴書をご記入の上、
-                  a(href="mailto:saiyou@e-business.co.jp") saiyou@e-business.co.jp
-                  | までご送付ください
-          .col-sm-6
-            .service
-              i.service-icon.icon-drawer
-              .desc
-                h4.no-top-space 選考方法
-                p 書類選考、面接
-        .row
-          .col-sm-6
-            .service
-              i.service-icon.icon-calendar
-              .desc
-                h4.no-top-space 休日休暇
-                p 完全週休2日制、祝日
-                  br
-                  small ※客先により変動の可能性があります
-          .col-sm-6
-            .service
-              i.service-icon.icon-earphones-alt
-              .desc
-                h4.no-top-space お問い合わせ窓口
-                p
-                  | Tel: 03-6809-3235
-                  br
-                  | Fax: 03-6809-3238
-                  br
-                  a(href="mailto:saiyou@e-business.co.jp") E-Mail: saiyou@e-business.co.jp
-      .col-md-4
-        .service-block.service-block-u.margin-bottom-40(data-toggle="modal",data-target="#privacy-modal")
-          i.icon-4x.color-light.icon-line.icon-cloud-download
-          h2.heading-md 履歴書ダウンロード
-        #privacy-modal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
-          .modal-dialog.modal-lg
-            .modal-content
-              .modal-header
-                button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
-                h4#myModalLabel.modal-title 個人情報に関するご通知（募集時）
-              .modal-body
-                .service
-                  i.service-icon.icon-direction
-                  .desc
-                    h4.no-top-space 利用又は提供の目的
-                    p 当社は、貴殿から取得した氏名、生年月日、住所等の個人に関する情報を、当社の採用活動にのみ利用する目的で取得するものであり、それ以外の目的に利用もしくは他に提供・開示することは一切ありません。
-                .service
-                  i.service-icon.icon-speech
-                  .desc
-                    h4.no-top-space 個人情報の取扱いについて
-                    p 当社は、取得した貴殿の個人情報を、当社の責任のもとで適切に取扱い管理するものとし、又当社の採用活動の終了に伴い、当社の責任のもとで適切に廃棄･消去致します。
-                .service
-                  i.service-icon.icon-shuffle
-                  .desc
-                    h4.no-top-space 個人情報の当社への提供の任意性について
-                    p 当社が貴殿から取得する個人情報は、当社の業務を遂行する上で必要なもののみを取得しています。したがって、貴殿が本事項に定めた個人情報の取扱いに同意されない場合は、お申込をお断りすることがあります。
-                .service
-                  i.service-icon.icon-pencil
-                  .desc
-                    h4.no-top-space 貴方の個人情報の開示、訂正・削除について
-                    p 貴殿は、当社に対しご提供されたご自身の個人情報について、開示を請求することができます。又、開示の結果、ご自身の個人情報につきまして訂正・削除を請求することもできます。貴殿が弊社に対し、このような請求をされる場合は、下記の連絡先までご連絡下さい。
-                .service
-                  i.service-icon.icon-earphones-alt
-                  .desc
-                    h4.no-top-space 連絡先
-                    p 個人情報の開示・訂正・削除等のご請求、その他ご上明な点につきましては下記までご連絡ください。
-                    ul.list-unstyled
-                      li
-                        i.fa.fa-check.color-green
-                        |  連絡先: 株式会社イー・ビジネス
-                      li
-                        i.fa.fa-check.color-green
-                        |  窓口担当: 花 東江
-                      li
-                        i.fa.fa-check.color-green
-                        |  電話番号:  03-6809-3235
-                      li
-                        i.fa.fa-check.color-green
-                        |  FAX番号:  03-6809-3238
-                      li
-                        i.fa.fa-check.color-green
-                        |  URL: http://www.e-business.co.jp
-                      li
-                        i.fa.fa-check.color-green
-                        |  E-Mail: katoko@e-business.co.jp
-              .modal-footer
-                button.btn-u.btn-u-default(data-dismiss='modal', type='button') 同意しない
-                | &nbsp;
-                button#btn-download-resume.btn-u(type='button') 同意
-        .headline
-          h2 社員たちの声
-        #testimonials-6.carousel.slide.testimonials.testimonials-v1.margin-bottom-40
-          .carousel-inner
-            .item
-              p
-                | この会社の皆は単なる同僚ではなく、まさに家族だ！お帰り
-              .testimonial-info
-                img(src='/img/testimonials/user.jpg', alt='')
-                span.testimonial-author
-                  | 万力
-                  em 取締役
-            .item.active
-              p
-                | 「成功の成否は人の和にあり」自分の「和」の能力を生かして皆様の成長を見守って行きたいと思います。あなたの活躍を期待しています、ご応募をお待ちしております。
-              .testimonial-info
-                img(src='/img/testimonials/user.jpg', alt='')
-                span.testimonial-author
-                  | 趙威
-                  em 営業一部・部長
-            .item
-              p
-                | いい会社の条件の一つは、社員の声に耳を傾ける。
-              .testimonial-info
-                img(src='/img/testimonials/user.jpg', alt='')
-                span.testimonial-author
-                  | 王飛翔
-                  em 取締役
-            .item
-              p
-                | 性格は変えられませんが、行動は変えられます。
-              .testimonial-info
-                img(src='/img/testimonials/user.jpg', alt='')
-                span.testimonial-author
-                  | 陳栄
-                  em 経理部・部長
-          .carousel-arrow
-            a.left.carousel-control(href='#testimonials-6', data-slide='prev')
-              i.fa.fa-angle-left
-            a.right.carousel-control(href='#testimonials-6', data-slide='next')
-              i.fa.fa-angle-right
-        .headline
-          h2 会社生活
-        #myCarousel1.carousel.slide.carousel-v1.margin-bottom-40
-          .carousel-inner
-            .item.active
-              img(src='/img/eb/life1-1.jpg', alt='')
-              .carousel-caption
-                p リーダ研修での熱い討議
-            .item
-              img(src='/img/eb/life1-2.jpg', alt='')
-              .carousel-caption
-                p 社内教育で、ベテラン社員が新入社員に技術を教える
-            .item
-              img(src='/img/eb/life1-3.jpg', alt='')
-              .carousel-caption
-                p 新入社員が真剣に教育を受ける
-            .item
-              img(src='/img/eb/life1-4.jpg', alt='')
-              .carousel-caption
-                p iOS開発勉強会１
-            .item
-              img(src='/img/eb/life1-5.jpg', alt='')
-              .carousel-caption
-                p iOS開発勉強会２
-            .item
-              img(src='/img/eb/life2-1.jpg', alt='')
-              .carousel-caption
-                p 準備中......
-            .item
-              img(src='/img/eb/life2-2.jpg', alt='')
-              .carousel-caption
-                p いよいよ始まるぞ
-            .item
-              img(src='/img/eb/life3-1.jpg', alt='')
-              .carousel-caption
-                p アットホームな雰囲気で皆が盛り上げる
-            .item
-              img(src='/img/eb/life3-2.jpg', alt='')
-              .carousel-caption
-                p おいしい料理を食べながら、同僚達が熱く語り合う
-            .item
-              img(src='/img/eb/life3-3.jpg', alt='')
-              .carousel-caption
-                p 今回のイベントも盛上り、楽しいひと時を過しました
-          .carousel-arrow
-            a.left.carousel-control(href='#myCarousel1', data-slide='prev')
-              i.fa.fa-angle-left
-            a.right.carousel-control(href='#myCarousel1', data-slide='next')
-              i.fa.fa-angle-right
+                  | 目指す未来
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-red.text-center
+              .vcenter
+                i.service-icon.icon-graph
+                h4.no-top-space
+                  | キャリア制度
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-deep-blue.text-center
+              .vcenter
+                i.service-icon.icon-wallet
+                h4.no-top-space
+                  | 福利厚生
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-light-blue.text-center
+              .vcenter
+                i.service-icon.icon-layers
+                h4.no-top-space
+                  | オフィス紹介
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-purple.text-center
+              .vcenter
+                i.service-icon.icon-user
+                h4.no-top-space
+                  | 社員紹介            
+        li.cbp-item
+          a(href="/recruitment/a").cbp-singlePageInline
+            .service-bg
+            .desc-btn.desc-btn-light-green.text-center
+              .vcenter
+                i.service-icon.icon-question
+                h4.no-top-space
+                  | 採用ＦＡＱ
+      

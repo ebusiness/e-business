@@ -27,6 +27,10 @@ module.exports = function(app, config) {
     res.render('page/recruitment/index');
   });
 
+  app.get('/recruitment/a', function(req, res, next) {
+    res.render('page/recruitment/a');
+  });
+
   app.get('/recruitment/graduates', function(req, res, next) {
     res.render('page/recruitment/graduates');
   });
@@ -62,20 +66,6 @@ module.exports = function(app, config) {
     var file = global.config.root + '/resources/resume.xls';
     var filestream = fs.createReadStream(file);
     filestream.pipe(res);
-
-    // var options = {
-    //   root: GLOBAL.config.root + '/resources/',
-    // };
-    //
-    // res.sendFile('resume.xls', options, function(err) {
-    //   if (err) {
-    //     res.attachment("resume.xls");
-    //     res.set("Content-Disposition", "attachment;filename=resume.xls");
-    //     // res.setHeader('Content-Disposition', 'attachment; filename="resume.xls"');
-    //     res.setHeader('Content-Type', 'application/vnd.ms-excel');
-    //     res.status(err.status).end();
-    //   }
-    // });
   });
 
   app.get('/certification', function(req, res, next) {
