@@ -76,7 +76,8 @@ gulp.task('css-recruitment', function() {
   gulp.src([
     'public/css/recruitment.css',
     'public/components/cube-portfolio/cubeportfolio/css/cubeportfolio.min.css',
-    "public/components/fancybox/dist/jquery.fancybox.min.css",
+    'public/components/fancybox/dist/jquery.fancybox.min.css',
+    'public/components/owl.carousel/dist/assets/owl.carousel.min.css'
   ])
     .pipe(minifycss())
     .pipe(concat('recruitment.css'))
@@ -154,6 +155,7 @@ gulp.task('js-recruitment', function() {
       "public/components/jpreloader/js/jpreloader.min.js",
       "public/components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js",
       "public/components/fancybox/dist/jquery.fancybox.min.js",
+      "public/components/owl.carousel/dist/owl.carousel.min.js",
       "public/js/recruitment.js"
     ])
     .pipe(concat('recruitment.js'))

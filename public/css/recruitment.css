@@ -7,7 +7,7 @@
 
 .banner {
   background: url("../img/eb/banner.png") no-repeat;
-  padding: 100px;
+  padding: 100px 20px;
   background-size: cover;
 }
 
@@ -93,6 +93,26 @@
 
 .desc-btn-light-green {
   background-color: #72C02C;
+}
+
+/*Owl carousel*/
+.owl-carousel img {
+  transition: all 0.8s ease-in-out;
+}
+
+.owl-carousel a:hover img {
+  opacity: 0.8;
+  transform: scale(1.2) rotate(3deg);
+}
+
+.owl-carousel em {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+}
+
+.owl-carousel a {
+  display: block;
 }
 
 /*Breadcrumbs v5
