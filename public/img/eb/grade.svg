@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="487px" height="425px" viewBox="0 0 487 425" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>grade</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="423" height="47"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="423" height="47" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <rect id="path-3" x="0" y="0" width="82" height="340"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="340" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="0" y="0" width="82" height="102"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="102" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="0" y="0" width="82" height="103"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="103" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="0" y="0" width="82" height="69"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="69" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <rect id="path-11" x="0" y="0" width="82" height="137"></rect>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="82" height="137" fill="white">
+            <use xlink:href="#path-11"></use>
+        </mask>
+        <polygon id="path-13" points="0 0 158.946437 0 158.946437 33.2629802 167.767636 41.4350466 158.946437 50.971181 158.946437 78 0 78"></polygon>
+        <mask id="mask-14" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.767636" height="78" fill="white">
+            <use xlink:href="#path-13"></use>
+        </mask>
+        <polygon id="path-15" points="0 10 21.7074029 10 29.9267349 0.790032986 38.251517 10 179 10 179 32 0 32"></polygon>
+        <mask id="mask-16" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="179" height="31.209967" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <polygon id="path-17" points="6.5733881 0 193 0 193 22 6.5733881 22 6.5733881 14.8184525 0 11 6.5733881 6.67167711"></polygon>
+        <mask id="mask-18" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="193" height="22" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <polygon id="path-19" points="7 0 213 0 213 22 7 22 7 16.5508693 0.591792097 11.7843388 7 7.12852718"></polygon>
+        <mask id="mask-20" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="212.408208" height="22" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <polygon id="path-21" points="7 0 258 0 258 22 7 22 7 15.736402 0.249661236 11 7 6.0802577"></polygon>
+        <mask id="mask-22" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="257.750339" height="22" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="grade">
+            <g id="header" transform="translate(14.000000, 11.000000)">
+                <text id="等級" font-family="HiraMinPro-W6, Hiragino Mincho Pro" font-size="20" font-weight="500" fill="#555555">
+                    <tspan x="20.5625" y="29">等級</tspan>
+                </text>
+                <text id="非管理者" font-family="HiraMinPro-W6, Hiragino Mincho Pro" font-size="20" font-weight="500" fill="#555555">
+                    <tspan x="169.395833" y="29">非管理者</tspan>
+                </text>
+                <text id="管理者" font-family="HiraMinPro-W6, Hiragino Mincho Pro" font-size="20" font-weight="500" fill="#555555">
+                    <tspan x="342.708333" y="29">管理者</tspan>
+                </text>
+                <use id="Rectangle-17" stroke="#979797" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+            </g>
+            <g id="left" transform="translate(14.000000, 73.000000)">
+                <rect id="Rectangle-19" fill="#F8BBD0" x="1" y="0" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy" fill="#F8BBD0" x="1" y="34" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-2" fill="#F8BBD0" x="1" y="68" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-3" fill="#F8BBD0" x="1" y="102" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-4" fill="#FFD180" x="1" y="136" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-5" fill="#FFD180" x="1" y="170" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-6" fill="#F4FF81" x="1" y="204" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-7" fill="#F4FF81" x="1" y="238" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-8" fill="#B9F6CA" x="1" y="272" width="81" height="34"></rect>
+                <rect id="Rectangle-19-Copy-9" fill="#B9F6CA" x="1" y="306" width="81" height="34"></rect>
+                <g id="Group" transform="translate(29.000000, 7.000000)" font-size="20" font-family="HiraMinPro-W6, Hiragino Mincho Pro" fill="#555555" font-weight="500">
+                    <text id="10">
+                        <tspan x="0" y="18">10</tspan>
+                    </text>
+                    <text id="8">
+                        <tspan x="6" y="86">8</tspan>
+                    </text>
+                    <text id="9">
+                        <tspan x="6" y="52">9</tspan>
+                    </text>
+                    <text id="7">
+                        <tspan x="6" y="120">7</tspan>
+                    </text>
+                    <text id="6">
+                        <tspan x="6" y="154">6</tspan>
+                    </text>
+                    <text id="5">
+                        <tspan x="6" y="188">5</tspan>
+                    </text>
+                    <text id="4">
+                        <tspan x="6" y="222">4</tspan>
+                    </text>
+                    <text id="3">
+                        <tspan x="6" y="256">3</tspan>
+                    </text>
+                    <text id="2">
+                        <tspan x="6" y="290">2</tspan>
+                    </text>
+                    <text id="1">
+                        <tspan x="6" y="324">1</tspan>
+                    </text>
+                </g>
+                <use id="Rectangle-18" stroke="#979797" mask="url(#mask-4)" stroke-width="2" xlink:href="#path-3"></use>
+                <path d="M0.5,33.5 L81.5,33.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,68.5 L81.5,68.5" id="Line-Copy" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,102.5 L81.5,102.5" id="Line-Copy-2" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,136.5 L81.5,136.5" id="Line-Copy-3" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,170.5 L81.5,170.5" id="Line-Copy-4" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,204.5 L81.5,204.5" id="Line-Copy-5" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,238.5 L81.5,238.5" id="Line-Copy-6" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,272.5 L81.5,272.5" id="Line-Copy-7" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,306.5 L81.5,306.5" id="Line-Copy-8" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="PG" transform="translate(112.000000, 311.000000)">
+                <use id="Rectangle-20" stroke="#979797" mask="url(#mask-6)" stroke-width="2" fill="#B9F6CA" xlink:href="#path-5"></use>
+                <g transform="translate(27.000000, 10.000000)" font-size="14" font-family="HiraMinPro-W6, Hiragino Mincho Pro" fill="#555555" font-weight="500">
+                    <text id="PG3">
+                        <tspan x="0" y="12">PG3</tspan>
+                    </text>
+                    <text id="PG2">
+                        <tspan x="0" y="46">PG2</tspan>
+                    </text>
+                    <text id="PG1">
+                        <tspan x="0" y="79">PG1</tspan>
+                    </text>
+                </g>
+                <path d="M0.5,34.5 L81.5,34.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,68.5 L81.5,68.5" id="Line-Copy-9" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="SE" transform="translate(193.000000, 243.000000)">
+                <use id="Rectangle-20" stroke="#979797" mask="url(#mask-8)" stroke-width="2" fill="#F4FF81" xlink:href="#path-7"></use>
+                <g id="PG" transform="translate(27.000000, 10.098039)" font-size="14" font-family="HiraMinPro-W6, Hiragino Mincho Pro" fill="#555555" font-weight="500">
+                    <text id="SE3">
+                        <tspan x="0" y="12">SE3</tspan>
+                    </text>
+                    <text id="SE2">
+                        <tspan x="0" y="46.3333333">SE2</tspan>
+                    </text>
+                    <text id="SE1">
+                        <tspan x="0" y="79.6568627">SE1</tspan>
+                    </text>
+                </g>
+                <path d="M0.497296758,34.8382353 L81.5,34.8382353" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,68.1715686 L81.5,68.1715686" id="Line-Copy-9" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="PL" transform="translate(274.000000, 209.000000)">
+                <use id="Rectangle-20" stroke="#979797" mask="url(#mask-10)" stroke-width="2" fill="#FFD180" xlink:href="#path-9"></use>
+                <g id="PG" transform="translate(27.000000, 11.000000)" font-size="14" font-family="HiraMinPro-W6, Hiragino Mincho Pro" fill="#555555" font-weight="500">
+                    <text id="PL2">
+                        <tspan x="0" y="12">PL2</tspan>
+                    </text>
+                    <text id="PL1">
+                        <tspan x="0" y="45">PL1</tspan>
+                    </text>
+                </g>
+                <path d="M0.5,34.5 L81.5,34.5" id="Line-Copy-9" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="MG" transform="translate(355.000000, 73.000000)">
+                <use id="Rectangle-20" stroke="#979797" mask="url(#mask-12)" stroke-width="2" fill="#F8BBD0" xlink:href="#path-11"></use>
+                <g id="PG" transform="translate(4.000000, 9.000000)" font-size="14" font-family="HiraMinPro-W6, Hiragino Mincho Pro" fill="#555555" font-weight="500">
+                    <text id="担当部長">
+                        <tspan x="9.5" y="47">担当部長</tspan>
+                    </text>
+                    <text id="部長">
+                        <tspan x="23.5" y="12">部長</tspan>
+                    </text>
+                    <text id="課長">
+                        <tspan x="23.5" y="81">課長</tspan>
+                    </text>
+                    <text id="担当課長">
+                        <tspan x="9.5" y="116">担当課長</tspan>
+                    </text>
+                </g>
+                <path d="M0.5,68.5 L81.5,68.5" id="Line" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,33.5 L81.5,33.5" id="Line-Copy-10" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M0.5,102.5 L81.5,102.5" id="Line-Copy-9" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="MG-des" transform="translate(183.000000, 86.000000)">
+                <use id="Rectangle-21" stroke="#979797" mask="url(#mask-14)" stroke-width="2" xlink:href="#path-13"></use>
+                <text id="管理職として、部や課を率いて、売上拡大や" font-family="HiraMinPro-W3, Hiragino Mincho Pro" font-size="14" font-weight="300" fill="#F44336">
+                    <tspan x="16" y="23">管理職として、部や</tspan>
+                    <tspan x="16" y="37">課を率いて、売上拡</tspan>
+                    <tspan x="16" y="51">大や人材育成に手腕</tspan>
+                    <tspan x="16" y="65">を振るって下さい</tspan>
+                </text>
+            </g>
+            <g id="PL-des" transform="translate(281.000000, 279.000000)">
+                <use id="Rectangle-22" stroke="#979797" mask="url(#mask-16)" stroke-width="2" xlink:href="#path-15"></use>
+                <text id="プロジェクトリーダーに！" font-family="HiraMinPro-W3, Hiragino Mincho Pro" font-size="14" font-weight="300" fill="#F44336">
+                    <tspan x="7" y="26">プロジェクトリーダーに！</tspan>
+                </text>
+            </g>
+            <g id="SE-des" transform="translate(276.000000, 323.000000)">
+                <use id="Rectangle-22" stroke="#979797" mask="url(#mask-18)" stroke-width="2" xlink:href="#path-17"></use>
+                <text id="システムエンジニアに昇格" font-family="HiraMinPro-W3, Hiragino Mincho Pro" font-size="14" font-weight="300" fill="#F44336">
+                    <tspan x="18.1019417" y="16">システムエンジニアに昇格</tspan>
+                </text>
+            </g>
+            <g id="PG2-des" transform="translate(197.000000, 356.000000)">
+                <use id="Rectangle-22" stroke="#979797" mask="url(#mask-20)" stroke-width="2" xlink:href="#path-19"></use>
+                <text id="プログラマーとしてひとり立ち" font-family="HiraMinPro-W3, Hiragino Mincho Pro" font-size="14" font-weight="300" fill="#F44336">
+                    <tspan x="14" y="16">プログラマーとしてひとり立ち</tspan>
+                </text>
+            </g>
+            <g id="PG1-des" transform="translate(197.000000, 385.000000)">
+                <use id="Rectangle-22" stroke="#979797" mask="url(#mask-22)" stroke-width="2" xlink:href="#path-21"></use>
+                <text id="プログラマー補助としてスタートです" font-family="HiraMinPro-W3, Hiragino Mincho Pro" font-size="14" font-weight="300" fill="#F44336">
+                    <tspan x="14" y="16">プログラマー補助としてスタートです</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

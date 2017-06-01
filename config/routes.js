@@ -45,7 +45,27 @@ module.exports = function(app, config) {
   });
 
   app.get('/recruitment/future', function(req, res, next) {
-    res.render('page/recruitment/future');
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/future');
+    } else {
+      res.render('page/recruitment/index');
+    }
+  });
+
+  app.get('/recruitment/grade', function(req, res, next) {
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/grade');
+    } else {
+      res.render('page/recruitment/index');
+    }
+  });
+
+  app.get('/recruitment/benefit', function(req, res, next) {
+    if (req.query.ajax || isSpider(req)){
+      res.render('page/recruitment/benefit');
+    } else {
+      res.render('page/recruitment/index');
+    }
   });
 
   app.get('/recruitment/graduates', function(req, res, next) {

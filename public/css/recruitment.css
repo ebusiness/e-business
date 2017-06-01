@@ -17,8 +17,7 @@
 }
 
 .recruit-link-btn {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 15px;
   padding-top: 4px;
   width: 140px;
   border: solid 2px white;
@@ -41,8 +40,7 @@
   color: #666;
 }
 
-.recruit-link-btn i,
-i.service-icon {
+.recruit-link-btn i {
   font-weight: 400;
   font-size: 18px;
 }
@@ -61,6 +59,11 @@ i.service-icon {
 .desc-btn,
 .desc-btn h4 {
   color: white;
+}
+
+.desc-btn i {
+  font-weight: 400;
+  font-size: 25px;
 }
 
 .desc-btn .vcenter {
