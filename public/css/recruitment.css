@@ -14,6 +14,7 @@
 .banner h1 {
   color: white;
   text-align: center;
+  font-weight: bold;
 }
 
 .recruit-link-btn {
@@ -33,6 +34,7 @@
 
 .recruit-link-btn:hover {
   background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .recruit-link-btn:hover,
@@ -96,6 +98,9 @@
 }
 
 /*Owl carousel*/
+.owl-carousel {
+  padding-top: 20px;
+}
 .owl-carousel img {
   transition: all 0.8s ease-in-out;
 }
@@ -113,6 +118,21 @@
 
 .owl-carousel a {
   display: block;
+  text-align: center;
+}
+
+.owl-carousel span {
+  display: block;
+  padding: 10px;
+  border-bottom: solid 2px #eee;
+}
+.owl-carousel a:hover span {
+  border-bottom: solid 2px #3498db;
+  transition: all 0.3s ease-in-out;
+}
+
+.owl-carousel .item a i {
+  color: #666;
 }
 
 /*Breadcrumbs v5

@@ -3,65 +3,78 @@
     h2 福利厚生
   .content(style="padding: 0;")
     h4 ～ ワークライフバランスとやりがいの向上 ～
-    h5 社会保険
-    p &nbsp;&nbsp;健康保険、厚生年金、雇用保険、労災保険
-    
-    h5 定期健康診断
-    p &nbsp;&nbsp;年1回の受診制度
-    
-    h5 子育て・介護支援
-    p &nbsp;&nbsp;育児休業、介護休業制度
-    
-    h5 Iターン支援
-    p &nbsp;&nbsp;都内に社宅を完備
-    
-    h5 社員交流
-    p &nbsp;&nbsp;夏：BBQ大会（全社員＋家族可）、年末：忘年会（全社員）、社員誕生日会、新入社員歓迎会などを開催して、日頃は顔を合せない社員同士も、楽しく情報交換しています。
+    .row.service-info(style="padding: 0;")
+      .service.col-sm-6
+        i.service-icon.fa.fa-life-ring
+        .desc
+          h4.no-top-space 社会保険
+          p 健康保険、厚生年金、雇用保険、労災保険
+      .service.col-sm-6
+        i.service-icon.fa.fa-plus-circle
+        .desc
+          h4.no-top-space 定期健康診断
+          p 年1回の受診制度
+    .row.service-info(style="padding: 0;")
+      .service.col-sm-6
+        i.service-icon.fa.fa-child
+        .desc
+          h4.no-top-space 子育て・介護支援
+          p 育児休業、介護休業制度
+      .service.col-sm-6
+        i.service-icon.fa.fa-home
+        .desc
+          h4.no-top-space Iターン支援
+          p 都内に社宅を完備
+    .row.service-info(style="padding: 0;")
+      .service.col-sm-6
+        i.service-icon.fa.fa-comments-o
+        .desc
+          h4.no-top-space 社員交流
+          p 夏：BBQ大会（全社員＋家族可）、年末：忘年会（全社員）、社員誕生日会、新入社員歓迎会などを開催して、日頃は顔を合せない社員同士も、楽しく情報交換しています。
     
     .owl-carousel
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
             img(src="../img/eb/life2-1.jpg")
+          span
+            i 画像の説明1
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
             img(src="../img/eb/life2-2.jpg")
+          span
+            i 画像の説明2
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
             img(src="../img/eb/life3-2.jpg")
+          span
+            i 画像の説明3
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
-            img(src="../img/eb/life2-1.jpg")
+            img(src="../img/eb/life3-3.jpg")
+          span
+            i 画像の説明4
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
-            img(src="../img/eb/life2-2.jpg")
+            img(src="../img/eb/life1-1.jpg")
+          span
+            i 画像の説明5
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
-            img(src="../img/eb/life3-2.jpg")
+            img(src="../img/eb/life1-2.jpg")
+          span
+            i 画像の説明6
       .item
-        a(href="javascript:;")
+        a.fancybox(href="javascript:;")
           em
-            img(src="../img/eb/life2-1.jpg")
+            img(src="../img/eb/life1-4.jpg")
+          span
+            i 画像の説明7
 
 script.
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    //- autoplay: 3000,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:3
-      },
-      1000:{
-        items:5
-      }
-    }
-  })
+  initOwlCarousel();
