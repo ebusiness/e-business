@@ -136,7 +136,9 @@ var handleCbp = function() {
                 timeout: 5000
             })
             .done(function (result) {
-
+                if (url != window.location.pathname) {
+                  window.history.pushState("", "", url);
+                }
                 t.updateSinglePageInline(result);
 
             })
@@ -187,3 +189,15 @@ var initOwlCarousel = function () {
     }
   })
 }
+
+window.onpopstate = function (event) {
+  var active = $(".cbp-singlePageInline-active");
+  if(window.location.pathname == "/recruitment" && active.size() > 0) {
+    active.find("a").click();
+    return;
+  }
+  if (active.find("a").attr("href") == window.location.pathname) {
+    return;
+  }
+  handleAutoload();
+};
