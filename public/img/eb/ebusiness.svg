@@ -579,8 +579,9 @@
         <g id="技術推進事業部" transform="translate(509.000000, 1055.000000)">
             <g id="Group-6" transform="translate(0.000000, 86.000000)">
                 <use id="Rectangle-5" stroke="#3498DB" mask="url(#mask-48)" stroke-width="2" xlink:href="#path-47"></use>
-                <text id="技術推進事業部" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
-                    <tspan x="47" y="37">技術推進事業部</tspan>
+                <text id="イノベーション技術事業部" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
+                    <tspan x="47" y="24">イノベーション</tspan>
+                    <tspan x="47" y="52.677439">技術事業部</tspan>
                 </text>
                 <g id="user-9" transform="translate(11.000000, 8.000000)">
                     <g id="Layer_1">
