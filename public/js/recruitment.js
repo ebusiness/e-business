@@ -230,9 +230,12 @@ var loadParticles = function() {
   if ($("#particles-js").size() < 1) {
     return;
   }
-  $(window).resize(function(){
-    particlesResize();
-  });
+  if (!/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
+    $(window).resize(function(){
+      particlesResize();
+    });
+  }
+
   particlesResize();
 
   particlesJS("particles-js", {
