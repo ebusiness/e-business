@@ -156,6 +156,7 @@ gulp.task('js-recruitment', function() {
       "public/components/cube-portfolio/cubeportfolio/js/jquery.cubeportfolio.min.js",
       "public/components/fancybox/dist/jquery.fancybox.min.js",
       "public/components/owl.carousel/dist/owl.carousel.min.js",
+      "public/components/particles.js/particles.min.js",
       "public/js/recruitment.js"
     ])
     .pipe(concat('recruitment.js'))

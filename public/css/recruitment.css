@@ -5,9 +5,8 @@
 @import url(../unify/theme-colors/blue.css);
 @import url(custom.css);
 
-.banner {
+#particles-js {
   background: url("../img/eb/banner.png") no-repeat;
-  padding: 100px 20px;
   background-size: cover;
 }
 
@@ -15,15 +14,26 @@
   color: white;
   text-align: center;
   font-weight: bold;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .recruit-link-btn {
   margin: 15px;
-  padding-top: 4px;
-  width: 140px;
+  padding: 10px 6px 6px 6px;
+  width: 160px;
   border: solid 2px white;
-  border-radius: 100px !important;
+  border-radius: 10px !important;
   text-align: center;
+}
+
+
+#link-btn-graduates {
+  background-color: #43A047;
+}
+
+#link-btn-career {
+  background-color: #EF6C00;
 }
 
 .recruit-link-btn,
@@ -32,6 +42,8 @@
     display: inline-block;
 }
 
+#link-btn-graduates:hover,
+#link-btn-career:hover,
 .recruit-link-btn:hover {
   background-color: white;
   transition: all 0.3s ease-in-out;
@@ -48,7 +60,7 @@
 }
 
 .cbp-item {
-  height: 150px !important;
+  height: 100px !important;
 }
 
 .desc-btn {

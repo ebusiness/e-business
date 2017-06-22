@@ -33,6 +33,7 @@
     "back-to-top": "./public/plugins/back-to-top.js",
     "image-hover": "./public/plugins/image-hover",
     "fancybox": "^3.0.47",
-    "owl.carousel": "2.*"
+    "owl.carousel": "2.*",
+    "particles.js": "^2.0.0"
   }
 }
