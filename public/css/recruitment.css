@@ -5,6 +5,17 @@
 @import url(../unify/theme-colors/blue.css);
 @import url(custom.css);
 
+#grid-container li.item {
+  overflow: hidden;
+  height: 100px;
+  margin-top: 20px;
+}
+#grid-container img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
 #particles-js {
   background: url("../img/eb/banner.png") no-repeat;
   background-size: cover;

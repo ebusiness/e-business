@@ -108,46 +108,57 @@ var handleNextpage = function() {
 
 // cubeportfolio init
 var handleCbp = function() {
-  $('#grid-container').cubeportfolio({
-        caption: '',
-        singlePageInlinePosition: 'below',
-        gapHorizontal: 25, // this affects the vertical gap!
-        gapVertical: 55, // this affects the horizontal gap!
-        gridAdjustment: 'responsive',
-        mediaQueries: [{
-            width: 1100,
-            cols: 3
-        }, {
-            width: 800,
-            cols: 3
-        }, {
-            width: 500,
-            cols: 2
-        }, {
-            width: 320,
-            cols: 1
-        }],
-        singlePageInlineCallback: function (url, element) {
-            var t = this;
+  var resultBoxId = "cubeportfolioResult";
+  var insertResult = function(elem, html) {
+    var resultBox = $("#"+ resultBoxId);
+    if(resultBox.size() == 0) {
+      resultBox = $("<li>").attr({"id": "cubeportfolioResult"}).addClass("col-sm-12").css({"height": "auto"});
+    }
+    resultBox.remove();
+    resultBox.html(html);
 
-            $.ajax({
-                url: url + "?ajax=1",
-                type: 'GET',
-                dataType: 'html',
-                timeout: 5000
-            })
-            .done(function (result) {
-                if (url != window.location.pathname) {
-                  window.history.pushState("", "", url);
-                }
-                t.updateSinglePageInline(result);
+    var top = elem.parent().offset().top;
+    var bodyTop = top - $(".navbar").height();
+    if($('html, body').scrollTop() != bodyTop) {
+      $('html, body').animate({
+          scrollTop: bodyTop
+      }, 500);
+    }
 
-            })
-            .fail(function () {
-                t.updateSinglePageInline("Error! Please refresh the page!");
-            });
+    var lastElem = elem.parent();
+
+    elem.parent().parent().find("li").each(function(){
+      if($(this).offset().top == top) {
+        lastElem = $(this)
+      }
+    })
+
+    resultBox.insertAfter( lastElem );
+  };
+  $('#grid-container li>a').click(function(){
+    url = $(this).attr("href");
+    var $this = $(this)
+    if(url == "javascript:;"){
+      return false;
+    }
+    $.ajax({
+        url: url + "?ajax=1",
+        type: 'GET',
+        dataType: 'html',
+        timeout: 5000
+    })
+    .done(function (result) {
+        if (url != window.location.pathname) {
+          window.history.pushState("", "", url);
         }
+        insertResult($this, result);
+
+    })
+    .fail(function () {
+      insertResult($this, "Error! Please refresh the page!");
     });
+    return false;
+  });
 }
 
 var handleAutoload = function() {
