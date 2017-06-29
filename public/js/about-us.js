@@ -117,7 +117,7 @@ var handleFlot = function() {
       [25, 135],
       [26, 185],
       [27, 229],
-      [28, 230]
+      [28, 240]
     ],
     lines: {
       show: true
