@@ -107,6 +107,7 @@ gulp.task('js-home', function() {
       "public/components/waypoints/waypoints.js",
       "public/components/jquery-touchswipe/jquery.touchSwipe.js",
       "public/components/revolution-slider/rs-plugin/js/jquery.themepunch.revolution.min.js",
+      "public/js/google.js",
       "public/js/home.js"
     ])
     .pipe(concat('home.js'))
@@ -134,6 +135,7 @@ gulp.task('js-about', function() {
       "public/components/flot/jquery.flot.js",
       "public/components/flot/jquery.flot.resize.js",
       "public/components/counter-up/jquery.counterup.min.js",
+      "public/js/google.js",
       "public/js/about-us.js"
     ])
     .pipe(concat('about-us.js'))
@@ -157,6 +159,7 @@ gulp.task('js-recruitment', function() {
       "public/components/fancybox/dist/jquery.fancybox.min.js",
       "public/components/owl.carousel/dist/owl.carousel.min.js",
       "public/components/particles.js/particles.min.js",
+      "public/js/google.js",
       "public/js/recruitment.js"
     ])
     .pipe(concat('recruitment.js'))
@@ -176,6 +179,7 @@ gulp.task('js-contact', function() {
       "public/components/back-to-top/index.js",
       "public/components/gsap/src/minified/TweenMax.min.js",
       "public/components/gmaps/gmaps.js",
+      "public/js/google.js",
       "public/js/contact.js"
     ])
     .pipe(concat('contact.js'))
@@ -194,6 +198,7 @@ gulp.task('js-common', function() {
       "public/components/back-to-top/index.js",
       "public/components/gsap/src/minified/TweenMax.min.js",
       "public/components/jpreloader/js/jpreloader.min.js",
+      "public/js/google.js",
       "public/js/common.js"
     ])
     .pipe(concat('common.js'))
