@@ -131,23 +131,73 @@ block content
           .desc
             h4.no-top-space 応募方法
             .desc
-              | 履歴書をeメールまたは郵送でお送り下さい。（書類のご返却は致しません）
+              | 下記、経歴書をダウンロードし、必要事項をご記入頂き、
+              a(href="mailto:saiyou@e-business.co.jp") saiyou@e-business.co.jp
+              | まで送信下さい。
             .desc
-              .service
-                  h5.no-top-space 郵送
-                  p
-                    | 〒105-0014 東京都港区芝２－２８－８ 芝2丁目ビル１０階
-                    br
-                    | 株式会社イー・ビジネス　経営管理部 人事グループ宛
-                    br
-                    | Tel: 03-6809-3235
-                    br
-                    | Fax: 03-6809-3238
-              .service
-                  h5.no-top-space eメール
-                  p
-                    a(href="mailto:saiyou@e-business.co.jp") E-Mail: saiyou@e-business.co.jp
+              .col-sm-8.service-block.service-block-u.margin-top-20.margin-bottom-40(data-toggle="modal",data-target="#privacy-modal",role="button")
+                .service-bg
+                i.icon-4x.color-light.icon-line.icon-cloud-download
+                h2.heading-md 履歴書ダウンロード
             .desc
               | または「
               a(href="https://job.rikunabi.com/2018/company/r543202088/?isc=r8rcna01261") リクナビ2018
               | 」からも募集中です。
+
+
+  .container
+    #privacy-modal.modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog.modal-lg
+        .modal-content
+          .modal-header
+            button.close(aria-hidden='true', data-dismiss='modal', type='button') ×
+            h4#myModalLabel.modal-title 個人情報に関するご通知（募集時）
+          .modal-body
+            .service
+              i.service-icon.icon-direction
+              .desc
+                h4.no-top-space 利用又は提供の目的
+                p 当社は、貴殿から取得した氏名、生年月日、住所等の個人に関する情報を、当社の採用活動にのみ利用する目的で取得するものであり、それ以外の目的に利用もしくは他に提供・開示することは一切ありません。
+            .service
+              i.service-icon.icon-speech
+              .desc
+                h4.no-top-space 個人情報の取扱いについて
+                p 当社は、取得した貴殿の個人情報を、当社の責任のもとで適切に取扱い管理するものとし、又当社の採用活動の終了に伴い、当社の責任のもとで適切に廃棄･消去致します。
+            .service
+              i.service-icon.icon-shuffle
+              .desc
+                h4.no-top-space 個人情報の当社への提供の任意性について
+                p 当社が貴殿から取得する個人情報は、当社の業務を遂行する上で必要なもののみを取得しています。したがって、貴殿が本事項に定めた個人情報の取扱いに同意されない場合は、お申込をお断りすることがあります。
+            .service
+              i.service-icon.icon-pencil
+              .desc
+                h4.no-top-space 貴方の個人情報の開示、訂正・削除について
+                p 貴殿は、当社に対しご提供されたご自身の個人情報について、開示を請求することができます。又、開示の結果、ご自身の個人情報につきまして訂正・削除を請求することもできます。貴殿が弊社に対し、このような請求をされる場合は、下記の連絡先までご連絡下さい。
+            .service
+              i.service-icon.icon-earphones-alt
+              .desc
+                h4.no-top-space 連絡先
+                p 個人情報の開示・訂正・削除等のご請求、その他ご上明な点につきましては下記までご連絡ください。
+                ul.list-unstyled
+                  li
+                    i.fa.fa-check.color-green
+                    |  連絡先: 株式会社イー・ビジネス
+                  li
+                    i.fa.fa-check.color-green
+                    |  窓口担当: 三好 博之
+                  li
+                    i.fa.fa-check.color-green
+                    |  電話番号:  03-6809-3235
+                  li
+                    i.fa.fa-check.color-green
+                    |  FAX番号:  03-6809-3238
+                  li
+                    i.fa.fa-check.color-green
+                    |  URL: http://www.e-business.co.jp
+                  li
+                    i.fa.fa-check.color-green
+                    |  E-Mail: miyoshi.hiroyuki@e-business.co.jp
+          .modal-footer
+            button.btn-u.btn-u-default(data-dismiss='modal', type='button') 同意しない
+            | &nbsp;
+            button#btn-download-resume.btn-u(type='button') 同意

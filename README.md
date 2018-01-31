@@ -4,6 +4,8 @@
 
   ```sh
   docker run -d --restart=always --name=homepage -p 80:80 -p 443:443 -v /var/gogs/gogs/conf/rapid-cer.pem:/ssl/cert.pem -v /var/gogs/gogs/conf/server-key.pem:/ssl/key.pem ebusinessdocker/home
+#dev
+  docker run -it --rm -v $(pwd):/work -w /work -p 83:443 node:alpine npm start
   ```
 
 - webhook
