@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1192px" height="1941px" viewBox="0 0 1192 1941" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1192px" height="1972px" viewBox="0 0 1192 1972" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
     <title>eb 2</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M434,166.5 L434,1852.5" id="Line-6" stroke="#3498DB" stroke-linecap="square" transform="translate(434.500000, 1009.500000) rotate(180.000000) translate(-434.500000, -1009.500000) "></path>
-        <g id="Group-7" transform="translate(508.000000, 1724.000000)">
+        <path d="M434,197.5 L434,1883.5" id="Line-6" stroke="#3498DB" stroke-linecap="square" transform="translate(434.500000, 1040.500000) rotate(180.000000) translate(-434.500000, -1040.500000) "></path>
+        <g id="Group-7" transform="translate(508.000000, 1755.000000)">
             <rect id="Rectangle-5" stroke="#3498DB" x="0.5" y="0.5" width="349" height="63"></rect>
             <text id="セキュリティ・危機管理委員会" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
                 <tspan x="60" y="40">セキュリティ・危機管理委員会</tspan>
@@ -43,7 +43,7 @@
                 </g>
             </g>
         </g>
-        <g id="Group" transform="translate(19.000000, 184.000000)">
+        <g id="Group" transform="translate(19.000000, 215.000000)">
             <path d="M95.5,64 L95.5,125" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
             <path d="M92.5,190 L92.5,251" id="Line-2" stroke="#3498DB" stroke-linecap="square"></path>
             <rect id="Rectangle-1" stroke="#3498DB" x="0.5" y="1" width="187" height="63"></rect>
@@ -87,9 +87,9 @@
                 </g>
             </g>
         </g>
-        <path d="M319.5,466 L319.5,524.5" id="Line-3" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M321,350.5 L321,577.5" id="Line-4" stroke="#3498DB" stroke-linecap="square" transform="translate(321.000000, 464.000000) rotate(90.000000) translate(-321.000000, -464.000000) "></path>
-        <g id="Rectangle-4-+-経営会議-+-Bitmap" transform="translate(224.000000, 524.000000)">
+        <path d="M319.5,497 L319.5,555.5" id="Line-3" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M321,381.5 L321,608.5" id="Line-4" stroke="#3498DB" stroke-linecap="square" transform="translate(321.000000, 495.000000) rotate(90.000000) translate(-321.000000, -495.000000) "></path>
+        <g id="Rectangle-4-+-経営会議-+-Bitmap" transform="translate(224.000000, 555.000000)">
             <rect id="Rectangle-4" stroke="#3498DB" x="0.5" y="1" width="187" height="63"></rect>
             <text id="経営会議" font-family="HiraginoSans-W3, Hiragino Sans" font-size="20" font-weight="300" fill="#000000">
                 <tspan x="66" y="37.5">経営会議</tspan>
@@ -105,7 +105,7 @@
                 </g>
             </g>
         </g>
-        <g id="Group-2" transform="translate(508.000000, -20.000000)">
+        <g id="Group-2" transform="translate(508.000000, 11.000000)">
             <g id="Group-5" transform="translate(340.000000, 0.000000)">
                 <rect id="Rectangle-5" stroke="#3498DB" x="0.5" y="0.5" width="306" height="63"></rect>
                 <text id="ソリューション-サービス1部（SS1）" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
@@ -219,7 +219,7 @@
             <path d="M269.5,137.5 L340.5,137.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
             <path d="M269.5,36.5 L339.5,36.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
         </g>
-        <g id="Group-2" transform="translate(508.000000, 387.000000)">
+        <g id="Group-2" transform="translate(508.000000, 418.000000)">
             <g id="Group-5" transform="translate(341.000000, 0.000000)">
                 <rect id="Rectangle-5" stroke="#3498DB" x="0.5" y="0.5" width="306" height="63"></rect>
                 <text id="ソリューション-サービス１部（SS1）" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
@@ -366,13 +366,13 @@
             <path d="M270.5,137.5 L341.5,137.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
             <path d="M270.5,36.5 L340.5,36.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
         </g>
-        <path d="M435.5,166.5 L508.5,166.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M435.5,627.5 L508.5,627.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M435.5,1135.5 L508.5,1135.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M436.5,1497.5 L509.5,1497.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M435.5,1760.5 L508.5,1760.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <path d="M435.5,1852.5 L508.5,1852.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
-        <g id="Group-2" transform="translate(506.000000, 1308.000000)">
+        <path d="M435.5,197.5 L508.5,197.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M435.5,658.5 L508.5,658.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M435.5,1166.5 L508.5,1166.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M436.5,1528.5 L509.5,1528.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M435.5,1791.5 L508.5,1791.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <path d="M435.5,1883.5 L508.5,1883.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
+        <g id="Group-2" transform="translate(506.000000, 1339.000000)">
             <g id="Group-5" transform="translate(340.000000, 0.000000)">
                 <rect id="Rectangle-5" stroke="#3498DB" x="0.5" y="0.5" width="216" height="63"></rect>
                 <text id="人事グループ" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
@@ -467,7 +467,7 @@
             <path d="M269.5,137.5 L340.5,137.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
             <path d="M269.5,36.5 L339.5,36.5" id="Line" stroke="#3498DB" stroke-linecap="square"></path>
         </g>
-        <g id="技術推進事業部" transform="translate(508.000000, 1033.000000)">
+        <g id="技術推進事業部" transform="translate(508.000000, 1064.000000)">
             <g id="Group-6" transform="translate(0.000000, 66.000000)">
                 <rect id="Rectangle-5" stroke="#3498DB" x="0.5" y="0.5" width="187" height="63"></rect>
                 <text id="イノベーション事業部" font-family="HiraginoSans-W3, Hiragino Sans" font-size="19.3548387" font-weight="300" fill="#000000">
