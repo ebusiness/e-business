@@ -63,9 +63,7 @@ gulp.task('scripts', () => {
             "./src/js/plugins/wow.min.js",
             "./src/js/plugins/jquery.validate.min.js",
             "./src/js/contact-form.js",
-            // "./src/js/map.js",
-            "./src/js/theme.js",
-            "./src/gmaps/*.js",
+            "./src/js/map.js",
             "./src/js/theme.js"
         ]),
         uglify(),
